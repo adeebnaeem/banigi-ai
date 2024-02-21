@@ -1,0 +1,43 @@
+nav{
+    background-color: $secondary;
+    color: white;
+
+    .navbar{
+       
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 70px;
+    }
+    .nav_links{
+        ul{
+            display: flex;
+            gap: 20px;
+            li{
+                cursor: pointer;
+            }  :hover{
+                color: $accent; 
+                // border-bottom: 1px solid $accent;
+                // transition: all .5s;
+            }
+        }
+    }
+    .nav_button{
+      
+        .login_btn{
+            background: transparent;
+            color: white;
+            font-size: 16px;
+        }
+        .getStarted_btn{
+            background-color: $accent;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            margin-left: 12px;
+            font-size: 16px;
+        }
+    }
+
+}

@@ -1,0 +1,318 @@
+// Banner Section
+
+.main_banner {
+    background: url('../../../src/assets/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    .main_banner_div {
+        display: flex;
+        gap: 10px;
+        height: 100vh;
+
+        .banner_left {
+            background-color: rgba(0, 0, 0, 0.4);
+            width: 35%;
+
+            .banner_left_text {
+
+                margin-top: 150px;
+                padding-left: 70px;
+
+                h1 {
+                    font-size: 40px;
+                }
+
+                .banner_left_btn {
+                    display: flex;
+                    gap: 25px;
+                    margin-top: 30px;
+
+                    .tryBtn {
+                        background-color: $accent;
+                        color: white;
+                        padding: 12px 17px;
+                        border-radius: 10px;
+                        font-size: 17px;
+
+                        span {
+                            color: black;
+                        }
+                    }
+
+                    .watchBtn {
+                        background: transparent;
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+                        color: white;
+                        font-size: 17px;
+                        text-decoration: underline;
+                    }
+
+                }
+            }
+
+        }
+
+        .banner_right {
+            width: 65%;
+            position: relative;
+
+            .banner_right_div {
+                position: absolute;
+                bottom: 15%;
+
+                display: flex;
+                justify-content: space-between;
+                left: 0;
+                right: 0;
+
+                &>*:nth-child(2) {
+                    background-color: $accent;
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+// How It Work CSS
+
+
+.HowItWorkDiv {
+
+    padding: 70px 70px;
+
+    background-color: $secondary;
+    color: white;
+
+    h2 {
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 30px;
+
+        span {
+            color: $accent;
+        }
+    }
+
+    .HowItWorkContainer {
+        display: flex;
+        justify-content: space-between;
+
+        .HowItWork_left,
+        .HowItWork_right {
+
+            margin-top: 100px;
+
+        }
+
+        .card_line {
+            width: 70%;
+            margin: 80px auto;
+            opacity: .5;
+        }
+    }
+}
+
+
+
+
+// Design Grid Css
+
+
+.DesignGridDiv {
+    background-color: #343A45;
+    color: white;
+    padding: 40px 70px;
+
+    h2 {
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 35px;
+
+        span {
+            color: $accent;
+        }
+    }
+
+    .DesignGridLayout {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 25px;
+
+        .grid_item2 {
+            grid-row: span 2;
+        }
+
+        .grid_item5 {
+            grid-row: span 2;
+        }
+
+        .grid_item6 {
+            grid-column: span 2;
+        }
+
+    }
+}
+
+
+
+// FeedBack CSS
+
+.feedback_div {
+    background-color: #343A45;
+    color: white;
+
+    padding: 20px 70px;
+
+    h2 {
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 30px;
+
+        span {
+            color: $accent;
+
+        }
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 50px;
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 60%;
+            }
+
+        }
+
+        .swiper-button-prev {
+            width: 45px;
+            height: 45px;
+
+        }
+
+        .swiper-button-prev::after {
+            display: none;
+        }
+
+        .swiper-button-next {
+            width: 45px;
+            height: 45px;
+
+
+        }
+
+        .swiper-button-next::after {
+            display: none;
+        }
+
+
+        .swiper-pagination-bullet {
+            background-color: rgb(255, 255, 255);
+            display: inline-block;
+            width: .6rem;
+            height: .6rem;
+        }
+
+    }
+}
+
+
+// Download App Css
+
+.downloadAppDiv {
+    background-color: #343A45;
+    padding: 20px 70px;
+
+    .downloadAppInfo {
+        background-color: white;
+        display: flex;
+        border-radius: 20px;
+
+
+        .downloadAppText {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 100px;
+            gap: 25px;
+
+            h2 {
+                max-width: 400px;
+                font-size: 35px;
+            }
+            .downloadBtn{
+                display: flex;
+                gap: 10px;
+                width: 50%;
+                img{
+                    cursor: pointer;
+                }
+            }
+
+        }
+
+        .DownloadAppImg {
+            width: 55%;
+
+            display: flex;
+            justify-content: center;
+
+            .mobileImgDiv {
+                background-image: url("../../../src/assets/downloadAppbg.png");
+                    background-repeat: no-repeat;
+                    background-position:right;
+            
+                    background-size: cover;
+            }
+        }
+    }
+}
+
+
+
+// Pricing Section CSS
+
+.pricing_section{
+    background-color: #343A45;
+    padding: 30px 70px;
+    color: white;
+
+    .pricing_header{
+        text-align: center;
+        max-width: 30%;
+        margin: auto;
+
+        h3{
+            font-size: 30px;
+        }
+    }
+
+    .pricing_bottom{
+        display: flex;
+        gap: 20px;
+
+    }
+
+}
+
+
+
+// Contact Us CSS
+

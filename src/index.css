@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.bannerCardDiv {
+  width: 250px;
+  background-color: #43484B;
+  text-align: center;
+  padding: 25px 10px;
+  border-radius: 10px;
+}
+
+.HowItWorkCardDiv {
+  width: 250px;
+  border: 1px solid white;
+  padding: 17px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  border-radius: 10px;
+}
+.HowItWorkCardDiv span {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  background-color: #43484B;
+  color: white;
+}
+nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 70px;
+}
+nav .nav_links ul {
+  display: flex;
+  gap: 20px;
+}
+nav .nav_links ul li {
+  cursor: pointer;
+}
+nav .nav_links ul :hover {
+  color: #C79952;
+}
+nav .nav_button .login_btn {
+  background: transparent;
+  color: white;
+  font-size: 16px;
+}
+nav .nav_button .getStarted_btn {
+  background-color: #C79952;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 12px;
+  font-size: 16px;
+}
+
+.main_banner {
+  background: url("../../../src/assets/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+.main_banner .main_banner_div {
+  display: flex;
+  gap: 10px;
+  height: 100vh;
+}
+.main_banner .main_banner_div .banner_left {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 35%;
+}
+.main_banner .main_banner_div .banner_left .banner_left_text {
+  margin-top: 150px;
+  padding-left: 70px;
+}
+.main_banner .main_banner_div .banner_left .banner_left_text h1 {
+  font-size: 40px;
+}
+.main_banner .main_banner_div .banner_left .banner_left_text .banner_left_btn {
+  display: flex;
+  gap: 25px;
+  margin-top: 30px;
+}
+.main_banner .main_banner_div .banner_left .banner_left_text .banner_left_btn .tryBtn {
+  background-color: #C79952;
+  color: white;
+  padding: 12px 17px;
+  border-radius: 10px;
+  font-size: 17px;
+}
+.main_banner .main_banner_div .banner_left .banner_left_text .banner_left_btn .tryBtn span {
+  color: black;
+}
+.main_banner .main_banner_div .banner_left .banner_left_text .banner_left_btn .watchBtn {
+  background: transparent;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: white;
+  font-size: 17px;
+  text-decoration: underline;
+}
+.main_banner .main_banner_div .banner_right {
+  width: 65%;
+  position: relative;
+}
+.main_banner .main_banner_div .banner_right .banner_right_div {
+  position: absolute;
+  bottom: 15%;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  right: 0;
+}
+.main_banner .main_banner_div .banner_right .banner_right_div > *:nth-child(2) {
+  background-color: #C79952;
+}
+
+.HowItWorkDiv {
+  padding: 70px 70px;
+  background-color: #43484B;
+  color: white;
+}
+.HowItWorkDiv h2 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+.HowItWorkDiv h2 span {
+  color: #C79952;
+}
+.HowItWorkDiv .HowItWorkContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.HowItWorkDiv .HowItWorkContainer .HowItWork_left,
+.HowItWorkDiv .HowItWorkContainer .HowItWork_right {
+  margin-top: 100px;
+}
+.HowItWorkDiv .HowItWorkContainer .card_line {
+  width: 70%;
+  margin: 80px auto;
+  opacity: 0.5;
+}
+
+.DesignGridDiv {
+  background-color: #343A45;
+  color: white;
+  padding: 40px 70px;
+}
+.DesignGridDiv h2 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 35px;
+}
+.DesignGridDiv h2 span {
+  color: #C79952;
+}
+.DesignGridDiv .DesignGridLayout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 25px;
+}
+.DesignGridDiv .DesignGridLayout .grid_item2 {
+  grid-row: span 2;
+}
+.DesignGridDiv .DesignGridLayout .grid_item5 {
+  grid-row: span 2;
+}
+.DesignGridDiv .DesignGridLayout .grid_item6 {
+  grid-column: span 2;
+}
+
+.feedback_div {
+  background-color: #343A45;
+  color: white;
+  padding: 20px 70px;
+}
+.feedback_div h2 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+.feedback_div h2 span {
+  color: #C79952;
+}
+.feedback_div .swiper {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+}
+.feedback_div .swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feedback_div .swiper .swiper-slide img {
+  width: 60%;
+}
+.feedback_div .swiper .swiper-button-prev {
+  width: 45px;
+  height: 45px;
+}
+.feedback_div .swiper .swiper-button-prev::after {
+  display: none;
+}
+.feedback_div .swiper .swiper-button-next {
+  width: 45px;
+  height: 45px;
+}
+.feedback_div .swiper .swiper-button-next::after {
+  display: none;
+}
+.feedback_div .swiper .swiper-pagination-bullet {
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.6rem;
+}
+
+.downloadAppDiv {
+  background-color: #343A45;
+  padding: 20px 70px;
+}
+.downloadAppDiv .downloadAppInfo {
+  background-color: white;
+  display: flex;
+  border-radius: 20px;
+}
+.downloadAppDiv .downloadAppInfo .downloadAppText {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+  gap: 25px;
+}
+.downloadAppDiv .downloadAppInfo .downloadAppText h2 {
+  max-width: 400px;
+  font-size: 35px;
+}
+.downloadAppDiv .downloadAppInfo .downloadAppText .downloadBtn {
+  display: flex;
+  gap: 10px;
+  width: 50%;
+}
+.downloadAppDiv .downloadAppInfo .downloadAppText .downloadBtn img {
+  cursor: pointer;
+}
+.downloadAppDiv .downloadAppInfo .DownloadAppImg {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+}
+.downloadAppDiv .downloadAppInfo .DownloadAppImg .mobileImgDiv {
+  background-image: url("../../../src/assets/downloadAppbg.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+
+.pricing_section {
+  background-color: #343A45;
+  padding: 30px 70px;
+  color: white;
+}
+.pricing_section .pricing_header {
+  text-align: center;
+  max-width: 30%;
+  margin: auto;
+}
+.pricing_section .pricing_header h3 {
+  font-size: 30px;
+}
+.pricing_section .pricing_bottom {
+  display: flex;
+  gap: 20px;
+}/*# sourceMappingURL=index.css.map */

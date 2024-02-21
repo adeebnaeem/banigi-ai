@@ -1,0 +1,25 @@
+// Utils CSS
+
+@import "./styles/utils/mediaQueries";
+@import "./styles/utils/variables";
+
+// base css
+
+@import "./styles/base/base";
+
+// component css
+
+@import "./styles/components/bannerCard";
+@import "./styles/components/howItworkCard";
+@import "./styles/components/pricingCard";
+
+// Layout css
+
+@import "./styles/layout/footer/footer";
+@import "./styles/layout/header/header";
+
+
+
+// Pages css
+
+@import "./styles/home/home";
