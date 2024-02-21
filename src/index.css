@@ -309,4 +309,30 @@ nav .nav_button .getStarted_btn {
 .pricing_section .pricing_bottom {
   display: flex;
   gap: 20px;
+}
+
+.contactUsSection {
+  background-color: #343A45;
+  padding: 30px 70px;
+  color: white;
+}
+.contactUsSection h4 {
+  font-size: 25px;
+  text-align: center;
+}
+.contactUsSection h4 span {
+  color: #C79952;
+}
+.contactUsSection .contactusDiv {
+  display: flex;
+}
+.contactUsSection .contactusDiv .contactUsLeft {
+  width: 50%;
+}
+.contactUsSection .contactusDiv .contactUsLeft img {
+  width: 400px;
+  height: 380px;
+}
+.contactUsSection .contactusDiv .contactUsLeft p {
+  text-align: center;
 }/*# sourceMappingURL=index.css.map */
