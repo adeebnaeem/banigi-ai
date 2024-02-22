@@ -52,6 +52,41 @@ img {
   justify-content: center;
 }
 
+.pricingCardDiv {
+  border: 1px solid white;
+  padding: 50px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.pricingCardDiv span {
+  text-align: center;
+  font-size: 18px;
+}
+.pricingCardDiv .pricingCardList {
+  margin-top: 15px;
+}
+.pricingCardDiv .pricingCardList ul li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.accordion .accordion-item {
+  background-color: #576072;
+  border-radius: 15px;
+  padding: 20px 50px;
+}
+.accordion .accordion-item .accordion-title {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.accordion .accordion-item .accordion-content {
+  color: #C79952;
+}
+
 nav {
   background-color: #43484B;
   color: white;
@@ -177,7 +212,7 @@ nav .nav_button .getStarted_btn {
 }
 
 .DesignGridDiv {
-  background-color: #343A45;
+  background-color: #343a45;
   color: white;
   padding: 40px 70px;
 }
@@ -206,7 +241,7 @@ nav .nav_button .getStarted_btn {
 }
 
 .feedback_div {
-  background-color: #343A45;
+  background-color: #343a45;
   color: white;
   padding: 20px 70px;
 }
@@ -253,7 +288,7 @@ nav .nav_button .getStarted_btn {
 }
 
 .downloadAppDiv {
-  background-color: #343A45;
+  background-color: #343a45;
   padding: 20px 70px;
 }
 .downloadAppDiv .downloadAppInfo {
@@ -294,45 +329,110 @@ nav .nav_button .getStarted_btn {
 }
 
 .pricing_section {
-  background-color: #343A45;
-  padding: 30px 70px;
+  background-color: #343a45;
   color: white;
+  padding: 100px 0px;
 }
-.pricing_section .pricing_header {
-  text-align: center;
-  max-width: 30%;
+.pricing_section .pricingDiv {
+  width: 70%;
   margin: auto;
 }
-.pricing_section .pricing_header h3 {
+.pricing_section .pricingDiv .pricing_header {
+  text-align: center;
+  max-width: 50%;
+  margin: auto;
+}
+.pricing_section .pricingDiv .pricing_header h3 {
   font-size: 30px;
 }
-.pricing_section .pricing_bottom {
+.pricing_section .pricingDiv .pricing_bottom {
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.pricing_section .pricingDiv .pricing_bottom > *:nth-child(2) {
+  transform: scale(1.2);
 }
 
-.contactUsSection {
-  background-color: #343A45;
-  padding: 30px 70px;
+.faqDiv {
+  background-color: #43484B;
   color: white;
+  padding: 60px 70px;
 }
-.contactUsSection h4 {
-  font-size: 25px;
+.faqDiv h3 {
   text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
 }
-.contactUsSection h4 span {
+.faqDiv h3 span {
   color: #C79952;
 }
-.contactUsSection .contactusDiv {
+.faqDiv .faqList {
   display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 70%;
+  margin: auto;
 }
-.contactUsSection .contactusDiv .contactUsLeft {
+
+.contactUsContainner {
+  background-color: #343a45;
+  color: white;
+}
+.contactUsContainner .contactUsSection {
+  width: 80%;
+  margin: auto;
+}
+.contactUsContainner .contactUsSection h4 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contactUsContainner .contactUsSection h4 span {
+  color: #C79952;
+}
+.contactUsContainner .contactUsSection .contactusDiv {
+  display: flex;
+  justify-content: space-between;
+}
+.contactUsContainner .contactUsSection .contactusDiv .contactUsLeft {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
-.contactUsSection .contactusDiv .contactUsLeft img {
+.contactUsContainner .contactUsSection .contactusDiv .contactUsLeft img {
   width: 400px;
   height: 380px;
 }
-.contactUsSection .contactusDiv .contactUsLeft p {
+.contactUsContainner .contactUsSection .contactusDiv .contactUsLeft p {
+  max-width: 450px;
   text-align: center;
+}
+.contactUsContainner .contactUsSection .contactusDiv .contactUsRight {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
+.contactUsContainner .contactUsSection .contactusDiv .contactUsRight .contactForm {
+  width: 70%;
+  border: 1px solid white;
+  padding: 20px 40px;
+  border-radius: 20px;
+}
+.contactUsContainner .contactUsSection .contactusDiv .contactUsRight .contactForm form {
+  display: flex;
+  flex-direction: column;
+}
+.contactUsContainner .contactUsSection .contactusDiv .contactUsRight .contactForm form input,
+.contactUsContainner .contactUsSection .contactusDiv .contactUsRight .contactForm form textarea {
+  background: transparent;
+  border: 1px solid white;
+  padding: 12px;
+  border-radius: 10px;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=index.css.map */

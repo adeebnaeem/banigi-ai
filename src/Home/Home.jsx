@@ -6,6 +6,7 @@ import Feedback from './Sections/Feedback/Feedback'
 import DownloadApp from './Sections/DownloadApp/DownloadApp'
 import PricingSection from './Sections/PricingSection/PricingSection'
 import ContactUs from './Sections/ContactUs/ContactUs'
+import FaqSection from './Sections/FaqSection/FaqSection'
 
 const Home = () => {
   return (
@@ -18,6 +19,8 @@ const Home = () => {
 
       <DownloadApp/>
       <PricingSection/>
+
+      <FaqSection/>
       <ContactUs/>
     </div>
   )
