@@ -8,9 +8,9 @@ const ContactUs = () => {
 
     
       <div className="contactUsSection">
-        <h4>
+        <h3>
           <span>Contact</span> Us
-        </h4>
+        </h3>
 
         <div className="contactusDiv">
           <div className="contactUsLeft">
@@ -18,7 +18,7 @@ const ContactUs = () => {
             <p>
               Our communication hub awaits! Here, you&#39;ll find various
               channels to connect with us. Whether you have questions, feedback,
-              or need assistance, we're just a message away. Explore our contact
+              or need assistance, we&#39;re just a message away. Explore our contact
               form and social media links to get in touch. We value your input
               and are here to assist you promptly!
             </p>

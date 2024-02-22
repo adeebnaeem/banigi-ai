@@ -7,6 +7,7 @@ import DownloadApp from './Sections/DownloadApp/DownloadApp'
 import PricingSection from './Sections/PricingSection/PricingSection'
 import ContactUs from './Sections/ContactUs/ContactUs'
 import FaqSection from './Sections/FaqSection/FaqSection'
+import TryBanigiAi from './Sections/TryBanigiAi/TryBanigiAi'
 
 const Home = () => {
   return (
@@ -14,7 +15,7 @@ const Home = () => {
       <BannerSection/>
       <HowItWorkSection/>
       <DesignGrid/>
-
+      <TryBanigiAi/>
       <Feedback/>
 
       <DownloadApp/>
