@@ -87,6 +87,91 @@ img {
   color: #C79952;
 }
 
+.tryDesignFormDiv {
+  background-color: #43484B;
+}
+.tryDesignFormDiv form .tryDesignFile {
+  display: flex;
+  flex-direction: column;
+  border: 1px dashed #C79952;
+  padding: 50px;
+  border-radius: 10px;
+  position: relative;
+}
+.tryDesignFormDiv form .tryDesignFile span {
+  display: flex;
+  gap: 10px;
+}
+.tryDesignFormDiv form .tryDesignFile input {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.tryDesignFormDiv form .selectOptionDiv {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.tryDesignFormDiv form .selectOptionDiv label {
+  margin-bottom: 7px;
+}
+.tryDesignFormDiv form .selectOptionDiv .custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: #576072;
+  background-image: url('data:image/svg+xml;utf8,<svg width="10" height="18"  viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 1.80249L9 9.30249L1.5 16.8025" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  cursor: pointer;
+  color: white;
+  margin-bottom: 20px;
+}
+.tryDesignFormDiv form .selectOptionDiv .custom-select option {
+  padding: 20px 40px;
+}
+.tryDesignFormDiv form .selectOptionDiv .custom-select :hover {
+  background-color: #C79952;
+}
+.tryDesignFormDiv form .selectOptionDiv :focus {
+  outline: none;
+}
+.tryDesignFormDiv form .selectOptionDiv .intervation_radio {
+  display: flex;
+  justify-content: space-between;
+}
+.tryDesignFormDiv form .selectOptionDiv .intervation_radio div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.tryDesignFormDiv form .selectOptionDiv .intervation_radio div input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #C79952;
+  border-radius: 50%;
+  background-clip: content-box;
+  padding: 3px;
+}
+.tryDesignFormDiv form .selectOptionDiv .intervation_radio div nput[type=radio]:checked {
+  background-color: #C79952;
+}
+
 .footer_Section {
   background-color: #43484B;
   padding: 30px 100px;
@@ -314,9 +399,55 @@ nav .nav_button .getStarted_btn {
 .TryDesignDiv h3 {
   text-align: center;
   font-size: 30px;
+  margin-bottom: 30px;
 }
 .TryDesignDiv h3 span {
   color: #C79952;
+}
+.TryDesignDiv .tabs-container .tab-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.TryDesignDiv .tabs-container .tab-heading button {
+  background-color: transparent;
+  border: 1px solid #C79952;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+.TryDesignDiv .tabs-container .tab-heading button.active {
+  background-color: #C79952;
+}
+.TryDesignDiv .tabs-container .tab_content_div {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.TryDesignDiv .tabs-container .tab_content_div .tab-content {
+  width: 30%;
+}
+.TryDesignDiv .tabs-container .tab_content_div .swiper {
+  width: 60%;
+  height: 100%;
+  padding-bottom: 35px;
+}
+.TryDesignDiv .tabs-container .tab_content_div .swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.TryDesignDiv .tabs-container .tab_content_div .swiper .swiper-slide img {
+  width: 50%;
+}
+.TryDesignDiv .tabs-container .tab_content_div .swiper .swiper-pagination-bullet {
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.6rem;
 }
 
 .feedback_div {

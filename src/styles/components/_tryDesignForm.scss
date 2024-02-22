@@ -1,0 +1,97 @@
+
+.tryDesignFormDiv{
+    background-color: $secondary;
+
+    form{
+        .tryDesignFile{
+            display: flex;
+            flex-direction: column;
+            border: 1px dashed $accent;
+            padding: 50px;
+            border-radius: 10px;
+            position: relative;
+            span{
+                display: flex;
+                gap: 10px;
+
+            }
+            input{
+                display: block;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                opacity: 0;
+                cursor: pointer;
+            }
+
+        }
+
+        .selectOptionDiv{
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            label{
+                margin-bottom: 7px;
+            }
+            .custom-select {
+                appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                width: 100%;
+                padding: 15px ;
+
+                border: none;
+                font-size: 16px;
+                border-radius: 4px;
+                background-color: #576072;
+                background-image: url('data:image/svg+xml;utf8,<svg width="10" height="18"  viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 1.80249L9 9.30249L1.5 16.8025" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+                background-repeat: no-repeat;
+                background-position: right 8px center;
+                cursor: pointer;
+                color: white;
+                margin-bottom: 20px;
+                option{
+                    padding: 20px 40px;
+                }:hover{
+                    background-color: $accent;
+                }
+              }
+              :focus{
+                outline: none;
+    
+              }
+
+              .intervation_radio{
+                display: flex;
+                justify-content: space-between;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    input{
+                        appearance: none;
+                        width: 20px;
+                        height: 20px;
+                        border: 2px solid $accent;
+                        border-radius: 50%;
+                        background-clip: content-box;
+                        padding: 3px;
+
+
+                }
+                nput[type="radio"]:checked {
+                    background-color: $accent;
+                }
+              
+
+                }
+              }
+
+        }
+      
+    }
+}
