@@ -1,21 +1,19 @@
-
-.tryDesignFormDiv{
+.tryDesignFormDiv {
     background-color: $secondary;
 
-    form{
-        .tryDesignFile{
+    form {
+        .tryDesignFile {
             display: flex;
             flex-direction: column;
             border: 1px dashed $accent;
             padding: 50px;
             border-radius: 10px;
             position: relative;
-            span{
+            span {
                 display: flex;
                 gap: 10px;
-
             }
-            input{
+            input {
                 display: block;
                 height: 100%;
                 width: 100%;
@@ -27,14 +25,13 @@
                 opacity: 0;
                 cursor: pointer;
             }
-
         }
 
-        .selectOptionDiv{
+        .selectOptionDiv {
             display: flex;
             flex-direction: column;
             margin-top: 20px;
-            label{
+            label {
                 margin-bottom: 7px;
             }
             .custom-select {
@@ -42,7 +39,7 @@
                 -webkit-appearance: none;
                 -moz-appearance: none;
                 width: 100%;
-                padding: 15px ;
+                padding: 15px;
 
                 border: none;
                 font-size: 16px;
@@ -54,44 +51,58 @@
                 cursor: pointer;
                 color: white;
                 margin-bottom: 20px;
-                option{
+                option {
                     padding: 20px 40px;
-                }:hover{
+                }
+                :hover {
                     background-color: $accent;
                 }
-              }
-              :focus{
+            }
+            :focus {
                 outline: none;
-    
-              }
+            }
 
-              .intervation_radio{
+            .intervation_radio {
                 display: flex;
                 justify-content: space-between;
-                div{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 5px;
-                    input{
-                        appearance: none;
-                        width: 20px;
-                        height: 20px;
-                        border: 2px solid $accent;
-                        border-radius: 50%;
-                        background-clip: content-box;
-                        padding: 3px;
-
-
-                }
-                nput[type="radio"]:checked {
-                    background-color: $accent;
-                }
               
-
+                div {
+                  position: relative;
+                  display: flex;
+                  align-items: center;
+                  flex-direction: column;
+                  gap: 5px;
+              
+                  input {
+                    appearance: none;
+                    width: 23px;
+                    height: 23px;
+                    border: 2px solid $accent;
+                    border-radius: 50%;
+                    cursor: pointer;
+              
+                    &:checked {
+                      background-color: $accent;
+                    }
+                  }
+              
+                  &::after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 100%;
+                    width: 100%; // Adjust the width of the line
+                    height: 4px; // Adjust the height of the line
+                    background-color: white;
+                  }
+              
+                  // Hide the line after the last div
+                  &:last-child::after {
+                    display: none;
+                  }
                 }
               }
-
+              
         }
-      
     }
 }
