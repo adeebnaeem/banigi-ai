@@ -151,8 +151,20 @@ img {
 .tryDesignFormDiv form .selectOptionDiv .intervation_radio {
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+.tryDesignFormDiv form .selectOptionDiv .intervation_radio::after {
+  content: "";
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 5px;
+  width: 88%;
+  background-color: white;
 }
 .tryDesignFormDiv form .selectOptionDiv .intervation_radio div {
+  z-index: 3;
   position: relative;
   display: flex;
   align-items: center;
@@ -168,6 +180,7 @@ img {
   border: 2px solid #C79952;
   border-radius: 50%;
   cursor: pointer;
+  background-color: #43484B;
 }
 .tryDesignFormDiv form .selectOptionDiv .intervation_radio div input:checked {
   background-color: #C79952;
@@ -228,15 +241,108 @@ img {
 }
 
 .ModalContainer .loginModalOverlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
-  background-color: #8d8d8d;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
 }
-.ModalContainer .LoginModalContainer {
-  position: fixed;
+.ModalContainer .loginModalOverlay .LoginModalContainer {
+  border-radius: 20px;
+  z-index: 2;
+  background-color: #43484B;
+  width: 85%;
+}
+.ModalContainer .loginModalOverlay .LoginModalContainer .closeIcon {
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.ModalContainer .loginModalOverlay .LoginModalContainer .closeIcon img {
+  cursor: pointer;
+  width: 30px;
+}
+.ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  padding: 40px 0px;
+}
+.ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginLeftDiv {
+  width: 50%;
+}
+.ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginLeftDiv img {
+  width: 67%;
+}
+.ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+.ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .loginLogo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .loginLogo img {
+  width: 40%;
+}
+.ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .LoginForm {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .LoginForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .LoginForm form input {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid white;
+  color: white;
+  outline: none;
+  background: transparent;
+  width: 100%;
+}
+.ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .LoginForm form .passwordField {
+  position: relative;
+}
+.ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .LoginForm form .eyeIcon {
+  right: 12px;
+  top: 10px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .LoginForm form span {
+  text-align: right;
+  cursor: pointer;
+}
+.ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .loginTextCenter {
+  display: flex;
+  justify-content: center;
+}
+.ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .socialLogin {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .socialLogin img {
+  width: 100px;
+  cursor: pointer;
 }
 
 .footer_Section {

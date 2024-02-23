@@ -31,7 +31,8 @@ const Header = () => {
                     <div className="nav_button">
                         <button className='login_btn' onClick={()=>{setShowModal(true)}}>Login</button>
                         {showModal && <LoginModal closeModal={closeModal}/>}
-                        <button className='getStarted_btn'>Get Started</button>
+                        <button className='getStarted_btn'onClick={()=>{setShowModal(true)}}>Get Started</button>
+                        {showModal && <LoginModal closeModal={closeModal}/>}
                     </div>
                 </div>
             </nav>

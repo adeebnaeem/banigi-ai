@@ -70,10 +70,28 @@
             }
 
             .intervation_radio {
+
                 display: flex;
                 justify-content: space-between;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 13%;
+
+                    left: 50%;
+                    transform: translateX(-50%);
+                    height: 5px;
+
+
+                    width: 88%;
+                    background-color: white;
+                }
 
                 div {
+                    z-index: 3;
+
                     position: relative;
                     display: flex;
                     align-items: center;
@@ -87,6 +105,7 @@
                         border: 2px solid $accent;
                         border-radius: 50%;
                         cursor: pointer;
+                        background-color: $secondary;
 
                         &:checked {
                             background-color: $accent;
@@ -145,7 +164,8 @@
             }
 
         }
-        button{
+
+        button {
             margin-top: 25px;
             width: 100%;
         }
