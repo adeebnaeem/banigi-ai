@@ -345,6 +345,182 @@ img {
   cursor: pointer;
 }
 
+.dash_InteriorDesign .dash_interiorDesignForm {
+  margin-top: 40px;
+}
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst,
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond {
+  display: flex;
+  justify-content: space-between;
+}
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst div,
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex-basis: calc(33.33% - 20px);
+}
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst div .custom-select,
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond div .custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 15px;
+  border: none;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: #43484B;
+  background-image: url('data:image/svg+xml;utf8,<svg width="10" height="18"  viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 1.80249L9 9.30249L1.5 16.8025" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  cursor: pointer;
+  color: white;
+  margin-bottom: 20px;
+}
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst div .intervation_radio,
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond div .intervation_radio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  flex-wrap: nowrap;
+}
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst div .intervation_radio::after,
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond div .intervation_radio::after {
+  content: "";
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 5px;
+  width: 80%;
+  background-color: white;
+}
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst div .intervation_radio div,
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond div .intervation_radio div {
+  z-index: 3;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst div .intervation_radio div input,
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond div .intervation_radio div input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 23px;
+  height: 23px;
+  border: 2px solid #C79952;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #43484B;
+}
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst div .intervation_radio div input:checked,
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond div .intervation_radio div input:checked {
+  background-color: #C79952;
+}
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst div .intervation_radio div:last-child::after,
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond div .intervation_radio div:last-child::after {
+  display: none;
+}
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignThird {
+  display: flex;
+  justify-content: space-between;
+}
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignThird .customAiIntervationForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex-basis: calc(33.33% - 20px);
+}
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignThird .customAiIntervationForm .customAiIntervationLabel {
+  display: flex;
+  gap: 15px;
+}
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignThird .customAiIntervationForm .customAiIntervationLabel input[type=checkbox] {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #C79952;
+  cursor: pointer;
+  position: relative;
+}
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignThird .customAiIntervationForm .customAiIntervationLabel input[type=checkbox]:checked {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23C79952" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignThird .customAiIntervationForm textarea {
+  background-color: #576072;
+  border: none;
+  border-radius: 10px;
+  resize: none;
+  color: white;
+  padding: 10px;
+}
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignThird .customAiIntervationForm ::-moz-placeholder {
+  color: rgb(255, 255, 255) !important;
+}
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignThird .customAiIntervationForm ::placeholder {
+  color: rgb(255, 255, 255) !important;
+}
+.dash_InteriorDesign .dash_interiorDesignForm .interiorDesignFileDiv {
+  display: flex;
+  width: 70%;
+  margin: 40px auto;
+  height: 350px;
+}
+.dash_InteriorDesign .dash_interiorDesignForm .interiorDesignFileDiv .interiorDesignFile {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  position: relative;
+  background-color: #43484B;
+}
+.dash_InteriorDesign .dash_interiorDesignForm .interiorDesignFileDiv .interiorDesignFile span {
+  display: flex;
+  gap: 10px;
+}
+.dash_InteriorDesign .dash_interiorDesignForm .interiorDesignFileDiv .interiorDesignFile input {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.dash_InteriorDesign .dash_interiorDesignForm .interiorDesignFileDiv .interiorDesignFileImg {
+  width: 50%;
+  background: #6A7074;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dash_InteriorDesign .dash_interiorDesignForm .InteriorDesignBtn {
+  display: flex;
+  justify-content: center;
+}
+.dash_InteriorDesign .dash_interiorDesignForm .InteriorDesignBtn button {
+  padding: 16px 60px;
+}
+
 .footer_Section {
   background-color: #43484B;
   padding: 30px 100px;
@@ -827,21 +1003,27 @@ nav .nav_button .getStarted_btn {
 }
 .dashboard_container .sidebar_section {
   background-color: #43484B;
-  height: 100vh;
-  width: 10vw;
+  width: 15vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 .dashboard_container .sidebar_section .dashboardLogo {
-  width: 75%;
+  width: 65%;
   margin: 0px auto;
 }
-.dashboard_container .sidebar_section .dashboard_links ul li .navLink_text {
-  color: white;
-}
-.dashboard_container .sidebar_section .dashboard_links ul li div {
+.dashboard_container .sidebar_section .dashboard_links ul li .navLink_bg {
   background-color: #C79952;
+  color: white;
+  padding: 17px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+.dashboard_container .sidebar_section .dashboard_links ul li .navLink_trans {
+  background-color: transparent;
+  color: white;
   padding: 17px 0px;
   display: flex;
   flex-direction: column;
@@ -871,5 +1053,19 @@ nav .nav_button .getStarted_btn {
 }
 .dashboard_container .dashboardPages {
   background-color: #343a45;
+  color: white;
   width: 100%;
+  padding: 40px;
+}
+.dashboard_container .dashboardPages .myAccountDiv {
+  display: flex;
+  justify-content: end;
+}
+.dashboard_container .dashboardPages .myAccountDiv button {
+  background-color: transparent;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 17px;
 }/*# sourceMappingURL=index.css.map */
