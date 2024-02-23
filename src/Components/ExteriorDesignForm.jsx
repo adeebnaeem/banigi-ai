@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
-const TryDesignForm = () => {
+
+const ExteriorDesignForm = () => {
     const [selectedFile, setSelectedFile] = useState(null);
     const [selectedName, setSelectedName] = useState("");
     const handleFileChange = (event) => {
@@ -25,40 +26,46 @@ const TryDesignForm = () => {
                     <div className="selectOptionDiv">
 
 
-                        <label htmlFor="">Interior Type</label>
+                        <label htmlFor="">Exterior Type</label>
                         <select name="" id="" className='custom-select'>
-                            <option value="">Bed Room</option>
-                            <option value="">Bed Room</option>
-                            <option value="">Bed Room</option>
-                            <option value="">Bed Room</option>
+                            <option value="">House Front</option>
+                            <option value="">Pond</option>
+                            <option value="">Outdoor Pool</option>
+                            <option value="">Outdoor patio</option>
+                            <option value="">Garden</option>
+                            
                         </select>
-                        <label htmlFor="">Interior Type</label>
+                        <label htmlFor="">Mode</label>
                         <select name="" id="" className='custom-select'>
-                            <option value="">Bed Room</option>
-                            <option value="">Bed Room</option>
-                            <option value="">Bed Room</option>
-                            <option value="">Bed Room</option>
+                            <option value="">Beautiful Redesign</option>
+                            <option value="">Creative Redesign</option>
+                            <option value="">Fill The Exterior</option>
+                            
                         </select>
-                        <label htmlFor="">Interior Type</label>
+                        <label htmlFor="">Style</label>
                         <select name="" id="" className='custom-select'>
-                            <option value="">Bed Room</option>
-                            <option value="">Bed Room</option>
-                            <option value="">Bed Room</option>
-                            <option value="">Bed Room</option>
+                            <option value="">Colonial </option>
+                            <option value="">Contemporary </option>
+                            <option value="">Greek </option>
+                            <option value="">Luxury </option>
+                            <option value="">Modern </option>
+                            <option value="">Ranch </option>
+                            <option value="">Spanish </option>
+                            <option value="">Tudor </option>
+                            <option value="">Tuscan </option>
+                            <option value="">Victorian </option>
+                            <option value="">Villa </option>
+                           
+
                         </select>
-                        <label htmlFor="">Interior Type</label>
+                       
+                        <label htmlFor="">Number Of Designs</label>
                         <select name="" id="" className='custom-select'>
-                            <option value="">Bed Room</option>
-                            <option value="">Bed Room</option>
-                            <option value="">Bed Room</option>
-                            <option value="">Bed Room</option>
-                        </select>
-                        <label htmlFor="">Interior Type</label>
-                        <select name="" id="" className='custom-select'>
-                            <option value="">Bed Room</option>
-                            <option value="">Befdsd Room</option>
-                            <option value="">Bed Room</option>
-                            <option value="">Bed Room</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
                         </select>
                         <label htmlFor="">AI Intervention</label>
                         <div className="intervation_radio">
@@ -105,4 +112,4 @@ const TryDesignForm = () => {
     )
 }
 
-export default TryDesignForm
+export default ExteriorDesignForm

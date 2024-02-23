@@ -1,5 +1,6 @@
 import React from "react";
 import contactImg from "../../../assets/contactImg.png";
+import PrimaryButton from "../../../Components/PrimaryButton";
 
 const ContactUs = () => {
   return (
@@ -34,7 +35,7 @@ const ContactUs = () => {
                 <label htmlFor="message">Message</label>
                 <textarea name="" id="" cols="30" rows="10"></textarea>
 
-                <button>Submit</button>
+                <PrimaryButton text="Submit"/>
               </form>
             </div>
           </div>

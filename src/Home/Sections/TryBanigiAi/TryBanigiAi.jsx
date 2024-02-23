@@ -13,15 +13,19 @@ import t4 from "../../../assets/t4.png";
 
 
 import TryDesignForm from '../../../Components/TryDesignForm'
+import InteriorDesignForm from '../../../Components/InteriorDesignForm';
+import ExteriorDesignForm from '../../../Components/ExteriorDesignForm';
+import LandscapeDesignForm from '../../../Components/LandscapeDesignForm';
 
 const TryBanigiAi = () => {
 
+
   const [activeTab, setActiveTab] = useState(0);
   const tabs = [
-    { title: 'Interior Design', content: <TryDesignForm /> },
-    { title: 'Exterior Design', content: 'Content 2' },
-    { title: 'Landscape Design', content: 'Content 3' },
-    { title: 'Custom Design', content: 'Content 4' }
+    { title: 'Interior Design', content: <InteriorDesignForm/> },
+    { title: 'Exterior Design', content: <ExteriorDesignForm/> },
+    { title: 'Landscape Design', content: <LandscapeDesignForm/> },
+    { title: 'Custom Design', content: <TryDesignForm/> }
   ];
   const handleTabClick = (index) => {
     setActiveTab(index);

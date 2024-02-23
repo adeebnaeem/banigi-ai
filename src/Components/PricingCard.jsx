@@ -1,4 +1,5 @@
 import React from "react";
+import PrimaryButton from "./PrimaryButton";
 
 const PricingCard = ({ heading, price, features = []  }) => {
   return (
@@ -16,7 +17,11 @@ const PricingCard = ({ heading, price, features = []  }) => {
             ))}
           </ul>
         </div>
-        <button>Activate</button>
+
+        
+        <PrimaryButton text="Activate" />
+
+    
       </div>
     </>
   );
