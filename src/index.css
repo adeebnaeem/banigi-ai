@@ -345,6 +345,176 @@ img {
   cursor: pointer;
 }
 
+.dash_ExteriorDesign .dash_ExteriorDesignForm {
+  margin-top: 40px;
+}
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst,
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond:not(:last-child) {
+  display: flex;
+  justify-content: space-between;
+}
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst div,
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond:not(:last-child) div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex-basis: calc(33.33% - 20px);
+}
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst div .custom-select,
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond:not(:last-child) div .custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 15px;
+  border: none;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: #43484B;
+  background-image: url('data:image/svg+xml;utf8,<svg width="10" height="18"  viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 1.80249L9 9.30249L1.5 16.8025" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  cursor: pointer;
+  color: white;
+  margin-bottom: 20px;
+}
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst div .intervation_radio,
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond:not(:last-child) div .intervation_radio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  flex-wrap: nowrap;
+}
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst div .intervation_radio::after,
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond:not(:last-child) div .intervation_radio::after {
+  content: "";
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 5px;
+  width: 80%;
+  background-color: white;
+}
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst div .intervation_radio div,
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond:not(:last-child) div .intervation_radio div {
+  z-index: 3;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst div .intervation_radio div input,
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond:not(:last-child) div .intervation_radio div input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 23px;
+  height: 23px;
+  border: 2px solid #C79952;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #43484B;
+}
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst div .intervation_radio div input:checked,
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond:not(:last-child) div .intervation_radio div input:checked {
+  background-color: #C79952;
+}
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst div .intervation_radio div:last-child::after,
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond:not(:last-child) div .intervation_radio div:last-child::after {
+  display: none;
+}
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst .customAiIntervationForm .customAiIntervationLabel,
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond:not(:last-child) .customAiIntervationForm .customAiIntervationLabel {
+  display: flex;
+  gap: 15px;
+}
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst .customAiIntervationForm .customAiIntervationLabel input[type=checkbox],
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond:not(:last-child) .customAiIntervationForm .customAiIntervationLabel input[type=checkbox] {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #C79952;
+  cursor: pointer;
+  position: relative;
+}
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst .customAiIntervationForm .customAiIntervationLabel input[type=checkbox]:checked,
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond:not(:last-child) .customAiIntervationForm .customAiIntervationLabel input[type=checkbox]:checked {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23C79952" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst .customAiIntervationForm textarea,
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond:not(:last-child) .customAiIntervationForm textarea {
+  background-color: #576072;
+  border: none;
+  border-radius: 10px;
+  resize: none;
+  color: white;
+  padding: 10px;
+}
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst .customAiIntervationForm ::-moz-placeholder, .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond:not(:last-child) .customAiIntervationForm ::-moz-placeholder {
+  color: rgb(255, 255, 255) !important;
+}
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst .customAiIntervationForm ::placeholder,
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond:not(:last-child) .customAiIntervationForm ::placeholder {
+  color: rgb(255, 255, 255) !important;
+}
+.dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignFileDiv {
+  display: flex;
+  width: 70%;
+  margin: 40px auto;
+  height: 350px;
+}
+.dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignFileDiv .ExteriorDesignFile {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  position: relative;
+  background-color: #43484B;
+}
+.dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignFileDiv .ExteriorDesignFile span {
+  display: flex;
+  gap: 10px;
+}
+.dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignFileDiv .ExteriorDesignFile input {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignFileDiv .ExteriorDesignFileImg {
+  width: 50%;
+  background: #6A7074;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignBtn {
+  display: flex;
+  justify-content: center;
+}
+.dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignBtn button {
+  padding: 16px 60px;
+}
+
 .dash_InteriorDesign .dash_interiorDesignForm {
   margin-top: 40px;
 }
