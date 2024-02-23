@@ -2,7 +2,7 @@
     .dash_ExteriorDesignForm {
         margin-top: 40px;
         .dash_ExteriorDesignFirst,
-        .dash_ExteriorDesignSecond:not(:last-child) {
+        .dash_ExteriorDesignSecond{
             display: flex;
             justify-content: space-between;
             div {
@@ -79,10 +79,10 @@
                
             }
             .customAiIntervationForm {
-                 
+                 flex-wrap: nowrap;
                 .customAiIntervationLabel {
                     display: flex;
-
+                    flex-direction: row;
                     gap: 15px;
 
                     input[type="checkbox"] {

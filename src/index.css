@@ -349,12 +349,12 @@ img {
   margin-top: 40px;
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst,
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond:not(:last-child) {
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond {
   display: flex;
   justify-content: space-between;
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst div,
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond:not(:last-child) div {
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond div {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -362,7 +362,7 @@ img {
   flex-basis: calc(33.33% - 20px);
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst div .custom-select,
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond:not(:last-child) div .custom-select {
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond div .custom-select {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -379,7 +379,7 @@ img {
   margin-bottom: 20px;
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst div .intervation_radio,
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond:not(:last-child) div .intervation_radio {
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond div .intervation_radio {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -387,7 +387,7 @@ img {
   flex-wrap: nowrap;
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst div .intervation_radio::after,
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond:not(:last-child) div .intervation_radio::after {
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond div .intervation_radio::after {
   content: "";
   position: absolute;
   top: 13%;
@@ -398,7 +398,7 @@ img {
   background-color: white;
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst div .intervation_radio div,
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond:not(:last-child) div .intervation_radio div {
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond div .intervation_radio div {
   z-index: 3;
   position: relative;
   display: flex;
@@ -407,7 +407,7 @@ img {
   gap: 5px;
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst div .intervation_radio div input,
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond:not(:last-child) div .intervation_radio div input {
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond div .intervation_radio div input {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -419,20 +419,25 @@ img {
   background-color: #43484B;
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst div .intervation_radio div input:checked,
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond:not(:last-child) div .intervation_radio div input:checked {
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond div .intervation_radio div input:checked {
   background-color: #C79952;
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst div .intervation_radio div:last-child::after,
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond:not(:last-child) div .intervation_radio div:last-child::after {
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond div .intervation_radio div:last-child::after {
   display: none;
 }
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst .customAiIntervationForm,
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond .customAiIntervationForm {
+  flex-wrap: nowrap;
+}
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst .customAiIntervationForm .customAiIntervationLabel,
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond:not(:last-child) .customAiIntervationForm .customAiIntervationLabel {
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond .customAiIntervationForm .customAiIntervationLabel {
   display: flex;
+  flex-direction: row;
   gap: 15px;
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst .customAiIntervationForm .customAiIntervationLabel input[type=checkbox],
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond:not(:last-child) .customAiIntervationForm .customAiIntervationLabel input[type=checkbox] {
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond .customAiIntervationForm .customAiIntervationLabel input[type=checkbox] {
   -moz-appearance: none;
        appearance: none;
   -webkit-appearance: none;
@@ -443,14 +448,14 @@ img {
   position: relative;
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst .customAiIntervationForm .customAiIntervationLabel input[type=checkbox]:checked,
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond:not(:last-child) .customAiIntervationForm .customAiIntervationLabel input[type=checkbox]:checked {
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond .customAiIntervationForm .customAiIntervationLabel input[type=checkbox]:checked {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23C79952" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst .customAiIntervationForm textarea,
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond:not(:last-child) .customAiIntervationForm textarea {
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond .customAiIntervationForm textarea {
   background-color: #576072;
   border: none;
   border-radius: 10px;
@@ -458,11 +463,11 @@ img {
   color: white;
   padding: 10px;
 }
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst .customAiIntervationForm ::-moz-placeholder, .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond:not(:last-child) .customAiIntervationForm ::-moz-placeholder {
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst .customAiIntervationForm ::-moz-placeholder, .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond .customAiIntervationForm ::-moz-placeholder {
   color: rgb(255, 255, 255) !important;
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst .customAiIntervationForm ::placeholder,
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond:not(:last-child) .customAiIntervationForm ::placeholder {
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond .customAiIntervationForm ::placeholder {
   color: rgb(255, 255, 255) !important;
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignFileDiv {
