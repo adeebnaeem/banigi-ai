@@ -1,12 +1,28 @@
 import React, { useState } from 'react'
 import logo from '../assets/logo.png'
 import LoginModal from '../Components/LoginModal';
+import SignupModal from '../Components/SignupModal';
 
 const Header = () => {
 
-    const [showModal,setShowModal]=useState(false);
+    const [showLoginModal, setShowLoginModal] = useState(false);
+    const [showSignupModal, setShowSignupModal] = useState(false);
 
-    const closeModal=()=>setShowModal(false);
+    const openLoginModal = () => {
+        setShowLoginModal(true);
+        setShowSignupModal(false);
+    };
+
+    const openSignupModal = () => {
+        setShowSignupModal(true);
+        setShowLoginModal(false);
+    };
+
+    const closeModal = () => {
+        setShowLoginModal(false);
+        setShowSignupModal(false);
+    };
+
 
     return (
         <>
@@ -29,10 +45,10 @@ const Header = () => {
                     </div>
 
                     <div className="nav_button">
-                        <button className='login_btn' onClick={()=>{setShowModal(true)}}>Login</button>
-                        {showModal && <LoginModal closeModal={closeModal}/>}
-                        <button className='getStarted_btn'onClick={()=>{setShowModal(true)}}>Get Started</button>
-                        {showModal && <LoginModal closeModal={closeModal}/>}
+                        <button className='login_btn' onClick={openLoginModal}>Login</button>
+                        {showLoginModal && <LoginModal closeModal={closeModal}/>}
+                        <button className='getStarted_btn' onClick={openSignupModal}>Get Started</button>
+                        {showSignupModal && <SignupModal closeModal={closeModal}/>} 
                     </div>
                 </div>
             </nav>

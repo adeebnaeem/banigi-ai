@@ -8,21 +8,24 @@ import PricingSection from './Sections/PricingSection/PricingSection'
 import ContactUs from './Sections/ContactUs/ContactUs'
 import FaqSection from './Sections/FaqSection/FaqSection'
 import TryBanigiAi from './Sections/TryBanigiAi/TryBanigiAi'
+import Header from '../layout/Header'
+import Footer from '../layout/Footer'
 
 const Home = () => {
   return (
     <div>
+      <Header/>
       <BannerSection/>
       <HowItWorkSection/>
       <DesignGrid/>
       <TryBanigiAi/>
       <Feedback/>
-
       <DownloadApp/>
       <PricingSection/>
 
       <FaqSection/>
       <ContactUs/>
+      <Footer/>
     </div>
   )
 }
