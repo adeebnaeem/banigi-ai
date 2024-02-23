@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import PrimaryButton from './PrimaryButton';
 
 const LandscapeDesignForm = () => {
     const [selectedFile, setSelectedFile] = useState(null);
@@ -116,7 +117,7 @@ const LandscapeDesignForm = () => {
 
                     </div>
 
-                    <button>Generate Image</button>
+                    <PrimaryButton text="Generate Image"/>
                 </form>
             </div>
 

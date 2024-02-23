@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../assets/logo.png'
+import LoginModal from '../Components/LoginModal';
 
 const Header = () => {
+
+    const [showModal,setShowModal]=useState(false);
+
+    const closeModal=()=>setShowModal(false);
+
     return (
         <>
             <nav>
@@ -23,7 +29,8 @@ const Header = () => {
                     </div>
 
                     <div className="nav_button">
-                        <button className='login_btn'>Login</button>
+                        <button className='login_btn' onClick={()=>{setShowModal(true)}}>Login</button>
+                        {showModal && <LoginModal closeModal={closeModal}/>}
                         <button className='getStarted_btn'>Get Started</button>
                     </div>
                 </div>

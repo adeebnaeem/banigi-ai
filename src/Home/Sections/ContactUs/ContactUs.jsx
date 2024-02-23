@@ -1,4 +1,3 @@
-import React from "react";
 import contactImg from "../../../assets/contactImg.png";
 import PrimaryButton from "../../../Components/PrimaryButton";
 

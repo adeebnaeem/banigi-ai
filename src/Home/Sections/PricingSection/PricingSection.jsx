@@ -1,4 +1,3 @@
-import React from 'react'
 import PricingCard from '../../../Components/PricingCard'
 
 const PricingSection = () => {

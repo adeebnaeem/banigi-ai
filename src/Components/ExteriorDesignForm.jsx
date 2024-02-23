@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import PrimaryButton from './PrimaryButton';
 
 
 const ExteriorDesignForm = () => {
@@ -104,7 +105,7 @@ const ExteriorDesignForm = () => {
 
                     </div>
 
-                    <button>Generate Image</button>
+                    <PrimaryButton text="Generate Image"/>
                 </form>
             </div>
 
