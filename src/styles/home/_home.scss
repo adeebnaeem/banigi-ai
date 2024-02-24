@@ -73,9 +73,10 @@
                 position: absolute;
                 bottom: 15%;
 
-                display: flex;
-                justify-content: space-between;
-                left: 0;
+                display: flex;  
+               justify-content: space-between;       
+               gap: 20px;  
+                   left: 0;
                 right: 0;
 
                 & > *:nth-child(2) {
