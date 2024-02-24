@@ -1,0 +1,12 @@
+.dash_pricing_section{
+   .dash_pricing_bottom{
+    margin-top: 100px;
+    display: flex;
+    gap: 4%;
+   
+
+    & > *:nth-child(2) {
+       transform: scale(1.2);
+    }
+   }
+}

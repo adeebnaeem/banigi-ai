@@ -244,7 +244,9 @@ const Dashboard = () => {
 
         <div className="dashboard_credits">
           <button>3 Credits Left</button>
-          <button>Buy Credits</button>
+
+          <NavLink to={"/dashboard/myPricing"}>
+          <button className="buyCreditBtn">Buy Credits</button></NavLink>
         </div>
       </aside>
       {/* --//aside-- */}

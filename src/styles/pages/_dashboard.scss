@@ -4,12 +4,14 @@
     .sidebar_section {
         background-color: $secondary;
         width: 15vw;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        gap: 4rem;
         .dashboardLogo {
+
             width: 65%;
-            margin: 0px auto;
+            margin: 40px auto;
         }
 
         .dashboard_links {
@@ -55,7 +57,9 @@
                 padding: 10px;
                 border-radius: 10px;
             }
-            :last-child {
+            
+            .buyCreditBtn{
+                width: 100%;
                 background: white;
                 color: black;
                 border: none;
@@ -64,7 +68,6 @@
             }
         }
     }
-
     .dashboardPages {
         background-color: #343a45;
         color: white;

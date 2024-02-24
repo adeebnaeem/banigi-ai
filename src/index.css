@@ -345,6 +345,101 @@ img {
   cursor: pointer;
 }
 
+.dash_CustomDesign .dash_CustomDesignForm {
+  margin-top: 40px;
+}
+.dash_CustomDesign .dash_CustomDesignForm .dash_CustomDesginFirst {
+  display: flex;
+  gap: 30px;
+}
+.dash_CustomDesign .dash_CustomDesignForm .dash_CustomDesginFirst div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-basis: calc(33.33% - 20px);
+}
+.dash_CustomDesign .dash_CustomDesignForm .dash_CustomDesginFirst div textarea {
+  background-color: #43484B;
+  border: none;
+  border-radius: 10px;
+  resize: none;
+  color: white;
+  padding: 10px;
+}
+.dash_CustomDesign .dash_CustomDesignForm .dash_CustomDesginFirst div ::-moz-placeholder {
+  color: rgb(255, 255, 255) !important;
+}
+.dash_CustomDesign .dash_CustomDesignForm .dash_CustomDesginFirst div ::placeholder {
+  color: rgb(255, 255, 255) !important;
+}
+.dash_CustomDesign .dash_CustomDesignForm .dash_CustomDesginFirst div .dash_CustomDesign_exam_btn {
+  margin-top: 22px;
+}
+.dash_CustomDesign .dash_CustomDesignForm .dash_CustomDesginFirst div .dash_CustomDesign_exam_btn button {
+  background: #43484B;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dash_CustomDesign .dash_CustomDesignForm .dash_CustomDesginFirst div .dash_customDesign_exam p {
+  border-radius: 10px;
+  background: #43484B;
+  color: white;
+  padding: 15px;
+}
+.dash_CustomDesign .dash_CustomDesignForm .ExteriorDesignFileDiv {
+  display: flex;
+  width: 70%;
+  margin: 40px auto;
+  height: 350px;
+}
+.dash_CustomDesign .dash_CustomDesignForm .ExteriorDesignFileDiv .ExteriorDesignFile {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  position: relative;
+  background-color: #43484B;
+}
+.dash_CustomDesign .dash_CustomDesignForm .ExteriorDesignFileDiv .ExteriorDesignFile span {
+  display: flex;
+  gap: 10px;
+}
+.dash_CustomDesign .dash_CustomDesignForm .ExteriorDesignFileDiv .ExteriorDesignFile input {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.dash_CustomDesign .dash_CustomDesignForm .ExteriorDesignFileDiv .ExteriorDesignFileImg {
+  width: 50%;
+  background: #6A7074;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dash_CustomDesign .dash_CustomDesignForm .ExteriorDesignBtn {
+  display: flex;
+  justify-content: center;
+}
+.dash_CustomDesign .dash_CustomDesignForm .ExteriorDesignBtn button {
+  padding: 16px 60px;
+}
+
 .dash_ExteriorDesign .dash_ExteriorDesignForm {
   margin-top: 40px;
 }
@@ -696,6 +791,44 @@ img {
   padding: 16px 60px;
 }
 
+.myDesignSection .tabs-container {
+  margin-top: 40px;
+}
+.myDesignSection .tabs-container .tab-heading {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.myDesignSection .tabs-container .tab-heading button {
+  background-color: transparent;
+  border: 1px solid #C79952;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+.myDesignSection .tabs-container .tab-heading button.active {
+  background-color: #C79952;
+}
+.myDesignSection .tabs-container .tab_content_div {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.myDesignSection .tabs-container .tab_content_div .tab-content {
+  width: 30%;
+}
+
+.dash_pricing_section .dash_pricing_bottom {
+  margin-top: 100px;
+  display: flex;
+  gap: 4%;
+}
+.dash_pricing_section .dash_pricing_bottom > *:nth-child(2) {
+  transform: scale(1.2);
+}
+
 .footer_Section {
   background-color: #43484B;
   padding: 30px 100px;
@@ -939,7 +1072,7 @@ nav .nav_button .getStarted_btn {
   background-color: transparent;
   border: 1px solid #C79952;
   color: white;
-  padding: 15px;
+  padding: 15px 20px;
   border-radius: 10px;
 }
 .TryDesignDiv .tabs-container .tab-heading button.active {
@@ -1179,13 +1312,14 @@ nav .nav_button .getStarted_btn {
 .dashboard_container .sidebar_section {
   background-color: #43484B;
   width: 15vw;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  gap: 4rem;
 }
 .dashboard_container .sidebar_section .dashboardLogo {
   width: 65%;
-  margin: 0px auto;
+  margin: 40px auto;
 }
 .dashboard_container .sidebar_section .dashboard_links ul li .navLink_bg {
   background-color: #C79952;
@@ -1219,7 +1353,8 @@ nav .nav_button .getStarted_btn {
   padding: 10px;
   border-radius: 10px;
 }
-.dashboard_container .sidebar_section .dashboard_credits :last-child {
+.dashboard_container .sidebar_section .dashboard_credits .buyCreditBtn {
+  width: 100%;
   background: white;
   color: black;
   border: none;
