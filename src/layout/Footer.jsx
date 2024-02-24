@@ -24,11 +24,11 @@ const Footer = () => {
             <div className="footer_quick_lnks">
               <h5>Quick Links</h5>
               <ul>
-                <li>Home</li>
-                <li>Pricing</li>
-                <li>Faq</li>
-                <li>Feedback</li>
-                <li>Contact Us</li>
+              <a href="#main_banner"><li>Home</li></a>
+              <a href="#pricing"><li>Pricing</li></a>
+              <a href="#faq"><li>Faq</li></a>
+              <a href="#feedback"><li>Feedback</li></a>
+              <a href="#contact_us"><li>Contact Us</li></a> 
               </ul>
             </div>
             <div className="footer_design_types">

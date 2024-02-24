@@ -5,6 +5,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 li {
   list-style-type: none;
 }
@@ -915,6 +919,18 @@ nav .nav_button .getStarted_btn {
   border-radius: 10px;
   margin-left: 12px;
   font-size: 16px;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:active {
+  color: #C79952;
 }
 
 .main_banner {

@@ -16,7 +16,7 @@ const Feedback = () => {
     return (
         <>
 
-            <div className="feedback_div">
+            <div className="feedback_div" id='feedback'>
 
                 <h2>What our <span>customers</span> say about us?</h2>
 

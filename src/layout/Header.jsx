@@ -35,12 +35,12 @@ const Header = () => {
 
                     <div className="nav_links">
                         <ul>
-                            <li>Home</li>
-                            <li>How It work</li>
-                            <li>Feedback</li>
-                            <li>Pricing</li>
-                            <li>Faq</li>
-                            <li>Contact Us</li>
+                            <a href="#main_banner"><li>Home</li></a>
+                            <a href="#howItWork"><li>How It work</li></a>
+                            <a href="#feedback"><li>Feedback</li></a>
+                            <a href="#pricing"><li>Pricing</li></a>
+                            <a href="#faq"><li>Faq</li></a>
+                           <a href="#contact_us"><li>Contact Us</li></a> 
                         </ul>
                     </div>
 

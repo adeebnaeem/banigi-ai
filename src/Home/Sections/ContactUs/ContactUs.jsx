@@ -4,7 +4,7 @@ import PrimaryButton from "../../../Components/PrimaryButton";
 const ContactUs = () => {
   return (
     <>
-    <div className="contactUsContainner">
+    <div className="contactUsContainner" id="contact_us">
 
     
       <div className="contactUsSection">

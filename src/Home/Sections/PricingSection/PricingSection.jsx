@@ -37,7 +37,7 @@ const PricingSection = () => {
   return (
     <>
     
-    <div className="pricing_section">
+    <div className="pricing_section" id='pricing'>
       <div className="pricingDiv">
       <div className="pricing_header">
             <h3>Pricing</h3>

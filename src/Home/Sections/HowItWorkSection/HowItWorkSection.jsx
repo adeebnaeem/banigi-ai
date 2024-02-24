@@ -8,7 +8,7 @@ const HowItWorkSection = () => {
     return (
         <>
 
-            <div className="HowItWorkDiv">
+            <div className="HowItWorkDiv" id='howItWork'>
                 <h2>How it <span>work</span></h2>
                 <div className="HowItWorkContainer">
                     <div className="HowItWork_left">

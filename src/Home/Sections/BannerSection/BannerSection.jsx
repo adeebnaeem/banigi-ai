@@ -5,7 +5,7 @@ import vector from '../../../assets/vector.png'
 const BannerSection = () => {
     return (
         <>
-            <div className="main_banner">
+            <div className="main_banner" id='main_banner'>
                 <div className="main_banner_div">
                     <div className="banner_left">
                         <div className="banner_left_text">
