@@ -16,6 +16,7 @@ import TryDesignForm from '../../../Components/TryDesignForm'
 import InteriorDesignForm from '../../../Components/InteriorDesignForm';
 import ExteriorDesignForm from '../../../Components/ExteriorDesignForm';
 import LandscapeDesignForm from '../../../Components/LandscapeDesignForm';
+import CustomDesignForm from '../../../Components/CustomDesignForm';
 
 const TryBanigiAi = () => {
 
@@ -25,7 +26,7 @@ const TryBanigiAi = () => {
     { title: 'Interior Design', content: <InteriorDesignForm/> },
     { title: 'Exterior Design', content: <ExteriorDesignForm/> },
     { title: 'Landscape Design', content: <LandscapeDesignForm/> },
-    { title: 'Custom Design', content: <TryDesignForm/> }
+    { title: 'Custom Design', content: <CustomDesignForm/> }
   ];
   const handleTabClick = (index) => {
     setActiveTab(index);

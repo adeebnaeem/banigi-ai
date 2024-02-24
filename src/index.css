@@ -333,6 +333,9 @@ img {
   text-align: right;
   cursor: pointer;
 }
+.ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .LoginForm form button {
+  width: 100%;
+}
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .loginTextCenter {
   display: flex;
   justify-content: center;
@@ -949,7 +952,7 @@ a:active {
   width: 35%;
 }
 .main_banner .main_banner_div .banner_left .banner_left_text {
-  margin-top: 150px;
+  margin-top: 15%;
   padding-left: 70px;
 }
 .main_banner .main_banner_div .banner_left .banner_left_text h1 {
@@ -1385,6 +1388,8 @@ a:active {
 }
 .dashboard_container .dashboardPages .myAccountDiv {
   display: flex;
+  flex-direction: column;
+  align-items: end;
   justify-content: end;
 }
 .dashboard_container .dashboardPages .myAccountDiv button {
@@ -1394,4 +1399,11 @@ a:active {
   align-items: center;
   gap: 8px;
   font-size: 17px;
+}
+.dashboard_container .dashboardPages .myAccountDiv .logout_btn {
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: #C79952;
+  padding: 10px;
+  border-radius: 10px;
 }/*# sourceMappingURL=index.css.map */

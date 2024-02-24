@@ -1,7 +1,16 @@
 import { NavLink, Outlet } from "react-router-dom";
 import dashboardLogo from "../../assets/logo.png";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
 
 const Dashboard = () => {
+  const [showLogout, setShowLogout] = useState(false);
+
+  const openLogout = () => {
+    setShowLogout(!showLogout);
+  }
+
   return (
     <div className="dashboard_container">
       {/* --aside-- */}
@@ -246,7 +255,7 @@ const Dashboard = () => {
           <button>3 Credits Left</button>
 
           <NavLink to={"/dashboard/myPricing"}>
-          <button className="buyCreditBtn">Buy Credits</button></NavLink>
+            <button className="buyCreditBtn">Buy Credits</button></NavLink>
         </div>
       </aside>
       {/* --//aside-- */}
@@ -254,7 +263,7 @@ const Dashboard = () => {
       {/* --dashboard pages-- */}
       <main className="dashboardPages">
         <div className="myAccountDiv">
-          <button>
+          <button  onClick={openLogout}>
             My Account
             <svg
               width="9"
@@ -272,6 +281,12 @@ const Dashboard = () => {
               />
             </svg>
           </button>
+
+          {showLogout && <Link to="/"><div className="logout_btn">
+            Logout
+          </div> </Link> 
+          }
+
         </div>
 
         <Outlet />

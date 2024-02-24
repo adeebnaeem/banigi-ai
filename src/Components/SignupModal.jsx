@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { Link } from "react-router-dom";
+
 import loginImg from "../assets/loginImg.png"
 import loginLogo from "../assets/logo.png"
 import PrimaryButton from './PrimaryButton'
@@ -80,7 +82,7 @@ const SignupModal = ({ closeModal }) => {
                                         </div>
                                         <span>Forgot Password?</span>
 
-                                        <PrimaryButton text="Sign Up" />
+                                        <Link to="/dashboard/interiorDesign">  <PrimaryButton text="Sign Up" /></Link>
 
                                     </form>
 
