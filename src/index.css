@@ -22,11 +22,6 @@ button {
   border: none;
 }
 
-img {
-  width: 100%;
-  height: 100%;
-}
-
 .bannerCardDiv {
   width: 250px;
   background-color: #43484B;
@@ -910,18 +905,37 @@ nav .nav_links ul li {
 nav .nav_links ul :hover {
   color: #C79952;
 }
+@media (max-width: 1200px) {
+  nav .nav_links {
+    display: none;
+  }
+}
+nav .nav_button {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 nav .nav_button .login_btn {
   background: transparent;
   color: white;
   font-size: 16px;
+}
+@media (max-width: 1200px) {
+  nav .nav_button .login_btn {
+    display: none;
+  }
 }
 nav .nav_button .getStarted_btn {
   background-color: #C79952;
   color: white;
   padding: 10px;
   border-radius: 10px;
-  margin-left: 12px;
   font-size: 16px;
+}
+@media (min-width: 1200px) {
+  nav .nav_button img {
+    display: none;
+  }
 }
 
 a:link {

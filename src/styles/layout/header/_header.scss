@@ -9,6 +9,7 @@ nav{
         justify-content: space-between;
         align-items: center;
         padding: 10px 70px;
+
     }
     .nav_links{
         ul{
@@ -22,21 +23,34 @@ nav{
                 // transition: all .5s;
             }
         }
+
+        @include bigScreen{
+            display: none;
+        }
     }
     .nav_button{
-      
+      display: flex;
+      align-items: center;
+      gap: 15px;
         .login_btn{
             background: transparent;
             color: white;
             font-size: 16px;
+            @include bigScreen{
+                display: none;
+            }
         }
         .getStarted_btn{
             background-color: $accent;
             color: white;
             padding: 10px;
             border-radius: 10px;
-            margin-left: 12px;
             font-size: 16px;
+        }
+        img{
+            @media (min-width:1200px) {
+                display: none;
+            }
         }
     }
 

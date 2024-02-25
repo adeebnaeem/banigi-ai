@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import logo from '../assets/logo.png'
+import mobileMenu from "../assets/mobileMenu.png"
 import LoginModal from '../Components/LoginModal';
 import SignupModal from '../Components/SignupModal';
 
@@ -49,6 +50,7 @@ const Header = () => {
                         {showLoginModal && <LoginModal closeModal={closeModal}/>}
                         <button className='getStarted_btn' onClick={openSignupModal}>Get Started</button>
                         {showSignupModal && <SignupModal closeModal={closeModal}/>} 
+                        <img src={mobileMenu} alt="" />
                     </div>
                 </div>
             </nav>
