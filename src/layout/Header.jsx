@@ -50,7 +50,7 @@ const Header = () => {
                         {showLoginModal && <LoginModal closeModal={closeModal}/>}
                         <button className='getStarted_btn' onClick={openSignupModal}>Get Started</button>
                         {showSignupModal && <SignupModal closeModal={closeModal}/>} 
-                        <img src={mobileMenu} alt="" />
+                        <img src={mobileMenu} alt="" className='mobilemenu'/>
                     </div>
                 </div>
             </nav>

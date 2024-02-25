@@ -23,11 +23,11 @@ button {
 }
 
 .bannerCardDiv {
-  width: 250px;
   background-color: #43484B;
   text-align: center;
-  padding: 25px 10px;
+  padding: 25px 15px;
   border-radius: 10px;
+  max-width: 270px;
 }
 
 .HowItWorkCardDiv {
@@ -893,47 +893,63 @@ nav .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 70px;
+  padding: 10px 4rem;
 }
-nav .nav_links ul {
+@media (max-width: 576px) {
+  nav .navbar {
+    padding: 10px 25px;
+  }
+}
+nav .navbar .nav_logo img {
+  width: 80%;
+}
+nav .navbar .nav_links ul {
   display: flex;
   gap: 20px;
 }
-nav .nav_links ul li {
+nav .navbar .nav_links ul li {
   cursor: pointer;
 }
-nav .nav_links ul :hover {
+nav .navbar .nav_links ul :hover {
   color: #C79952;
 }
 @media (max-width: 1200px) {
-  nav .nav_links {
+  nav .navbar .nav_links {
     display: none;
   }
 }
-nav .nav_button {
+nav .navbar .nav_button {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 25px;
 }
-nav .nav_button .login_btn {
+nav .navbar .nav_button .login_btn {
   background: transparent;
   color: white;
   font-size: 16px;
 }
 @media (max-width: 1200px) {
-  nav .nav_button .login_btn {
+  nav .navbar .nav_button .login_btn {
     display: none;
   }
 }
-nav .nav_button .getStarted_btn {
+nav .navbar .nav_button .getStarted_btn {
   background-color: #C79952;
   color: white;
   padding: 10px;
   border-radius: 10px;
   font-size: 16px;
 }
+@media (max-width: 768px) {
+  nav .navbar .nav_button .getStarted_btn {
+    display: none;
+  }
+}
+nav .navbar .nav_button .mobilemenu {
+  width: 28px;
+}
 @media (min-width: 1200px) {
-  nav .nav_button img {
+  nav .navbar .nav_button .mobilemenu {
     display: none;
   }
 }
@@ -955,22 +971,51 @@ a:active {
   background-repeat: no-repeat;
   background-size: 100% 120%;
   color: white;
+  padding-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .main_banner {
+    background-size: cover;
+    background-position: 40%;
+  }
 }
 .main_banner .main_banner_div {
   display: flex;
   gap: 10px;
-  height: 100vh;
+  min-height: 100vh;
+}
+@media (max-width: 992px) {
+  .main_banner .main_banner_div {
+    flex-direction: column;
+  }
 }
 .main_banner .main_banner_div .banner_left {
   background-color: rgba(0, 0, 0, 0.4);
   width: 35%;
 }
+@media (max-width: 992px) {
+  .main_banner .main_banner_div .banner_left {
+    width: 100%;
+  }
+}
 .main_banner .main_banner_div .banner_left .banner_left_text {
   margin-top: 15%;
-  padding-left: 70px;
+  padding-left: 4rem;
+  margin-bottom: 5%;
+  padding-right: 10px;
+}
+@media (max-width: 992px) {
+  .main_banner .main_banner_div .banner_left .banner_left_text {
+    margin-top: 5%;
+  }
+}
+@media (max-width: 576px) {
+  .main_banner .main_banner_div .banner_left .banner_left_text {
+    padding-left: 25px;
+  }
 }
 .main_banner .main_banner_div .banner_left .banner_left_text h1 {
-  font-size: 40px;
+  font-size: clamp(2rem, 2.5vw, 4rem);
 }
 .main_banner .main_banner_div .banner_left .banner_left_text h1 .vector_img {
   position: relative;
@@ -1013,6 +1058,12 @@ a:active {
   width: 65%;
   position: relative;
 }
+@media (max-width: 992px) {
+  .main_banner .main_banner_div .banner_right {
+    width: 80%;
+    margin: auto;
+  }
+}
 .main_banner .main_banner_div .banner_right .banner_right_div {
   position: absolute;
   bottom: 15%;
@@ -1021,6 +1072,17 @@ a:active {
   gap: 20px;
   left: 0;
   right: 0;
+}
+@media (max-width: 1200px) {
+  .main_banner .main_banner_div .banner_right .banner_right_div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 992px) {
+  .main_banner .main_banner_div .banner_right .banner_right_div {
+    position: static;
+  }
 }
 .main_banner .main_banner_div .banner_right .banner_right_div > *:nth-child(2) {
   background-color: #C79952;
@@ -1047,12 +1109,12 @@ a:active {
 .HowItWorkDiv .HowItWorkContainer .HowItWork_right {
   margin-top: 100px;
 }
-.HowItWorkDiv .HowItWorkContainer .card_line {
+.HowItWorkDiv .HowItWorkContainer .HowItWork_left .card_line,
+.HowItWorkDiv .HowItWorkContainer .HowItWork_right .card_line {
   width: 70%;
   margin: 80px auto;
   opacity: 0.5;
 }
-
 .DesignGridDiv {
   background-color: #343a45;
   color: white;

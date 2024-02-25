@@ -5,20 +5,44 @@
     background-repeat: no-repeat;
     background-size: 100% 120%;
     color: white;
+    padding-bottom: 20px;
+
+    @include mediumScreen{
+        background-size: cover ;
+        background-position: 40% ;
+    }
     .main_banner_div {
         display: flex;
         gap: 10px;
-        height: 100vh;
+        min-height: 100vh;
+
+        @include largeScreen{
+            flex-direction: column;
+        }
         .banner_left {
             background-color: rgba(0, 0, 0, 0.4);
             width: 35%;
+            @include largeScreen{
+                width: 100%;
+            }
 
             .banner_left_text {
                 margin-top: 15%;
-                padding-left: 70px;
+                padding-left: 4rem;
+                margin-bottom: 5%;
+                padding-right: 10px;
+              
+                @include largeScreen{
+                    margin-top: 5%;
+                    
+                }
+                @include smallScreen{
+                    padding-left: 25px;
+                }
+            
 
                 h1 {
-                    font-size: 40px;
+                    font-size : clamp(2rem, 2.5vw, 4rem);
                     .vector_img{
                         position: relative;
                         img{
@@ -69,6 +93,11 @@
             width: 65%;
             position: relative;
 
+            @include largeScreen{
+                width: 80%;
+                margin: auto;
+            }
+
             .banner_right_div {
                 position: absolute;
                 bottom: 15%;
@@ -78,7 +107,15 @@
                gap: 20px;  
                    left: 0;
                 right: 0;
+               
+                @include bigScreen{
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+                @include largeScreen{
+                    position: static;
 
+                }
                 & > *:nth-child(2) {
                     background-color: $accent;
                 }
@@ -108,17 +145,20 @@
     .HowItWorkContainer {
         display: flex;
         justify-content: space-between;
-
         .HowItWork_left,
         .HowItWork_right {
+
             margin-top: 100px;
+            .card_line {
+                width: 70%;
+                margin: 80px auto;
+                opacity: 0.5;
+            }
+        }
+        .HowItWork_Middle{
         }
 
-        .card_line {
-            width: 70%;
-            margin: 80px auto;
-            opacity: 0.5;
-        }
+        
     }
 }
 
