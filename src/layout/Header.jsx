@@ -8,6 +8,7 @@ const Header = () => {
 
     const [showLoginModal, setShowLoginModal] = useState(false);
     const [showSignupModal, setShowSignupModal] = useState(false);
+    const [showMobileNav, setShowMobileNav] = useState(false);
 
     const openLoginModal = () => {
         setShowLoginModal(true);
@@ -41,18 +42,37 @@ const Header = () => {
                             <a href="#feedback"><li>Feedback</li></a>
                             <a href="#pricing"><li>Pricing</li></a>
                             <a href="#faq"><li>Faq</li></a>
-                           <a href="#contact_us"><li>Contact Us</li></a> 
+                            <a href="#contact_us"><li>Contact Us</li></a>
                         </ul>
                     </div>
 
                     <div className="nav_button">
                         <button className='login_btn' onClick={openLoginModal}>Login</button>
-                        {showLoginModal && <LoginModal closeModal={closeModal}/>}
+                        {showLoginModal && <LoginModal closeModal={closeModal} />}
                         <button className='getStarted_btn' onClick={openSignupModal}>Get Started</button>
-                        {showSignupModal && <SignupModal closeModal={closeModal}/>} 
-                        <img src={mobileMenu} alt="" className='mobilemenu'/>
+                        {showSignupModal && <SignupModal closeModal={closeModal} />}
+                        <img src={mobileMenu} alt="" className='mobilemenu' onClick={() => { setShowMobileNav(!showMobileNav) }} />
                     </div>
+
+
                 </div>
+
+                {showMobileNav && <div className="mobile_navbar">
+                    <ul>
+                        <li>Home</li>
+                        <li>How it Work</li>
+                        <li>Feedback</li>
+                        <li>Pricing</li>
+                        <li>Faq</li>
+                        <li>Contact Us</li>
+
+                    </ul>
+                    <button className='login_btn' onClick={openLoginModal}>Login</button>
+                    {showLoginModal && <LoginModal closeModal={closeModal} />}
+                    <button className='getStarted_btn' onClick={openSignupModal}>Get Started</button>
+                    {showSignupModal && <SignupModal closeModal={closeModal} />}
+                </div>}
+
             </nav>
         </>
     )

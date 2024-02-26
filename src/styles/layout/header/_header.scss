@@ -67,6 +67,43 @@ nav {
             }
         }
     }
+
+    .mobile_navbar{
+        background-color: $secondary;
+        color: white;
+        width: 100%;
+        position: fixed;
+        z-index: 2;
+        
+        ul{
+            
+           border-top: 1px solid white;
+            li{
+                cursor: pointer;
+                text-align: center;
+                width: 100%;
+                padding: 15px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                transition: background-color .1s;
+            
+            } :hover{
+                background-color: $accent;
+            }
+           
+        }
+
+        .login_btn{
+            border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+        }
+        button{
+            width: 100%;
+            background-color: $accent;
+            color: white;
+            padding: 15px;
+            font-size: 16px;
+
+        }
+    }
 }
 
 

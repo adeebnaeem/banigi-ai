@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import {  Pagination } from 'swiper/modules';
+import { Pagination } from 'swiper/modules';
 import 'swiper/css/pagination';
 import 'swiper/css';
 
@@ -23,10 +23,10 @@ const TryBanigiAi = () => {
 
   const [activeTab, setActiveTab] = useState(0);
   const tabs = [
-    { title: 'Interior Design', content: <InteriorDesignForm/> },
-    { title: 'Exterior Design', content: <ExteriorDesignForm/> },
-    { title: 'Landscape Design', content: <LandscapeDesignForm/> },
-    { title: 'Custom Design', content: <CustomDesignForm/> }
+    { title: 'Interior Design', content: <InteriorDesignForm /> },
+    { title: 'Exterior Design', content: <ExteriorDesignForm /> },
+    { title: 'Landscape Design', content: <LandscapeDesignForm /> },
+    { title: 'Custom Design', content: <CustomDesignForm /> }
   ];
   const handleTabClick = (index) => {
     setActiveTab(index);
@@ -51,40 +51,39 @@ const TryBanigiAi = () => {
 
         <div className="tabs-container">
           <div className="tab-heading">
-          {renderTabs()}
+            {renderTabs()}
           </div>
 
           <div className="tab_content_div">
-          <div className="tab-content">{tabs[activeTab]?.content}</div>
-          
+            <div className="tab-content">{tabs[activeTab]?.content}</div>
 
-          <Swiper
-                    modules={[ Pagination]}
 
-                    spaceBetween={50}
-                    slidesPerView={1}
-                    
-                    pagination={{
-                        clickable: true,
-                    }}
 
-                    className="mySwiper"
+            <Swiper
+              modules={[Pagination]}
 
-                >
-                    <SwiperSlide><img src={t1} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={t2} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={t3} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={t4} alt="" /></SwiperSlide>
-                    
+              spaceBetween={50}
+              slidesPerView={1}
 
-                    
+              pagination={{
+                clickable: true,
+              }}
 
-                </Swiper>
+              className="mySwiper"
 
-              
-          
+            >
+              <SwiperSlide><img src={t1} alt="" /></SwiperSlide>
+              <SwiperSlide><img src={t2} alt="" /></SwiperSlide>
+              <SwiperSlide><img src={t3} alt="" /></SwiperSlide>
+              <SwiperSlide><img src={t4} alt="" /></SwiperSlide>
+
+
+
+
+            </Swiper>
+
           </div>
-          
+
         </div>
       </div>
 
