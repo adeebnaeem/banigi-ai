@@ -4,11 +4,25 @@
     color: white;
     display: flex;
 
+    @include largeScreen{
+        padding: 30px 50px;
+    }
+    @include mediumScreen{
+        flex-direction: column;
+        gap: 30px;
+    }
+
     .footer_left{
         width: 40%;
         display: flex;
         flex-direction: column;
         gap: 15px;
+
+        @include mediumScreen{
+            width: 90%;
+            margin: auto;
+            align-items: center;
+        }
 
         img{
             width: 40%;
@@ -16,6 +30,10 @@
         }
         p{
             max-width: 70%;
+            @include mediumScreen{
+                max-width: 100%;
+                text-align: center;
+            }
 
         }
         .footer_social_link{
@@ -32,6 +50,16 @@
         width: 60%;
         display: flex;
         justify-content: space-around;
+        @include mediumScreen{
+            width: 90%;
+            justify-content: space-between;
+        }
+        @include smallScreen{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
             h5{
                 font-size: 18px;
                 margin-bottom: 20px;

@@ -210,6 +210,9 @@
     background-color: #343a45;
     color: white;
     padding: 40px 70px;
+    @include largeScreen{
+        padding: 40px 28px;
+    }
 
     h2 {
         text-align: center;
@@ -645,6 +648,11 @@
         display: flex;
         justify-content: space-between;
 
+        @include largeScreen{
+            flex-direction: column;
+            gap: 30px;
+        }
+
         .contactUsLeft {
             width: 50%;
             display: flex;
@@ -652,10 +660,14 @@
             align-items: center;
             justify-content: center;
             gap: 15px;
+            @include largeScreen{
+                width: 80%;
+                margin: auto;
+            }
 
             img {
-                width: 400px;
-                height: 380px;
+                max-width: 400px;
+                width: 95%;
             }
 
             p {
@@ -669,11 +681,26 @@
             display: flex;
             justify-content: end;
 
+            @include largeScreen{
+                width: 80%;
+                margin: auto;
+            }
+            @include smallScreen{
+                width: 100%;
+                justify-content: center;
+            }
+
             .contactForm {
                 width: 70%;
                 border: 1px solid white;
                 padding: 20px 40px;
                 border-radius: 20px;
+                @include bigScreen{
+                    width: 90%;
+                }
+                @include smallScreen{
+                    width: 100%;
+                }
 
                 form {
                     display: flex;
