@@ -245,23 +245,27 @@ button {
 }
 
 .ModalContainer .loginModalOverlay {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  padding: 10px 0px;
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer {
   border-radius: 20px;
   z-index: 2;
+  max-height: 700px;
+  overflow-y: scroll;
   background-color: #43484B;
   width: 85%;
+  max-width: 1500PX;
+  padding-bottom: 20px;
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .closeIcon {
   display: flex;
@@ -277,21 +281,35 @@ button {
   display: flex;
   width: 85%;
   margin: auto;
-  padding: 40px 0px;
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginLeftDiv {
-  width: 50%;
+  flex: 1;
+  display: flex;
+  align-items: center;
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginLeftDiv img {
-  width: 67%;
-}
-.ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  width: 100%;
   max-width: -moz-fit-content;
   max-width: fit-content;
+}
+@media (max-width: 768px) {
+  .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginLeftDiv {
+    display: none;
+  }
+}
+.ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+@media (max-width: 768px) {
+  .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv {
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+  }
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .loginLogo {
   text-align: center;
@@ -346,10 +364,17 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .socialLogin img {
-  width: 100px;
+  max-width: 40%;
   cursor: pointer;
+}
+.ModalContainer .loginModalOverlay ::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .dash_CustomDesign .dash_CustomDesignForm {
