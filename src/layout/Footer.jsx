@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import footerLogo from "../assets/logo.png"
 import fb from "../assets/fb.png"
 import insta from "../assets/insta.png"
 import twitter from "../assets/twitter.png"
+import PrivacyPolicy from '../Components/PrivacyPolicy'
+import TermsAndCondition from '../Components/TermsAndCondition'
+import RefundPolicy from '../Components/RefundPolicy'
 const Footer = () => {
+  const [showPP ,setShowPP]=useState(false);
+  const [showTC ,setShowTC]=useState(false);
+  const [showRP ,setShowRP]=useState(false);
   return (
     <>
 
@@ -43,9 +49,13 @@ const Footer = () => {
             <div className="footer_legal">
               <h5>Legal</h5>
               <ul>
-                <li>Privacy & Policy</li>
-                <li>Terms & Consitions</li>
-                <li>Refund Policy</li>
+
+                <li onClick={()=>{setShowPP(!showPP)}}>Privacy & Policy</li>
+                {showPP && <PrivacyPolicy/>}
+                <li onClick={()=>{setShowTC(!showTC)}}>Terms & Conditions</li>
+                {showTC && <TermsAndCondition/>}
+                <li onClick={()=>{setShowRP(!showRP)}}>Refund Policy</li>
+                {showRP && <RefundPolicy/>}
               </ul>
             </div>
         </div>

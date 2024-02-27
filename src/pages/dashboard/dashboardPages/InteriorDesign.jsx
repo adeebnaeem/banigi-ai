@@ -2,13 +2,11 @@ import React, { useState } from 'react'
 import PrimaryButton from '../../../Components/PrimaryButton';
 
 const InteriorDesign = () => {
-  const [selectedFile, setSelectedFile] = useState(null);
-    const [selectedName, setSelectedName] = useState("");
-    const handleFileChange = (event) => {
-        const file = event.target.files[0];
-        setSelectedFile(file);
-        setSelectedName(file.name);
-    };
+
+  const [file, setFile] = useState(false);
+  function getFile(event) {
+    setFile(URL.createObjectURL(event.target.files[0]))
+  }
   return (
     <>
       <div className="dash_InteriorDesign">
@@ -113,8 +111,9 @@ const InteriorDesign = () => {
 
           <div className="interiorDesignFileDiv">
             <div className="interiorDesignFile">
-              <span>
-               
+
+              {<img src={file} /> || <span>
+
                 <svg
                   width="42"
                   height="42"
@@ -133,10 +132,13 @@ const InteriorDesign = () => {
                     fill="#C79952"
                   />
                 </svg>
-                {selectedName ||
-                  "Tap to upload interior image Or Drag Image here direclty"}
-              </span>
-              <input type="file" name="" id=""  onChange={handleFileChange}/>
+
+                Tap to upload interior image Or Drag Image here direclty  </span>}
+
+
+
+              <input type="file" name="" id="" onChange={getFile} />
+
             </div>
 
             <div className="interiorDesignFileImg">
@@ -144,11 +146,11 @@ const InteriorDesign = () => {
             </div>
           </div>
 
-                <div className="InteriorDesignBtn">
-                  <PrimaryButton text="Generate Image"/>
-                </div>
+          <div className="InteriorDesignBtn">
+            <PrimaryButton text="Generate Image" />
+          </div>
         </div>
-      </div>
+      </div >
     </>
   );
 };
