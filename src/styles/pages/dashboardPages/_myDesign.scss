@@ -3,9 +3,11 @@
         margin-top: 40px;
         .tab-heading{
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             gap: 30px;
             margin-bottom: 50px;
+           
             button{
                 background-color: transparent;
                 border: 1px solid $accent;
@@ -22,12 +24,13 @@
             margin: auto;
             display: flex;
             justify-content: center;
-            
             .tab-content{
                 width: 30%;
             }
         
-            
+            @include mediumScreen{
+                min-height: 100vh;
+            }
                 
             
         }

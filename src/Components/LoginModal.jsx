@@ -75,7 +75,7 @@ const LoginModal = ({ closeModal }) => {
                                     <img src={appleLogin} alt="" />
                                 </div>
 
-                                <p className='loginTextCenter'>Dont have an account?<span>Signup</span></p>
+                                <p className='loginTextCenter'>Dont have an account ? <span>Signup</span></p>
 
                             </div>
                         </div>

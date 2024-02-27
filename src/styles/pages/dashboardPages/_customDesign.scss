@@ -5,12 +5,20 @@
         .dash_CustomDesginFirst{
             display: flex;
             gap: 30px;
+            @include mediumScreen{
+                flex-direction: column;
+                
+            }
             div {
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
                 flex-basis: calc(33.33% - 20px);
 
+                @include bigScreen{
+                flex-basis: calc(50% - 20px);
+
+                }
 
                 textarea {
                     background-color: $secondary;
@@ -57,6 +65,18 @@
             width: 70%;
             margin: 40px auto;
             height: 350px;
+            @include bigScreen{
+                width: 90%;
+            }
+            @include largeScreen{
+                height: 300px;
+            }
+            @include mediumScreen{
+                flex-direction: column;
+                height: 700px;
+                width: 100%;
+                
+            }
             .ExteriorDesignFile {
                 width: 50%;
                 display: flex;
@@ -70,6 +90,9 @@
                 span {
                     display: flex;
                     gap: 10px;
+                    svg{
+                        min-width: 30px;
+                    }
                 }
 
                 input {
@@ -84,6 +107,13 @@
                     opacity: 0;
                     cursor: pointer;
                 }
+                @include mediumScreen{
+                    width: 100%;
+                    height: 50%;
+                    border-top-right-radius: 25px;
+                    border-bottom-left-radius: 0px;
+
+                }
             }
             .ExteriorDesignFileImg {
                 width: 50%;
@@ -94,7 +124,15 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                @include mediumScreen{
+                    width: 100%;
+                    border-top-right-radius: 0px;
+                    border-bottom-left-radius: 25px;
+                    height: 50%;
+                }
             }
+           
+        
         }
 
         .ExteriorDesignBtn{
@@ -104,6 +142,10 @@
             button{
                 padding: 16px 60px;
             }
+            @include mediumScreen{
+                margin-bottom: 150px;
+            }
+        
         }
     }
 }

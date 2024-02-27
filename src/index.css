@@ -255,16 +255,16 @@ button {
   justify-content: center;
   align-items: center;
   z-index: 2;
-  padding: 10px 0px;
+  bottom: 0;
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer {
+  margin-top: 2%;
   border-radius: 20px;
   z-index: 2;
-  max-height: 700px;
   overflow-y: scroll;
   background-color: #43484B;
-  width: 85%;
-  max-width: 1500PX;
+  width: 95%;
+  max-width: 1200px;
   padding-bottom: 20px;
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .closeIcon {
@@ -358,6 +358,10 @@ button {
   display: flex;
   justify-content: center;
 }
+.ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .loginTextCenter span {
+  margin-left: 5px;
+  cursor: pointer;
+}
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .socialLogin {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -384,11 +388,21 @@ button {
   display: flex;
   gap: 30px;
 }
+@media (max-width: 768px) {
+  .dash_CustomDesign .dash_CustomDesignForm .dash_CustomDesginFirst {
+    flex-direction: column;
+  }
+}
 .dash_CustomDesign .dash_CustomDesignForm .dash_CustomDesginFirst div {
   display: flex;
   flex-direction: column;
   gap: 10px;
   flex-basis: calc(33.33% - 20px);
+}
+@media (max-width: 1200px) {
+  .dash_CustomDesign .dash_CustomDesignForm .dash_CustomDesginFirst div {
+    flex-basis: calc(50% - 20px);
+  }
 }
 .dash_CustomDesign .dash_CustomDesignForm .dash_CustomDesginFirst div textarea {
   background-color: #43484B;
@@ -428,6 +442,23 @@ button {
   margin: 40px auto;
   height: 350px;
 }
+@media (max-width: 1200px) {
+  .dash_CustomDesign .dash_CustomDesignForm .ExteriorDesignFileDiv {
+    width: 90%;
+  }
+}
+@media (max-width: 992px) {
+  .dash_CustomDesign .dash_CustomDesignForm .ExteriorDesignFileDiv {
+    height: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .dash_CustomDesign .dash_CustomDesignForm .ExteriorDesignFileDiv {
+    flex-direction: column;
+    height: 700px;
+    width: 100%;
+  }
+}
 .dash_CustomDesign .dash_CustomDesignForm .ExteriorDesignFileDiv .ExteriorDesignFile {
   width: 50%;
   display: flex;
@@ -443,6 +474,9 @@ button {
   display: flex;
   gap: 10px;
 }
+.dash_CustomDesign .dash_CustomDesignForm .ExteriorDesignFileDiv .ExteriorDesignFile span svg {
+  min-width: 30px;
+}
 .dash_CustomDesign .dash_CustomDesignForm .ExteriorDesignFileDiv .ExteriorDesignFile input {
   display: block;
   height: 100%;
@@ -455,6 +489,14 @@ button {
   opacity: 0;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .dash_CustomDesign .dash_CustomDesignForm .ExteriorDesignFileDiv .ExteriorDesignFile {
+    width: 100%;
+    height: 50%;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 0px;
+  }
+}
 .dash_CustomDesign .dash_CustomDesignForm .ExteriorDesignFileDiv .ExteriorDesignFileImg {
   width: 50%;
   background: #6A7074;
@@ -464,12 +506,25 @@ button {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .dash_CustomDesign .dash_CustomDesignForm .ExteriorDesignFileDiv .ExteriorDesignFileImg {
+    width: 100%;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 25px;
+    height: 50%;
+  }
+}
 .dash_CustomDesign .dash_CustomDesignForm .ExteriorDesignBtn {
   display: flex;
   justify-content: center;
 }
 .dash_CustomDesign .dash_CustomDesignForm .ExteriorDesignBtn button {
   padding: 16px 60px;
+}
+@media (max-width: 768px) {
+  .dash_CustomDesign .dash_CustomDesignForm .ExteriorDesignBtn {
+    margin-bottom: 150px;
+  }
 }
 
 .dash_ExteriorDesign .dash_ExteriorDesignForm {
@@ -479,6 +534,12 @@ button {
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst,
+  .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond {
+    flex-direction: column;
+  }
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst div,
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond div {
@@ -603,6 +664,23 @@ button {
   margin: 40px auto;
   height: 350px;
 }
+@media (max-width: 1200px) {
+  .dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignFileDiv {
+    width: 90%;
+  }
+}
+@media (max-width: 992px) {
+  .dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignFileDiv {
+    height: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignFileDiv {
+    flex-direction: column;
+    height: 700px;
+    width: 100%;
+  }
+}
 .dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignFileDiv .ExteriorDesignFile {
   width: 50%;
   display: flex;
@@ -618,6 +696,9 @@ button {
   display: flex;
   gap: 10px;
 }
+.dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignFileDiv .ExteriorDesignFile span svg {
+  min-width: 30px;
+}
 .dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignFileDiv .ExteriorDesignFile input {
   display: block;
   height: 100%;
@@ -630,6 +711,14 @@ button {
   opacity: 0;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignFileDiv .ExteriorDesignFile {
+    width: 100%;
+    height: 50%;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 0px;
+  }
+}
 .dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignFileDiv .ExteriorDesignFileImg {
   width: 50%;
   background: #6A7074;
@@ -639,12 +728,25 @@ button {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignFileDiv .ExteriorDesignFileImg {
+    width: 100%;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 25px;
+    height: 50%;
+  }
+}
 .dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignBtn {
   display: flex;
   justify-content: center;
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignBtn button {
   padding: 16px 60px;
+}
+@media (max-width: 768px) {
+  .dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignBtn {
+    margin-bottom: 150px;
+  }
 }
 
 .dash_InteriorDesign .dash_interiorDesignForm {
@@ -654,6 +756,12 @@ button {
 .dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst,
+  .dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond {
+    flex-direction: column;
+  }
 }
 .dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst div,
 .dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond div {
@@ -739,6 +847,11 @@ button {
   flex-wrap: wrap;
   flex-basis: calc(33.33% - 20px);
 }
+@media (max-width: 992px) {
+  .dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignThird .customAiIntervationForm {
+    flex-basis: 100%;
+  }
+}
 .dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignThird .customAiIntervationForm .customAiIntervationLabel {
   display: flex;
   gap: 15px;
@@ -779,6 +892,23 @@ button {
   margin: 40px auto;
   height: 350px;
 }
+@media (max-width: 1200px) {
+  .dash_InteriorDesign .dash_interiorDesignForm .interiorDesignFileDiv {
+    width: 90%;
+  }
+}
+@media (max-width: 992px) {
+  .dash_InteriorDesign .dash_interiorDesignForm .interiorDesignFileDiv {
+    height: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .dash_InteriorDesign .dash_interiorDesignForm .interiorDesignFileDiv {
+    flex-direction: column;
+    height: 700px;
+    width: 100%;
+  }
+}
 .dash_InteriorDesign .dash_interiorDesignForm .interiorDesignFileDiv .interiorDesignFile {
   width: 50%;
   display: flex;
@@ -794,6 +924,9 @@ button {
   display: flex;
   gap: 10px;
 }
+.dash_InteriorDesign .dash_interiorDesignForm .interiorDesignFileDiv .interiorDesignFile span svg {
+  min-width: 30px;
+}
 .dash_InteriorDesign .dash_interiorDesignForm .interiorDesignFileDiv .interiorDesignFile input {
   display: block;
   height: 100%;
@@ -806,6 +939,14 @@ button {
   opacity: 0;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .dash_InteriorDesign .dash_interiorDesignForm .interiorDesignFileDiv .interiorDesignFile {
+    width: 100%;
+    height: 50%;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 0px;
+  }
+}
 .dash_InteriorDesign .dash_interiorDesignForm .interiorDesignFileDiv .interiorDesignFileImg {
   width: 50%;
   background: #6A7074;
@@ -815,6 +956,14 @@ button {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .dash_InteriorDesign .dash_interiorDesignForm .interiorDesignFileDiv .interiorDesignFileImg {
+    width: 100%;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 25px;
+    height: 50%;
+  }
+}
 .dash_InteriorDesign .dash_interiorDesignForm .InteriorDesignBtn {
   display: flex;
   justify-content: center;
@@ -822,12 +971,18 @@ button {
 .dash_InteriorDesign .dash_interiorDesignForm .InteriorDesignBtn button {
   padding: 16px 60px;
 }
+@media (max-width: 768px) {
+  .dash_InteriorDesign .dash_interiorDesignForm .InteriorDesignBtn {
+    margin-bottom: 150px;
+  }
+}
 
 .myDesignSection .tabs-container {
   margin-top: 40px;
 }
 .myDesignSection .tabs-container .tab-heading {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 30px;
   margin-bottom: 50px;
@@ -850,6 +1005,11 @@ button {
 }
 .myDesignSection .tabs-container .tab_content_div .tab-content {
   width: 30%;
+}
+@media (max-width: 768px) {
+  .myDesignSection .tabs-container .tab_content_div {
+    min-height: 100vh;
+  }
 }
 
 .dash_pricing_section .dash_pricing_bottom {
@@ -1703,6 +1863,11 @@ a:active {
 .dashboard_container {
   display: flex;
 }
+@media (max-width: 768px) {
+  .dashboard_container {
+    flex-direction: column;
+  }
+}
 .dashboard_container .sidebar_section {
   background-color: #43484B;
   width: 15vw;
@@ -1711,9 +1876,38 @@ a:active {
   flex-direction: column;
   gap: 4rem;
 }
+@media (max-width: 1200px) {
+  .dashboard_container .sidebar_section {
+    width: 20vw;
+  }
+}
+@media (max-width: 992px) {
+  .dashboard_container .sidebar_section {
+    width: 25vw;
+  }
+}
+@media (max-width: 768px) {
+  .dashboard_container .sidebar_section {
+    min-height: 100%;
+    width: 100%;
+    flex-direction: row;
+  }
+}
 .dashboard_container .sidebar_section .dashboardLogo {
-  width: 65%;
+  width: 80%;
   margin: 40px auto;
+}
+.dashboard_container .sidebar_section .dashboardLogo img {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .dashboard_container .sidebar_section .dashboardLogo {
+    width: 40%;
+    margin: 20px auto;
+  }
+  .dashboard_container .sidebar_section .dashboardLogo img {
+    width: 100%;
+  }
 }
 .dashboard_container .sidebar_section .dashboard_links ul li .navLink_bg {
   background-color: #C79952;
@@ -1724,6 +1918,11 @@ a:active {
   gap: 8px;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .dashboard_container .sidebar_section .dashboard_links ul li .navLink_bg {
+    color: white;
+  }
+}
 .dashboard_container .sidebar_section .dashboard_links ul li .navLink_trans {
   background-color: transparent;
   color: white;
@@ -1733,12 +1932,58 @@ a:active {
   gap: 8px;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .dashboard_container .sidebar_section .dashboard_links ul li .navLink_trans {
+    color: rgb(59, 57, 57);
+  }
+}
+@media (max-width: 768px) {
+  .dashboard_container .sidebar_section .dashboard_links ul li span span {
+    display: none;
+  }
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  .dashboard_container .sidebar_section .dashboard_links ul li span {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .dashboard_container .sidebar_section .dashboard_links ul li svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .dashboard_container .sidebar_section .dashboard_links ul {
+    padding: 0px 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #C79952;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 768px) {
+  .dashboard_container .sidebar_section .dashboard_links {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 5;
+  }
+}
 .dashboard_container .sidebar_section .dashboard_credits {
   background-color: #C79952;
   padding: 17px 17px;
   display: flex;
   gap: 10px;
   flex-direction: column;
+}
+@media (max-width: 768px) {
+  .dashboard_container .sidebar_section .dashboard_credits {
+    display: none;
+  }
 }
 .dashboard_container .sidebar_section .dashboard_credits :first-child {
   background: transparent;

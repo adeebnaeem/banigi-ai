@@ -42,7 +42,7 @@ const Dashboard = () => {
                   />
                 </svg>
 
-                <span> Interior Design</span>
+                <span> Interior <span>Design</span></span>
               </NavLink>
             </li>
             <li>
@@ -90,7 +90,7 @@ const Dashboard = () => {
                     stroke-width="0.8037"
                   />
                 </svg>
-                <span> Exterior Design</span>
+                <span> Exterior <span>Design</span></span>
               </NavLink>
             </li>
             <li>
@@ -170,7 +170,7 @@ const Dashboard = () => {
                     fill-opacity="0.6"
                   />
                 </svg>
-                <span> Landscape Design</span>
+                <span> Landscape <span>Design</span></span>
               </NavLink>
             </li>
             <li>
@@ -204,7 +204,7 @@ const Dashboard = () => {
                     fill-opacity="0.6"
                   />
                 </svg>
-                <span> Custom Design</span>
+                <span> Custom <span>Design</span></span>
               </NavLink>
             </li>
             <li>

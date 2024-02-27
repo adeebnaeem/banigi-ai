@@ -104,7 +104,7 @@ const InteriorDesign = () => {
               <textarea
                 name=""
                 id=""
-                cols="30"
+                cols=""
                 rows="5"
                 placeholder="e.g A clean looking living room with black and yellow textures and a coffee table made from hardwood."
               ></textarea>
