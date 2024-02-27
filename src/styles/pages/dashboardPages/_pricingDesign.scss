@@ -1,12 +1,30 @@
-.dash_pricing_section{
-   .dash_pricing_bottom{
-    margin-top: 100px;
-    display: flex;
-    gap: 4%;
-   
+.dash_pricing_section {
+   .dash_pricing_bottom {
+      margin-top: 100px;
+      display: flex;
+      gap: 4%;
+      @include bigScreen{
+         transform: scale(.9);
+         gap: 5%;
+      
+      }
+      @include largeScreen{
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         transform: scale(1);
+         gap: 20px;
 
-    & > *:nth-child(2) {
-       transform: scale(1.2);
-    }
+      }
+      @include mediumScreen{
+         margin-bottom: 100px;
+      }
+      &>*:nth-child(2) {
+         transform: scale(1.2);
+         @include largeScreen{
+            transform: scale(1);
+
+         }
+      }
    }
 }

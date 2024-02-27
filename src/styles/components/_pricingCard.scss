@@ -4,9 +4,10 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-
-    @include largeScreen{
+    
+    @include bigScreen{
         max-width: 300px;
+        padding: 30px;
     }
     span{
         text-align: center;

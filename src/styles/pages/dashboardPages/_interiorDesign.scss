@@ -93,7 +93,7 @@
                 flex-basis: calc(33.33% - 20px);
 
                 @include largeScreen{
-                    flex-basis: calc(100%-20px);
+                    flex-basis: calc(100%);
                 }
 
                 .customAiIntervationLabel {

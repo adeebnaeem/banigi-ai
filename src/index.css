@@ -58,9 +58,10 @@ button {
   display: flex;
   flex-direction: column;
 }
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .pricingCardDiv {
     max-width: 300px;
+    padding: 30px;
   }
 }
 .pricingCardDiv span {
@@ -1017,8 +1018,33 @@ button {
   display: flex;
   gap: 4%;
 }
+@media (max-width: 1200px) {
+  .dash_pricing_section .dash_pricing_bottom {
+    transform: scale(0.9);
+    gap: 5%;
+  }
+}
+@media (max-width: 992px) {
+  .dash_pricing_section .dash_pricing_bottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1);
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .dash_pricing_section .dash_pricing_bottom {
+    margin-bottom: 100px;
+  }
+}
 .dash_pricing_section .dash_pricing_bottom > *:nth-child(2) {
   transform: scale(1.2);
+}
+@media (max-width: 992px) {
+  .dash_pricing_section .dash_pricing_bottom > *:nth-child(2) {
+    transform: scale(1);
+  }
 }
 
 .footer_Section {
