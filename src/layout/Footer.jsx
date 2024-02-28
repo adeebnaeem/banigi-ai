@@ -10,6 +10,12 @@ const Footer = () => {
   const [showPP ,setShowPP]=useState(false);
   const [showTC ,setShowTC]=useState(false);
   const [showRP ,setShowRP]=useState(false);
+
+  const closeModal=()=>{
+    setShowPP(false);
+    setShowRP(false);
+    setShowTC(false);
+  };
   return (
     <>
 
@@ -51,11 +57,11 @@ const Footer = () => {
               <ul>
 
                 <li onClick={()=>{setShowPP(!showPP)}}>Privacy & Policy</li>
-                {showPP && <PrivacyPolicy/>}
+                {showPP && <PrivacyPolicy closeModal={closeModal}/>}
                 <li onClick={()=>{setShowTC(!showTC)}}>Terms & Conditions</li>
-                {showTC && <TermsAndCondition/>}
+                {showTC && <TermsAndCondition closeModal={closeModal}/>}
                 <li onClick={()=>{setShowRP(!showRP)}}>Refund Policy</li>
-                {showRP && <RefundPolicy/>}
+                {showRP && <RefundPolicy closeModal={closeModal}/>}
               </ul>
             </div>
         </div>

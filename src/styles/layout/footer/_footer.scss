@@ -68,10 +68,13 @@
                 li{
                     cursor: pointer;
                     margin-bottom: 10px;
+
                    
-                } :hover{
+                } 
+                li:hover{
                     color: $accent;
                 }
+            
             }
     }
 }
