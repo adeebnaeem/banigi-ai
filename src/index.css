@@ -1995,6 +1995,14 @@ a:active {
     max-width: 100%;
   }
 }
+.faqDiv .seeMoreBtn {
+  margin: 15px 0px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: underline;
+}
 
 .contactUsContainner {
   background-color: #343a45;

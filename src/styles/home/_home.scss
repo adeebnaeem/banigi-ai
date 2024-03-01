@@ -654,13 +654,15 @@
                 justify-content: center;
                 align-items: center;
             }
+            
 
             &>*:nth-child(2) {
-                transform: scale(1.17);
-                
-            }
+               transform: scale(1.17);
 
+            }
+         
         }
+        
 
     }
 
@@ -699,8 +701,15 @@
             max-width: 100%;
         }
     }
+    .seeMoreBtn{
+margin: 15px 0px;        cursor: pointer;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: underline;
+    }
+  
 }
-
 
 
 // Contact Us CSS

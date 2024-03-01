@@ -1,7 +1,7 @@
 import React from "react";
 import PrimaryButton from "./PrimaryButton";
 
-const PricingCard = ({ heading, price,diffBtn ,features = []  }) => {
+const PricingCard = ({ heading,color, price,features = []  }) => {
   return (
     <>
       <div className="pricingCardDiv">
