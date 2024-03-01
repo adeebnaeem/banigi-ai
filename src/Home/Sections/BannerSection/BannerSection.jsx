@@ -9,10 +9,10 @@ const BannerSection = () => {
                 <div className="main_banner_div">
                     <div className="banner_left">
                         <div className="banner_left_text">
-                            <h1>Turn your home <br /> <span className='vector_img'>interior <img src={vector} alt=""className="vector_icon" /></span> design with one click through Banigi <span>AI</span> technology</h1>
+                            <h1>Turn your home <br /> <span className='vector_img'>interior <img src={vector} alt=""className="vector_icon" /></span> design with  one click through  Banigi <span>AI</span> technology</h1>
                             <p>Transform your home effortlessly with AI at Banigi AI. Elevate interiors, exteriors, and landscapes seamlessly. Personalized creativity meets efficient custom design. Redefine your space.</p>
                             <div className="banner_left_btn">
-                                <button className='tryBtn'>Try <span>Bagini Ai</span> Free</button>
+                                <button className='tryBtn'>Try <span>Bagini AI</span> Free</button>
                                 <button className='watchBtn'><img src={watchIcon} alt="Watch" /> Watch</button>
                             </div>
                         </div>

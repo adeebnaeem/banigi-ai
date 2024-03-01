@@ -3,6 +3,8 @@ import logo from '../assets/logo.png'
 import mobileMenu from "../assets/mobileMenu.png"
 import LoginModal from '../Components/LoginModal';
 import SignupModal from '../Components/SignupModal';
+import { NavLink, Outlet, useLocation, useSearchParams } from "react-router-dom";
+
 
 const Header = () => {
 
@@ -10,6 +12,7 @@ const Header = () => {
     const [showSignupModal, setShowSignupModal] = useState(false);
     const [showMobileNav, setShowMobileNav] = useState(false);
 
+    const urlCheck=useLocation();
     const openLoginModal = () => {
         setShowLoginModal(true);
         setShowSignupModal(false);
@@ -37,12 +40,14 @@ const Header = () => {
 
                     <div className="nav_links">
                         <ul>
-                            <a href="#main_banner"><li>Home</li></a>
-                            <a href="#howItWork"><li>How It work</li></a>
-                            <a href="#feedback"><li>Feedback</li></a>
-                            <a href="#pricing"><li>Pricing</li></a>
-                            <a href="#faq"><li>Faq</li></a>
-                            <a href="#contact_us"><li>Contact Us</li></a>
+                            
+                            <a href="#main_banner" className={urlCheck.hash === "#main_banner" && "active_navLink"}><li>Home</li></a>
+                          
+                            <a href="#howItWork"className={urlCheck.hash === "#howItWork" && "active_navLink"}><li>How It Work</li></a>
+                            <a href="#feedback" className={urlCheck.hash === "#feedback" && "active_navLink"}><li>Feedback</li></a>
+                            <a href="#pricing" className={urlCheck.hash === "#pricing" && "active_navLink"}><li>Pricing</li></a>
+                            <a href="#faq"className={urlCheck.hash === "#faq" && "active_navLink"}><li>Faq</li></a>
+                            <a href="#contact_us"className={urlCheck.hash === "#contact_us" && "active_navLink"}><li>Contact Us</li></a>
                         </ul>
                     </div>
 
@@ -59,12 +64,13 @@ const Header = () => {
 
                 {showMobileNav && <div className="mobile_navbar">
                     <ul>
-                        <li>Home</li>
-                        <li>How it Work</li>
-                        <li>Feedback</li>
-                        <li>Pricing</li>
-                        <li>Faq</li>
-                        <li>Contact Us</li>
+                    <a href="#main_banner" className={urlCheck.hash === "#main_banner" && "active_navLink"}><li>Home</li></a>
+                          
+                          <a href="#howItWork"className={urlCheck.hash === "#howItWork" && "active_navLink"}><li>How It Work</li></a>
+                          <a href="#feedback" className={urlCheck.hash === "#feedback" && "active_navLink"}><li>Feedback</li></a>
+                          <a href="#pricing" className={urlCheck.hash === "#pricing" && "active_navLink"}><li>Pricing</li></a>
+                          <a href="#faq"className={urlCheck.hash === "#faq" && "active_navLink"}><li>Faq</li></a>
+                          <a href="#contact_us"className={urlCheck.hash === "#contact_us" && "active_navLink"}><li>Contact Us</li></a>
 
                     </ul>
                     <button className='login_btn' onClick={openLoginModal}>Login</button>

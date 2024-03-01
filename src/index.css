@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 html {
@@ -25,20 +25,39 @@ button {
 .bannerCardDiv {
   background-color: #43484B;
   text-align: center;
-  padding: 25px 15px;
+  padding: 20px 15px 20px 15px;
   border-radius: 10px;
-  max-width: 270px;
+  max-width: 190px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+@media (max-width: 576px) {
+  .bannerCardDiv {
+    max-width: 70%;
+  }
+}
+.bannerCardDiv h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.bannerCardDiv p {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 16.8px;
+  font-weight: 300;
 }
 
 .HowItWorkCardDiv {
-  width: 250px;
+  width: 237px;
+  min-height: 191px;
   border: 1px solid white;
-  padding: 17px;
+  padding: 35px 25px 35px 25px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
   border-radius: 10px;
 }
 .HowItWorkCardDiv span {
@@ -50,32 +69,48 @@ button {
   align-items: center;
   justify-content: center;
 }
+.HowItWorkCardDiv h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.HowItWorkCardDiv p {
+  font-size: 14px;
+  font-weight: 300;
+}
 
 .pricingCardDiv {
   border: 1px solid white;
-  padding: 50px;
+  padding: 50px 54px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
 }
-@media (max-width: 1200px) {
-  .pricingCardDiv {
-    max-width: 300px;
-    padding: 30px;
-  }
-}
-.pricingCardDiv span {
+.pricingCardDiv .pc_heading {
   text-align: center;
-  font-size: 18px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26.82px;
+  margin-bottom: 3px;
+}
+.pricingCardDiv .pc_price {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24.38px;
 }
 .pricingCardDiv .pricingCardList {
   margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .pricingCardDiv .pricingCardList ul li {
   display: flex;
   gap: 10px;
   align-items: center;
   margin-bottom: 10px;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 18px;
 }
 
 .accordion .accordion-item {
@@ -98,14 +133,18 @@ button {
 .tryDesignFormDiv form .tryDesignFile {
   display: flex;
   flex-direction: column;
-  border: 1px dashed #C79952;
-  padding: 50px;
+  border: 1px dashed white;
+  padding: 80px 35px;
   border-radius: 10px;
   position: relative;
 }
 .tryDesignFormDiv form .tryDesignFile span {
   display: flex;
   gap: 10px;
+  font-family: "Lato", sans-serif;
+}
+.tryDesignFormDiv form .tryDesignFile span svg {
+  min-width: 25px;
 }
 .tryDesignFormDiv form .tryDesignFile input {
   display: block;
@@ -125,30 +164,29 @@ button {
   margin-top: 20px;
 }
 .tryDesignFormDiv form .selectOptionDiv label {
-  margin-bottom: 7px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
 }
 .tryDesignFormDiv form .selectOptionDiv .custom-select {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   width: 100%;
-  padding: 15px;
+  padding: 20px;
   border: none;
   font-size: 16px;
-  border-radius: 4px;
+  border-radius: 8px;
   background-color: #576072;
   background-image: url('data:image/svg+xml;utf8,<svg width="10" height="18"  viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 1.80249L9 9.30249L1.5 16.8025" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
   background-repeat: no-repeat;
-  background-position: right 8px center;
+  background-position: right 20px center;
   cursor: pointer;
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
-.tryDesignFormDiv form .selectOptionDiv .custom-select option {
-  padding: 20px 40px;
-}
-.tryDesignFormDiv form .selectOptionDiv .custom-select :hover {
-  background-color: #C79952;
+.tryDesignFormDiv form .selectOptionDiv select option {
+  background-color: #576072;
 }
 .tryDesignFormDiv form .selectOptionDiv :focus {
   outline: none;
@@ -161,11 +199,11 @@ button {
 .tryDesignFormDiv form .selectOptionDiv .intervation_radio::after {
   content: "";
   position: absolute;
-  top: 13%;
+  top: 18%;
   left: 50%;
   transform: translateX(-50%);
   height: 5px;
-  width: 85%;
+  width: 90%;
   background-color: white;
 }
 .tryDesignFormDiv form .selectOptionDiv .intervation_radio div {
@@ -180,8 +218,8 @@ button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  width: 23px;
-  height: 23px;
+  width: 30px;
+  height: 30px;
   border: 2px solid #C79952;
   border-radius: 50%;
   cursor: pointer;
@@ -189,6 +227,11 @@ button {
 }
 .tryDesignFormDiv form .selectOptionDiv .intervation_radio div input:checked {
   background-color: #C79952;
+}
+.tryDesignFormDiv form .selectOptionDiv .intervation_radio div label {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
 }
 .tryDesignFormDiv form .selectOptionDiv .intervation_radio div:last-child::after {
   display: none;
@@ -206,8 +249,8 @@ button {
   -moz-appearance: none;
        appearance: none;
   -webkit-appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   border: 2px solid #C79952;
   cursor: pointer;
   position: relative;
@@ -233,7 +276,7 @@ button {
   color: rgb(255, 255, 255) !important;
 }
 .tryDesignFormDiv form button {
-  margin-top: 25px;
+  margin-top: 30px;
   width: 100%;
 }
 
@@ -486,9 +529,9 @@ button {
 }
 .dash_CustomDesign .dash_CustomDesignForm .ExteriorDesignFileDiv {
   display: flex;
-  width: 70%;
+  max-width: 840px;
   margin: 40px auto;
-  height: 350px;
+  height: 399px;
 }
 @media (max-width: 1200px) {
   .dash_CustomDesign .dash_CustomDesignForm .ExteriorDesignFileDiv {
@@ -512,15 +555,22 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 50px;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
   position: relative;
   background-color: #43484B;
 }
+.dash_CustomDesign .dash_CustomDesignForm .ExteriorDesignFileDiv .ExteriorDesignFile .uploadedImage {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .dash_CustomDesign .dash_CustomDesignForm .ExteriorDesignFileDiv .ExteriorDesignFile span {
+  padding: 0px 50px;
   display: flex;
   gap: 10px;
+  margin-left: 10px;
 }
 .dash_CustomDesign .dash_CustomDesignForm .ExteriorDesignFileDiv .ExteriorDesignFile span svg {
   min-width: 30px;
@@ -708,9 +758,9 @@ button {
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignFileDiv {
   display: flex;
-  width: 70%;
+  max-width: 840px;
   margin: 40px auto;
-  height: 350px;
+  height: 399px;
 }
 @media (max-width: 1200px) {
   .dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignFileDiv {
@@ -734,15 +784,22 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 50px;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
   position: relative;
   background-color: #43484B;
 }
+.dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignFileDiv .ExteriorDesignFile .uploadedImage {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignFileDiv .ExteriorDesignFile span {
+  padding: 0px 50px;
   display: flex;
   gap: 10px;
+  margin-left: 10px;
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignFileDiv .ExteriorDesignFile span svg {
   min-width: 30px;
@@ -936,9 +993,9 @@ button {
 }
 .dash_InteriorDesign .dash_interiorDesignForm .interiorDesignFileDiv {
   display: flex;
-  width: 70%;
+  max-width: 840px;
   margin: 40px auto;
-  height: 350px;
+  height: 399px;
 }
 @media (max-width: 1200px) {
   .dash_InteriorDesign .dash_interiorDesignForm .interiorDesignFileDiv {
@@ -962,15 +1019,22 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 50px;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
   position: relative;
   background-color: #43484B;
 }
+.dash_InteriorDesign .dash_interiorDesignForm .interiorDesignFileDiv .interiorDesignFile .uploadedImage {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .dash_InteriorDesign .dash_interiorDesignForm .interiorDesignFileDiv .interiorDesignFile span {
+  padding: 0px 50px;
   display: flex;
   gap: 10px;
+  margin-left: 10px;
 }
 .dash_InteriorDesign .dash_interiorDesignForm .interiorDesignFileDiv .interiorDesignFile span svg {
   min-width: 30px;
@@ -1189,6 +1253,11 @@ button {
 nav {
   background-color: #43484B;
   color: white;
+  font-size: 18px;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 nav .navbar {
   display: flex;
@@ -1202,17 +1271,38 @@ nav .navbar {
   }
 }
 nav .navbar .nav_logo img {
-  width: 80%;
+  width: 90%;
 }
 nav .navbar .nav_links ul {
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 nav .navbar .nav_links ul li {
   cursor: pointer;
+  position: relative;
 }
-nav .navbar .nav_links ul :hover {
+nav .navbar .nav_links ul li:hover {
   color: #C79952;
+}
+nav .navbar .nav_links ul li:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  border-bottom: 2px solid #C79952;
+  width: 50%;
+}
+nav .navbar .nav_links ul .active_navLink {
+  position: relative;
+  color: #C79952;
+}
+nav .navbar .nav_links ul .active_navLink::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  border-bottom: 2px solid #C79952;
+  width: 50%;
 }
 @media (max-width: 1200px) {
   nav .navbar .nav_links {
@@ -1282,7 +1372,7 @@ nav .mobile_navbar button {
   background-color: #C79952;
   color: white;
   padding: 15px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 a:link {
@@ -1300,9 +1390,8 @@ a:active {
 .main_banner {
   background: url("../public/banner.png");
   background-repeat: no-repeat;
-  background-size: 100% 120%;
+  background-size: 100% 125%;
   color: white;
-  padding-bottom: 20px;
 }
 @media (max-width: 768px) {
   .main_banner {
@@ -1322,7 +1411,7 @@ a:active {
 }
 .main_banner .main_banner_div .banner_left {
   background-color: rgba(0, 0, 0, 0.4);
-  width: 35%;
+  width: 45%;
 }
 @media (max-width: 992px) {
   .main_banner .main_banner_div .banner_left {
@@ -1330,13 +1419,30 @@ a:active {
   }
 }
 .main_banner .main_banner_div .banner_left .banner_left_text {
-  margin-top: 15%;
+  margin-top: 200px;
   padding-left: 4rem;
   margin-bottom: 5%;
-  padding-right: 10px;
+  padding-right: 10%;
+}
+@media (max-width: 1200px) {
+  .main_banner .main_banner_div .banner_left .banner_left_text {
+    margin-top: 150px;
+  }
 }
 .main_banner .main_banner_div .banner_left .banner_left_text h1 {
-  font-size: clamp(1.9rem, 2.5vw, 4rem);
+  font-size: 45px;
+  line-height: 60px;
+}
+@media (max-width: 1200px) {
+  .main_banner .main_banner_div .banner_left .banner_left_text h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .main_banner .main_banner_div .banner_left .banner_left_text h1 {
+    font-size: 30px;
+    line-height: 43px;
+  }
 }
 .main_banner .main_banner_div .banner_left .banner_left_text h1 .vector_img {
   position: relative;
@@ -1345,15 +1451,21 @@ a:active {
   width: 100%;
   height: 18px;
   position: absolute;
-  bottom: -10px;
+  bottom: -12px;
   left: 0;
 }
 .main_banner .main_banner_div .banner_left .banner_left_text h1 span {
   color: #C79952;
 }
+.main_banner .main_banner_div .banner_left .banner_left_text p {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 27px 0px;
+}
 @media (max-width: 992px) {
   .main_banner .main_banner_div .banner_left .banner_left_text {
-    margin-top: 5%;
+    margin-top: 100px;
   }
 }
 @media (max-width: 576px) {
@@ -1364,14 +1476,19 @@ a:active {
 .main_banner .main_banner_div .banner_left .banner_left_text .banner_left_btn {
   display: flex;
   gap: 25px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 .main_banner .main_banner_div .banner_left .banner_left_text .banner_left_btn .tryBtn {
   background-color: #C79952;
   color: white;
   padding: 12px 17px;
   border-radius: 10px;
-  font-size: 17px;
+  font-size: 20px;
+}
+@media (max-width: 576px) {
+  .main_banner .main_banner_div .banner_left .banner_left_text .banner_left_btn .tryBtn {
+    font-size: 17px;
+  }
 }
 .main_banner .main_banner_div .banner_left .banner_left_text .banner_left_btn .tryBtn span {
   color: black;
@@ -1382,7 +1499,7 @@ a:active {
   gap: 10px;
   align-items: center;
   color: white;
-  font-size: 17px;
+  font-size: 18px;
   text-decoration: underline;
 }
 .main_banner .main_banner_div .banner_right {
@@ -1397,7 +1514,8 @@ a:active {
 }
 .main_banner .main_banner_div .banner_right .banner_right_div {
   position: absolute;
-  bottom: 15%;
+  bottom: 10%;
+  padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -1420,14 +1538,21 @@ a:active {
 }
 
 .HowItWorkDiv {
-  padding: 70px 70px;
+  padding: 70px 70px 10px 70px;
   background-color: #43484B;
   color: white;
 }
 .HowItWorkDiv h2 {
   text-align: center;
-  font-size: 35px;
+  font-size: 40px;
+  font-weight: 700;
   margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .HowItWorkDiv h2 {
+    font-size: 30px;
+    margin-bottom: 17px;
+  }
 }
 .HowItWorkDiv h2 span {
   color: #C79952;
@@ -1474,9 +1599,9 @@ a:active {
 }
 
 .DesignGridDiv {
-  background-color: #343a45;
+  background-color: #343A45;
   color: white;
-  padding: 40px 70px;
+  padding: 60px 70px;
 }
 @media (max-width: 992px) {
   .DesignGridDiv {
@@ -1485,8 +1610,13 @@ a:active {
 }
 .DesignGridDiv h2 {
   text-align: center;
-  font-size: 35px;
+  font-size: 40px;
   margin-bottom: 35px;
+}
+@media (max-width: 768px) {
+  .DesignGridDiv h2 {
+    font-size: 30px;
+  }
 }
 .DesignGridDiv h2 span {
   color: #C79952;
@@ -1495,7 +1625,9 @@ a:active {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 25px;
+  gap: 30px;
+  max-width: 1274.5px;
+  margin: auto;
 }
 @media (max-width: 768px) {
   .DesignGridDiv .DesignGridLayout {
@@ -1543,8 +1675,13 @@ a:active {
 }
 .TryDesignDiv h3 {
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
   margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .TryDesignDiv h3 {
+    font-size: 30px;
+  }
 }
 .TryDesignDiv h3 span {
   color: #C79952;
@@ -1554,8 +1691,13 @@ a:active {
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
   margin-bottom: 50px;
+}
+@media (max-width: 768px) {
+  .TryDesignDiv .tabs-container .tab-heading {
+    gap: 20px;
+  }
 }
 .TryDesignDiv .tabs-container .tab-heading button {
   background-color: transparent;
@@ -1563,6 +1705,12 @@ a:active {
   color: white;
   padding: 15px 20px;
   border-radius: 10px;
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  .TryDesignDiv .tabs-container .tab-heading button {
+    font-size: 16px;
+  }
 }
 .TryDesignDiv .tabs-container .tab-heading button.active {
   background-color: #C79952;
@@ -1598,7 +1746,7 @@ a:active {
   }
 }
 .TryDesignDiv .tabs-container .tab_content_div .swiper {
-  width: 60%;
+  width: 55%;
   padding-bottom: 35px;
 }
 @media (max-width: 576px) {
@@ -1614,7 +1762,6 @@ a:active {
 .TryDesignDiv .tabs-container .tab_content_div .swiper .swiper-slide img {
   width: 100%;
   max-width: 550px;
-  max-height: 1000px;
 }
 .TryDesignDiv .tabs-container .tab_content_div .swiper .swiper-pagination-bullet {
   background-color: rgb(255, 255, 255);
@@ -1626,12 +1773,18 @@ a:active {
 .feedback_div {
   background-color: #343a45;
   color: white;
-  padding: 20px 70px;
+  padding: 60px 70px;
 }
 .feedback_div h2 {
   text-align: center;
-  font-size: 35px;
+  font-size: 40px;
   margin-bottom: 30px;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .feedback_div h2 {
+    font-size: 30px;
+  }
 }
 .feedback_div h2 span {
   color: #C79952;
@@ -1647,8 +1800,9 @@ a:active {
   align-items: center;
 }
 .feedback_div .swiper .swiper-slide img {
-  max-width: 350px;
   width: 100%;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 .feedback_div .swiper .swiper-button-prev {
   width: 45px;
@@ -1681,28 +1835,34 @@ a:active {
   }
 }
 .downloadAppDiv .downloadAppInfo {
+  max-width: 1280px;
+  margin: auto;
   background-color: white;
   display: flex;
   border-radius: 20px;
+  padding: 50px 105px;
+  background-image: url("../public/downloadAppbg.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
 }
 @media (max-width: 1200px) {
   .downloadAppDiv .downloadAppInfo {
-    padding-bottom: 30px;
+    padding: 50px 0px;
     flex-direction: column-reverse;
+    background-image: none;
   }
 }
 .downloadAppDiv .downloadAppInfo .downloadAppText {
-  width: 45%;
+  width: 50%;
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
   justify-content: center;
-  padding-left: 100px;
   gap: 25px;
 }
 @media (max-width: 1200px) {
   .downloadAppDiv .downloadAppInfo .downloadAppText {
-    width: 80%;
+    width: 90%;
     text-align: center;
     align-items: center;
     padding-left: 0;
@@ -1712,21 +1872,20 @@ a:active {
 .downloadAppDiv .downloadAppInfo .downloadAppText h2 {
   max-width: 400px;
   font-size: 35px;
+  color: #43484B;
 }
 @media (max-width: 1200px) {
   .downloadAppDiv .downloadAppInfo .downloadAppText h2 {
     max-width: 100%;
   }
 }
+.downloadAppDiv .downloadAppInfo .downloadAppText p {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+}
 .downloadAppDiv .downloadAppInfo .downloadAppText .downloadBtn {
   display: flex;
-  gap: 10px;
-  width: 50%;
-}
-@media (max-width: 1200px) {
-  .downloadAppDiv .downloadAppInfo .downloadAppText .downloadBtn {
-    width: 100%;
-  }
+  gap: 20px;
 }
 @media (max-width: 576px) {
   .downloadAppDiv .downloadAppInfo .downloadAppText .downloadBtn {
@@ -1736,32 +1895,22 @@ a:active {
 .downloadAppDiv .downloadAppInfo .downloadAppText .downloadBtn img {
   width: 100%;
   cursor: pointer;
-}
-@media (max-width: 576px) {
-  .downloadAppDiv .downloadAppInfo .downloadAppText .downloadBtn img {
-    width: 70%;
-    margin: auto;
-  }
+  max-width: 205px;
 }
 .downloadAppDiv .downloadAppInfo .DownloadAppImg {
-  width: 55%;
+  width: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 @media (max-width: 1200px) {
   .downloadAppDiv .downloadAppInfo .DownloadAppImg {
     width: 80%;
     margin: auto;
+    justify-content: center;
   }
 }
-.downloadAppDiv .downloadAppInfo .DownloadAppImg .mobileImgDiv {
-  background-image: url("../public/downloadAppbg.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: cover;
-}
 .downloadAppDiv .downloadAppInfo .DownloadAppImg .mobileImgDiv img {
-  width: 90%;
+  width: 100%;
 }
 
 .pricing_section {
@@ -1784,7 +1933,20 @@ a:active {
   }
 }
 .pricing_section .pricingDiv .pricing_header h3 {
-  font-size: 30px;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+  .pricing_section .pricingDiv .pricing_header h3 {
+    font-size: 30px;
+  }
+}
+.pricing_section .pricingDiv .pricing_header p {
+  margin: 0px auto;
+  max-width: 551px;
+  font-size: 22px;
+  line-height: 26.4px;
+  font-family: "Lato", sans-serif;
 }
 .pricing_section .pricingDiv .pricing_bottom {
   display: flex;
@@ -1800,7 +1962,7 @@ a:active {
   }
 }
 .pricing_section .pricingDiv .pricing_bottom > *:nth-child(2) {
-  transform: scale(1.2);
+  transform: scale(1.17);
 }
 
 .faqDiv {

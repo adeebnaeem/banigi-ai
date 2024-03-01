@@ -5,14 +5,19 @@
         .tryDesignFile {
             display: flex;
             flex-direction: column;
-            border: 1px dashed $accent;
-            padding: 50px;
+            border: 1px dashed white;
+            padding: 80px 35px;
             border-radius: 10px;
             position: relative;
 
             span {
                 display: flex;
                 gap: 10px;
+                font-family: "Lato", sans-serif;
+
+                svg{
+                    min-width: 25px;
+                }
             }
 
             input {
@@ -35,7 +40,9 @@
             margin-top: 20px;
 
             label {
-                margin-bottom: 7px;
+                margin-bottom: 15px;
+                font-size: 20px;
+                font-weight: 600;
             }
 
             .custom-select {
@@ -43,26 +50,25 @@
                 -webkit-appearance: none;
                 -moz-appearance: none;
                 width: 100%;
-                padding: 15px;
+                padding: 20px;
 
                 border: none;
                 font-size: 16px;
-                border-radius: 4px;
+                border-radius: 8px;
                 background-color: #576072;
                 background-image: url('data:image/svg+xml;utf8,<svg width="10" height="18"  viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 1.80249L9 9.30249L1.5 16.8025" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
                 background-repeat: no-repeat;
-                background-position: right 8px center;
+                background-position: right 20px center;
+
                 cursor: pointer;
                 color: white;
-                margin-bottom: 20px;
+                margin-bottom: 25px;
 
-                option {
-                    padding: 20px 40px;
-                }
-
-                :hover {
-                    background-color: $accent;
-                }
+               
+            }
+            select option{
+                background-color: #576072;
+               
             }
 
             :focus {
@@ -78,14 +84,14 @@
                 &::after {
                     content: "";
                     position: absolute;
-                    top: 13%;
+                    top: 18%;
 
                     left: 50%;
                     transform: translateX(-50%);
                     height: 5px;
 
 
-                    width: 85%;
+                    width: 90%;
                     background-color: white;
                 }
 
@@ -100,8 +106,8 @@
 
                     input {
                         appearance: none;
-                        width: 23px;
-                        height: 23px;
+                        width: 30px;
+                        height: 30px;
                         border: 2px solid $accent;
                         border-radius: 50%;
                         cursor: pointer;
@@ -110,6 +116,12 @@
                         &:checked {
                             background-color: $accent;
                         }
+                    }
+                    label{
+                        font-size: 14px;
+                        font-weight: 400;
+                        font-family: "Lato", sans-serif;
+
                     }
 
                     &:last-child::after {
@@ -130,8 +142,8 @@
                     input[type="checkbox"] {
                         appearance: none;
                         -webkit-appearance: none;
-                        width: 20px;
-                        height: 20px;
+                        width: 25px;
+                        height: 25px;
                         border: 2px solid $accent;
                         cursor: pointer;
                         position: relative;
@@ -166,7 +178,7 @@
         }
 
         button {
-            margin-top: 25px;
+            margin-top: 30px;
             width: 100%;
         }
     }

@@ -1,12 +1,13 @@
 .HowItWorkCardDiv{
-    width: 250px;
+    width: 237px;
+    min-height: 191px;
     border: 1px solid white;
-    padding: 17px;
+    padding: 35px 25px 35px 25px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     border-radius: 10px;
     span{
         border: 1px solid #fff;
@@ -16,5 +17,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    h4{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    p{
+        font-size: 14px;
+        font-weight: 300;
     }
 }

@@ -46,8 +46,7 @@ const PricingDesign = () => {
         <div className="dash_pricing_bottom">
           <PricingCard heading="Personal" price="$2.5" features={personal_features} />
           <PricingCard heading="Start Up" price="$12.9" features={startup_features} />
-          <PricingCard heading="Growth" price="40.5" features={growth_features} />
-
+          <PricingCard heading="Growth" price="$40.5" features={growth_features} />
         </div>
 
       </div>

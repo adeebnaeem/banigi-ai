@@ -1,12 +1,12 @@
 import React from "react";
 import PrimaryButton from "./PrimaryButton";
 
-const PricingCard = ({ heading, price, features = []  }) => {
+const PricingCard = ({ heading, price,diffBtn ,features = []  }) => {
   return (
     <>
       <div className="pricingCardDiv">
-        <span>{heading}</span>
-        <span>{price}</span>
+        <span className="pc_heading">{heading}</span>
+        <span className="pc_price">{price}</span>
         <div className="pricingCardList">
           <ul>
             {features.map((feature, index) => (
