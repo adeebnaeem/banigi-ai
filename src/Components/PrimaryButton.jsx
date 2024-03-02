@@ -1,9 +1,9 @@
 import React from 'react'
 
-const PrimaryButton = ({text}) => {
+const PrimaryButton = ({text ,classBtn}) => {
   return (
    <>
-   <button className='primary_btn'>{text}</button>
+   <button className={`primary_btn ${classBtn}`}>{text}</button>
    </>
   )
 }

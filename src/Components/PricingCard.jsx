@@ -1,7 +1,7 @@
 import React from "react";
 import PrimaryButton from "./PrimaryButton";
 
-const PricingCard = ({ heading,color, price,features = []  }) => {
+const PricingCard = ({ heading,color, price,features = [],classBtn  }) => {
   return (
     <>
       <div className="pricingCardDiv">
@@ -19,7 +19,7 @@ const PricingCard = ({ heading,color, price,features = []  }) => {
         </div>
 
         
-        <PrimaryButton text="Activate" />
+        <PrimaryButton text="Activate" classBtn={classBtn}/>
 
     
       </div>

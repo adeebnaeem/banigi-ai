@@ -1,4 +1,13 @@
 .dash_pricing_section {
+   margin-top: 30px;
+   h3{
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 15px;
+  }
+  p{
+   max-width: 600px;
+  }
    .dash_pricing_bottom {
       margin-top: 100px;
       display: flex;
@@ -19,12 +28,25 @@
       @include mediumScreen{
          margin-bottom: 100px;
       }
-      &>*:nth-child(2) {
-         transform: scale(1.2);
-         @include largeScreen{
-            transform: scale(1);
+      &>*:nth-child(1),
+            &>*:nth-child(3) {
+                align-self: start;
 
-         }
-      }
+                @include largeScreen {
+                    align-self: unset;
+                }
+            }
+
+
+            &>*:nth-child(2) {
+                padding: 100px 71px;
+                position: relative;
+                top: -50px;
+
+                @include largeScreen {
+                    position: unset;
+
+                }
+            }
    }
 }

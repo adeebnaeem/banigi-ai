@@ -44,9 +44,9 @@ const PricingDesign = () => {
           <p>You can stay on the personal $8 plan until you have need enough design generation to justify your self. After you can upgrade the package.</p>
         </div>
         <div className="dash_pricing_bottom">
-          <PricingCard heading="Personal" price="$2.5" features={personal_features} />
+          <PricingCard heading="Personal" price="$2.5" features={personal_features} classBtn="secondary_btn"/>
           <PricingCard heading="Start Up" price="$12.9" features={startup_features} />
-          <PricingCard heading="Growth" price="$40.5" features={growth_features} />
+          <PricingCard heading="Growth" price="$40.5" features={growth_features}classBtn="secondary_btn" />
         </div>
 
       </div>

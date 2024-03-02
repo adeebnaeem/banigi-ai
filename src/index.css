@@ -288,6 +288,19 @@ button {
   font-size: 17px;
 }
 
+.secondary_btn {
+  background-color: transparent;
+  color: white;
+  padding: 15px 0px;
+  border-radius: 10px;
+  font-size: 17px;
+  border: 1px solid #C79952;
+  transition: background-color 0.1s;
+}
+.secondary_btn:hover {
+  background-color: #C79952;
+}
+
 .ModalContainer .loginModalOverlay {
   width: 100%;
   height: 100%;
@@ -1239,6 +1252,17 @@ button {
   }
 }
 
+.dash_pricing_section {
+  margin-top: 30px;
+}
+.dash_pricing_section h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.dash_pricing_section p {
+  max-width: 600px;
+}
 .dash_pricing_section .dash_pricing_bottom {
   margin-top: 100px;
   display: flex;
@@ -1264,12 +1288,22 @@ button {
     margin-bottom: 100px;
   }
 }
+.dash_pricing_section .dash_pricing_bottom > *:nth-child(1), .dash_pricing_section .dash_pricing_bottom > *:nth-child(3) {
+  align-self: start;
+}
+@media (max-width: 992px) {
+  .dash_pricing_section .dash_pricing_bottom > *:nth-child(1), .dash_pricing_section .dash_pricing_bottom > *:nth-child(3) {
+    align-self: unset;
+  }
+}
 .dash_pricing_section .dash_pricing_bottom > *:nth-child(2) {
-  transform: scale(1.2);
+  padding: 100px 71px;
+  position: relative;
+  top: -50px;
 }
 @media (max-width: 992px) {
   .dash_pricing_section .dash_pricing_bottom > *:nth-child(2) {
-    transform: scale(1);
+    position: unset;
   }
 }
 
@@ -2059,7 +2093,7 @@ a:active {
 }
 
 .pricing_section {
-  background-color: #343a45;
+  background-color: #43484B;
   color: white;
   padding: 100px 0px;
 }
