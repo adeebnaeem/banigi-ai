@@ -12,15 +12,17 @@
         .dash_CustomDesginFirst{
             display: flex;
             gap: 30px;
+            align-items: baseline;
             @include mediumScreen{
                 flex-direction: column;
-                
+                align-items: unset;
             }
             div {
                 display: flex;
                 flex-direction: column;
                 gap: 15px;
                 flex-basis: calc(33.33% - 20px);
+                
 
                 @include bigScreen{
                 flex-basis: calc(50% - 20px);
@@ -39,12 +41,16 @@
                     color: white;
                     padding: 15px;
                     min-height: 123px;
-                } ::placeholder {
-                    font-size: 14px;
-                    font-weight: 400;
-                    color: rgb(255, 255, 255) !important;
-                    font-family: "Lato", sans-serif;
-                }
+
+                    &::placeholder {
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: rgb(255, 255, 255) !important;
+                        font-family: "Lato", sans-serif;
+                    }
+                } 
+
+             
 
                 
                 .dash_CustomDesign_exam_btn{

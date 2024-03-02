@@ -1,10 +1,18 @@
-import React from 'react'
+import React from 'react';
+import finalDesign from "../../assets/FinalDesign.png";
 
 const AllDesignDash = () => {
   return (
-    <div>
-      All Design
-    </div>
+    <>
+
+      <div className="AllDesignDash">
+       <img src={finalDesign} alt="" />
+        <img src={finalDesign} alt="" />
+        <img src={finalDesign} alt="" />
+      
+      </div>
+    
+    </>
   )
 }
 

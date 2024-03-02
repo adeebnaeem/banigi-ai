@@ -520,10 +520,12 @@ button {
 .dash_CustomDesign .dash_CustomDesignForm .dash_CustomDesginFirst {
   display: flex;
   gap: 30px;
+  align-items: baseline;
 }
 @media (max-width: 768px) {
   .dash_CustomDesign .dash_CustomDesignForm .dash_CustomDesginFirst {
     flex-direction: column;
+    align-items: unset;
   }
 }
 .dash_CustomDesign .dash_CustomDesignForm .dash_CustomDesginFirst div {
@@ -550,13 +552,13 @@ button {
   padding: 15px;
   min-height: 123px;
 }
-.dash_CustomDesign .dash_CustomDesignForm .dash_CustomDesginFirst div ::-moz-placeholder {
+.dash_CustomDesign .dash_CustomDesignForm .dash_CustomDesginFirst div textarea::-moz-placeholder {
   font-size: 14px;
   font-weight: 400;
   color: rgb(255, 255, 255) !important;
   font-family: "Lato", sans-serif;
 }
-.dash_CustomDesign .dash_CustomDesignForm .dash_CustomDesginFirst div ::placeholder {
+.dash_CustomDesign .dash_CustomDesignForm .dash_CustomDesginFirst div textarea::placeholder {
   font-size: 14px;
   font-weight: 400;
   color: rgb(255, 255, 255) !important;
@@ -1204,6 +1206,13 @@ button {
   }
 }
 
+.myDesignSection {
+  margin-top: 30px;
+}
+.myDesignSection h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
 .myDesignSection .tabs-container {
   margin-top: 40px;
 }
@@ -1224,18 +1233,9 @@ button {
 .myDesignSection .tabs-container .tab-heading button.active {
   background-color: #C79952;
 }
-.myDesignSection .tabs-container .tab_content_div {
-  width: 80%;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-}
-.myDesignSection .tabs-container .tab_content_div .tab-content {
-  width: 30%;
-}
 @media (max-width: 768px) {
   .myDesignSection .tabs-container .tab_content_div {
-    min-height: 100vh;
+    margin-bottom: 100px;
   }
 }
 
@@ -1271,6 +1271,16 @@ button {
   .dash_pricing_section .dash_pricing_bottom > *:nth-child(2) {
     transform: scale(1);
   }
+}
+
+.AllDesignDash {
+  display: flex;
+  flex-wrap: wrap;
+}
+.AllDesignDash img {
+  width: 100%;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .footer_Section {

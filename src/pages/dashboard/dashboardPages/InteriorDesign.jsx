@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import PrimaryButton from '../../../Components/PrimaryButton';
-
+import Select from 'react-select'
 const InteriorDesign = () => {
 
   const [file, setFile] = useState("");

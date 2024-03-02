@@ -1,4 +1,10 @@
 .myDesignSection{
+    margin-top: 30px;
+
+    h3{
+        font-size: 24px;
+        font-weight: 500;
+    }
     .tabs-container{
         margin-top: 40px;
         .tab-heading{
@@ -20,16 +26,14 @@
             }
         }
         .tab_content_div{
-            width: 80%;
-            margin: auto;
-            display: flex;
-            justify-content: center;
+                
+
+            
             .tab-content{
-                width: 30%;
             }
         
             @include mediumScreen{
-                min-height: 100vh;
+                margin-bottom: 100px;
             }
                 
             
