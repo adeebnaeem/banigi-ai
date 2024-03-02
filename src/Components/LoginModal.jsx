@@ -46,7 +46,7 @@ const LoginModal = ({ closeModal }) => {
                                 <div className="loginLogo">
                                     <img src={loginLogo} alt="" />
                                 </div>
-                                <p>Save time and boost your productivity using powerful Banigi AI features</p>
+                                <p>Save time and boost your productivity using powerful <span>Banigi AI</span> features</p>
 
                                 <div className="LoginForm">
                                     <form action="">
@@ -61,7 +61,7 @@ const LoginModal = ({ closeModal }) => {
                                                   <img src={icon} alt="" onClick={handleToggle} className='eyeIcon' />
                                         </div>
                                       
-                                        <span>Forgot Password?</span>
+                                        <span >Forgot Password?</span>
 
                                      <Link to="/dashboard/interiorDesign"><PrimaryButton text="Login" />  </Link> 
                                     </form>

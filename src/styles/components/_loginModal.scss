@@ -20,9 +20,8 @@
             background-color: white;
         border-radius: 30px;
         width: 85%;
+        max-width: 1280px;
         background-color: $secondary;
-       
-
         margin: auto;
           
             .closeIcon {
@@ -39,30 +38,36 @@
 
             .loginModalDiv {
                 display: flex;
-                width: 85%;
-                margin: auto;   
+                justify-content: space-between;
+
+                width: 75%;
+                margin: auto;
                padding-bottom: 15px;
+               @include bigScreen{
+                width: 85%;
+               }
                 .LoginLeftDiv {
-                   flex: 1;
+                   width: 50%;
                     display: flex;
                     align-items: center;
                     img {
                         width: 100%;
                         max-width: fit-content;
                     }
-                    @include mediumScreen{
+                    @include largeScreen{
                         display: none;
                     }
 
                 }
 
                 .LoginRightDiv {
-                   flex: 1;
+                   width: 50%;
                     display: flex;
                     flex-direction: column;
-                  
-                    max-width: fit-content;
-                    @include mediumScreen{
+                    justify-content: center;
+                    
+                    max-width: 347px;
+                    @include largeScreen{
                         width: 90%;
                         justify-content: center;
                         margin: auto;
@@ -73,7 +78,17 @@
                         margin-bottom: 40px;
 
                         img {
-                            width: 40%;
+                            width: 100%;
+                            max-width: fit-content;
+                            
+                        }
+                       
+                    }
+                    p{
+                        font-size: 16px;
+                        line-height: 24px;
+                        span{
+                            color: $accent;
                         }
                     }
 
@@ -95,6 +110,12 @@
                                 background: transparent;
                                 width: 100%;
                             }
+                            input::placeholder{
+                                color: white;
+                                font-size: 12px;
+                                font-family: "Lato", sans-serif;
+
+                            }
                             .passwordField{
                             position: relative;
                             }
@@ -109,11 +130,15 @@
                             }
 
                             span {
+                                font-weight:250;
+                                font-size: 14px;
+                                font-family: "Lato", sans-serif;
                                 text-align: right;
                                 cursor: pointer;
                             }
 
                             button{
+                                margin-top: 20px;
                                 width: 100%;
                             }
                         }
@@ -122,9 +147,13 @@
                     .loginTextCenter {
                         display: flex;
                         justify-content: center;
-                        
+                        font-family: "Lato", sans-serif;
+                        font-weight: 250;
+                        font-size: 14px;
                         span{
-                            margin-left: 5px;
+                            font-weight: 500;
+                            color: white;
+                            margin-left: 4px;
                             cursor: pointer;
                         }
                     }

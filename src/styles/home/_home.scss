@@ -507,6 +507,7 @@
 .downloadAppDiv {
     background-color: #343a45;
     padding: 20px 70px;
+
     @include mediumScreen {
         padding: 20px 20px;
     }
@@ -521,12 +522,13 @@
         background-image: url("../public/downloadAppbg.png");
         background-repeat: no-repeat;
         background-position: right;
-        
+
         background-size: contain;
+
         @include bigScreen {
             padding: 50px 0px;
             flex-direction: column-reverse;
-            background-image:none;
+            background-image: none;
         }
 
         .downloadAppText {
@@ -548,11 +550,13 @@
                 max-width: 400px;
                 font-size: 35px;
                 color: #43484B;
+
                 @include bigScreen {
                     max-width: 100%;
                 }
             }
-            p{
+
+            p {
                 font-family: "Lato", sans-serif;
                 font-size: 20px;
             }
@@ -560,7 +564,7 @@
             .downloadBtn {
                 display: flex;
                 gap: 20px;
-            
+
                 // @include bigScreen {
                 //     width: 100%;
                 // }
@@ -573,7 +577,7 @@
                     width: 100%;
                     cursor: pointer;
                     max-width: 205px;
-                  
+
                     // @include smallScreen {
                     //     width: 70%;
                     //     margin: auto;
@@ -595,7 +599,7 @@
 
             .mobileImgDiv {
 
-             
+
 
                 img {
                     width: 100%;
@@ -629,11 +633,13 @@
             h3 {
                 font-size: 40px;
                 margin-bottom: 15px;
+
                 @include mediumScreen {
                     font-size: 30px;
                 }
             }
-            p{
+
+            p {
                 margin: 0px auto;
                 max-width: 551px;
                 font-size: 22px;
@@ -646,23 +652,39 @@
         .pricing_bottom {
             display: flex;
             justify-content: center;
-            gap: 70px;
+            gap: 40px;
             margin-top: 100px;
+
 
             @include largeScreen {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
             }
-            
+
+            &>*:nth-child(1),
+            &>*:nth-child(3) {
+                align-self: start;
+
+                @include largeScreen {
+                    align-self: unset;
+                }
+            }
+
 
             &>*:nth-child(2) {
-               transform: scale(1.17);
+                padding: 100px 71px;
+                position: relative;
+                top: -50px;
 
+                @include largeScreen {
+                    position: unset;
+
+                }
             }
-         
+
         }
-        
+
 
     }
 
@@ -694,40 +716,48 @@
         display: flex;
         flex-direction: column;
         gap: 15px;
-        max-width: 70%;
+        max-width: 943.5px;
         margin: auto;
 
         @include largeScreen {
             max-width: 100%;
         }
     }
-    .seeMoreBtn{
-margin: 15px 0px;        cursor: pointer;
+
+    .seeMoreBtn {
+        margin: 15px 0px;
+        cursor: pointer;
         font-weight: 400;
         font-size: 20px;
         text-align: center;
         text-decoration: underline;
     }
-  
+
 }
 
 
 // Contact Us CSS
 .contactUsContainner {
-    background-color: #343a45;
+    background-color: $primary;
 
     color: white;
 
     .contactUsSection {
-        width: 80%;
+        width: 90%;
         margin: auto;
         padding-top: 50px;
         padding-bottom: 100px;
+
+
 
         h3 {
             font-size: 40px;
             text-align: center;
             margin-bottom: 40px;
+
+            @include mediumScreen {
+                font-size: 30px;
+            }
 
             span {
                 color: $accent;
@@ -737,7 +767,6 @@ margin: 15px 0px;        cursor: pointer;
 
     .contactusDiv {
         display: flex;
-        justify-content: space-between;
 
         @include largeScreen {
             flex-direction: column;
@@ -758,11 +787,17 @@ margin: 15px 0px;        cursor: pointer;
             }
 
             img {
-                max-width: 400px;
-                width: 95%;
+                width: 100%;
+                max-width: 475.14px;
+                max-height: 44248px;
             }
 
             p {
+                font-family: "Lato", sans-serif;
+                font-size: 18px;
+                line-height: 21.6px;
+                font-weight: 400;
+
                 max-width: 450px;
                 text-align: center;
             }
@@ -771,7 +806,7 @@ margin: 15px 0px;        cursor: pointer;
         .contactUsRight {
             width: 50%;
             display: flex;
-            justify-content: end;
+            justify-content: center;
 
             @include largeScreen {
                 width: 80%;
@@ -784,10 +819,13 @@ margin: 15px 0px;        cursor: pointer;
             }
 
             .contactForm {
+                max-width: 512px;
+                min-height: 712px;
                 width: 70%;
-                border: 1px solid white;
-                padding: 20px 40px;
-                border-radius: 20px;
+                border: 2px solid white;
+                padding: 40px 45px;
+
+                border-radius: 30px;
 
                 @include bigScreen {
                     width: 90%;
@@ -801,15 +839,41 @@ margin: 15px 0px;        cursor: pointer;
                     display: flex;
                     flex-direction: column;
 
-                    input,
-                    textarea {
+                    label {
+                        font-family: "Lato", sans-serif;
+
+                    }
+
+                    input {
                         background: transparent;
-                        border: 1px solid white;
-                        padding: 12px;
+                        border: 1.5px solid white;
+                        height: 70px;
                         border-radius: 10px;
                         color: white;
-                        margin-top: 10px;
-                        margin-bottom: 20px;
+                        margin-top: 15px;
+                        margin-bottom: 30px;
+                        outline: none;
+                        font-size: 18px;
+                        padding-left: 5px;
+                    }
+
+                    textarea {
+                        font-size: 18px;
+                        padding-top: 5px;
+                        padding-left: 5px;
+                        outline: none;
+                        resize: none;
+                        background: transparent;
+                        border: 1.5px solid white;
+                        height: 215px;
+                        border-radius: 10px;
+                        color: white;
+                        margin-top: 15px;
+                        margin-bottom: 30px;
+                    }
+
+                    .submitBtn {
+                        padding: 35px;
                     }
                 }
             }

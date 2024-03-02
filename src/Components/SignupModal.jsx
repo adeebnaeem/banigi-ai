@@ -58,7 +58,7 @@ const SignupModal = ({ closeModal }) => {
                                 <div className="loginLogo">
                                     <img src={loginLogo} alt="" />
                                 </div>
-                                <p>Register to save time and boost your productivity using powerful Banigi AI</p>
+                                <p>Register to save time and boost your productivity using powerful <span>Banigi AI</span></p>
 
                                 <div className="LoginForm">
                                     <form action="">

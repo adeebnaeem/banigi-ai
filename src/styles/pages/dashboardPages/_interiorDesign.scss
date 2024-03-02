@@ -1,6 +1,12 @@
 .dash_InteriorDesign {
+    margin-top: 30px;
+
+    h3{
+        font-size: 24px;
+        font-weight: 500;
+    }
     .dash_interiorDesignForm {
-        margin-top: 40px;
+        margin-top: 60px;
         .dash_interiorDesignFirst,
         .dash_interiorDesignSecond {
             display: flex;
@@ -11,7 +17,7 @@
             div {
                 display: flex;
                 flex-direction: column;
-                gap: 10px;
+                gap: 20px;
                 flex-wrap: wrap;
                 flex-basis: calc(33.33% - 20px);
                
@@ -19,19 +25,23 @@
                     appearance: none;
                     -webkit-appearance: none;
                     -moz-appearance: none;
-                    padding: 15px;
+                    padding: 25px 30px;
                     border: none;
                     font-size: 16px;
-                    border-radius: 4px;
+                    border-radius: 8px;
                     background-color: $secondary;
                     background-image: url('data:image/svg+xml;utf8,<svg width="10" height="18"  viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 1.80249L9 9.30249L1.5 16.8025" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
                     background-repeat: no-repeat;
-                    background-position: right 8px center;
+                    background-position: right 20px center;
                     cursor: pointer;
                     color: white;
                     margin-bottom: 20px;
+                    outline: none;
                 }
-
+                label{
+                    font-size: 20px;
+                    font-weight: 600;
+                }
                 .intervation_radio {
                     display: flex;
                     flex-direction: row;
@@ -74,6 +84,11 @@
                                 background-color: $accent;
                             }
                         }
+                        label{
+                            margin-top: 20px;
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
 
                         &:last-child::after {
                             display: none;
@@ -88,7 +103,7 @@
             .customAiIntervationForm {
                 display: flex;
                 flex-direction: column;
-                gap: 10px;
+                gap: 20px;
                 flex-wrap: wrap;
                 flex-basis: calc(33.33% - 20px);
 
@@ -104,8 +119,8 @@
                     input[type="checkbox"] {
                         appearance: none;
                         -webkit-appearance: none;
-                        width: 20px;
-                        height: 20px;
+                        width: 25px;
+                        height: 25px;
                         border: 2px solid $accent;
                         cursor: pointer;
                         position: relative;
@@ -117,19 +132,28 @@
                             background-size: 100%;
                         }
                     }
+                    label{
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
                 }
 
                 textarea {
-                    background-color: #576072;
+                    background-color: $secondary;
                     border: none;
                     border-radius: 10px;
                     resize: none;
                     color: white;
-                    padding: 10px;
+                    padding: 15px;
+                    min-height: 123px;
                 }
 
                 ::placeholder {
+                    font-size: 14px;
+                    font-weight: 400;
                     color: rgb(255, 255, 255) !important;
+                    font-family: "Lato", sans-serif;
+
                 }
             }
         }
@@ -216,7 +240,7 @@
         .InteriorDesignBtn{
             display: flex;
             justify-content: center;
-
+            margin-bottom: 100px;
             button{
                 padding: 16px 60px;
             }
@@ -227,3 +251,4 @@
         }
     }
 }
+

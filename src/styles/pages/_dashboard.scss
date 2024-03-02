@@ -36,7 +36,7 @@
 
             img {
                 width: 100%;
-
+                max-width: fit-content;
             }
 
             @include mediumScreen {
@@ -188,6 +188,7 @@
                 background-color: $accent;
                 padding: 10px;
                 border-radius: 10px;
+                
 
             }
         }

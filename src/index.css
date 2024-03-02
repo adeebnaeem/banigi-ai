@@ -309,6 +309,7 @@ button {
   background-color: white;
   border-radius: 30px;
   width: 85%;
+  max-width: 1280px;
   background-color: #43484B;
   margin: auto;
 }
@@ -324,12 +325,18 @@ button {
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv {
   display: flex;
-  width: 85%;
+  justify-content: space-between;
+  width: 75%;
   margin: auto;
   padding-bottom: 15px;
 }
+@media (max-width: 1200px) {
+  .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv {
+    width: 85%;
+  }
+}
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginLeftDiv {
-  flex: 1;
+  width: 50%;
   display: flex;
   align-items: center;
 }
@@ -338,19 +345,19 @@ button {
   max-width: -moz-fit-content;
   max-width: fit-content;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginLeftDiv {
     display: none;
   }
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv {
-  flex: 1;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+  justify-content: center;
+  max-width: 347px;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv {
     width: 90%;
     justify-content: center;
@@ -362,7 +369,16 @@ button {
   margin-bottom: 40px;
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .loginLogo img {
-  width: 40%;
+  width: 100%;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+.ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv p {
+  font-size: 16px;
+  line-height: 24px;
+}
+.ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv p span {
+  color: #C79952;
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .LoginForm {
   margin-top: 20px;
@@ -382,6 +398,16 @@ button {
   background: transparent;
   width: 100%;
 }
+.ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .LoginForm form input::-moz-placeholder {
+  color: white;
+  font-size: 12px;
+  font-family: "Lato", sans-serif;
+}
+.ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .LoginForm form input::placeholder {
+  color: white;
+  font-size: 12px;
+  font-family: "Lato", sans-serif;
+}
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .LoginForm form .passwordField {
   position: relative;
 }
@@ -394,18 +420,27 @@ button {
   cursor: pointer;
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .LoginForm form span {
+  font-weight: 250;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
   text-align: right;
   cursor: pointer;
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .LoginForm form button {
+  margin-top: 20px;
   width: 100%;
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .loginTextCenter {
   display: flex;
   justify-content: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 250;
+  font-size: 14px;
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .loginTextCenter span {
-  margin-left: 5px;
+  font-weight: 500;
+  color: white;
+  margin-left: 4px;
   cursor: pointer;
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .socialLogin {
@@ -442,7 +477,7 @@ button {
   padding-top: 20px;
   padding-bottom: 20px;
   overflow-y: scroll;
-  z-index: 3;
+  z-index: 10;
 }
 .legalModalContainer .legalModalDiv {
   background-color: white;
@@ -472,8 +507,15 @@ button {
   text-align: justify;
 }
 
+.dash_CustomDesign {
+  margin-top: 30px;
+}
+.dash_CustomDesign h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
 .dash_CustomDesign .dash_CustomDesignForm {
-  margin-top: 40px;
+  margin-top: 60px;
 }
 .dash_CustomDesign .dash_CustomDesignForm .dash_CustomDesginFirst {
   display: flex;
@@ -487,7 +529,7 @@ button {
 .dash_CustomDesign .dash_CustomDesignForm .dash_CustomDesginFirst div {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   flex-basis: calc(33.33% - 20px);
 }
 @media (max-width: 1200px) {
@@ -495,37 +537,51 @@ button {
     flex-basis: calc(50% - 20px);
   }
 }
+.dash_CustomDesign .dash_CustomDesignForm .dash_CustomDesginFirst div label {
+  font-size: 20px;
+  font-weight: 600;
+}
 .dash_CustomDesign .dash_CustomDesignForm .dash_CustomDesginFirst div textarea {
   background-color: #43484B;
   border: none;
   border-radius: 10px;
   resize: none;
   color: white;
-  padding: 10px;
+  padding: 15px;
+  min-height: 123px;
 }
 .dash_CustomDesign .dash_CustomDesignForm .dash_CustomDesginFirst div ::-moz-placeholder {
+  font-size: 14px;
+  font-weight: 400;
   color: rgb(255, 255, 255) !important;
+  font-family: "Lato", sans-serif;
 }
 .dash_CustomDesign .dash_CustomDesignForm .dash_CustomDesginFirst div ::placeholder {
+  font-size: 14px;
+  font-weight: 400;
   color: rgb(255, 255, 255) !important;
+  font-family: "Lato", sans-serif;
 }
 .dash_CustomDesign .dash_CustomDesignForm .dash_CustomDesginFirst div .dash_CustomDesign_exam_btn {
   margin-top: 22px;
 }
 .dash_CustomDesign .dash_CustomDesignForm .dash_CustomDesginFirst div .dash_CustomDesign_exam_btn button {
+  font-weight: 500;
+  font-size: 14px;
   background: #43484B;
   color: white;
-  padding: 15px;
-  border-radius: 10px;
+  min-height: 70px;
+  padding: 15px 20px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .dash_CustomDesign .dash_CustomDesignForm .dash_CustomDesginFirst div .dash_customDesign_exam p {
-  border-radius: 10px;
+  border-radius: 8px;
   background: #43484B;
   color: white;
-  padding: 15px;
+  padding: 15px 10px;
 }
 .dash_CustomDesign .dash_CustomDesignForm .ExteriorDesignFileDiv {
   display: flex;
@@ -615,6 +671,7 @@ button {
 .dash_CustomDesign .dash_CustomDesignForm .ExteriorDesignBtn {
   display: flex;
   justify-content: center;
+  margin-bottom: 100px;
 }
 .dash_CustomDesign .dash_CustomDesignForm .ExteriorDesignBtn button {
   padding: 16px 60px;
@@ -625,8 +682,15 @@ button {
   }
 }
 
+.dash_ExteriorDesign {
+  margin-top: 30px;
+}
+.dash_ExteriorDesign h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
 .dash_ExteriorDesign .dash_ExteriorDesignForm {
-  margin-top: 40px;
+  margin-top: 60px;
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst,
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond {
@@ -643,7 +707,7 @@ button {
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond div {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   flex-wrap: wrap;
   flex-basis: calc(33.33% - 20px);
 }
@@ -652,17 +716,22 @@ button {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding: 15px;
+  padding: 25px 30px;
   border: none;
   font-size: 16px;
-  border-radius: 4px;
+  border-radius: 8px;
   background-color: #43484B;
   background-image: url('data:image/svg+xml;utf8,<svg width="10" height="18"  viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 1.80249L9 9.30249L1.5 16.8025" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
   background-repeat: no-repeat;
-  background-position: right 8px center;
+  background-position: right 20px center;
   cursor: pointer;
   color: white;
   margin-bottom: 20px;
+}
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst div label,
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond div label {
+  font-size: 20px;
+  font-weight: 600;
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst div .intervation_radio,
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond div .intervation_radio {
@@ -708,6 +777,13 @@ button {
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond div .intervation_radio div input:checked {
   background-color: #C79952;
 }
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst div .intervation_radio div label,
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond div .intervation_radio div label {
+  font-family: "Lato", sans-serif;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst div .intervation_radio div:last-child::after,
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond div .intervation_radio div:last-child::after {
   display: none;
@@ -727,8 +803,8 @@ button {
   -moz-appearance: none;
        appearance: none;
   -webkit-appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   border: 2px solid #C79952;
   cursor: pointer;
   position: relative;
@@ -742,19 +818,26 @@ button {
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst .customAiIntervationForm textarea,
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond .customAiIntervationForm textarea {
-  background-color: #576072;
+  background-color: #43484B;
   border: none;
   border-radius: 10px;
   resize: none;
   color: white;
-  padding: 10px;
+  padding: 15px;
+  min-height: 123px;
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst .customAiIntervationForm ::-moz-placeholder, .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond .customAiIntervationForm ::-moz-placeholder {
+  font-size: 14px;
+  font-weight: 400;
   color: rgb(255, 255, 255) !important;
+  font-family: "Lato", sans-serif;
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst .customAiIntervationForm ::placeholder,
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond .customAiIntervationForm ::placeholder {
+  font-size: 14px;
+  font-weight: 400;
   color: rgb(255, 255, 255) !important;
+  font-family: "Lato", sans-serif;
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignFileDiv {
   display: flex;
@@ -844,6 +927,7 @@ button {
 .dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignBtn {
   display: flex;
   justify-content: center;
+  margin-bottom: 100px;
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignBtn button {
   padding: 16px 60px;
@@ -854,8 +938,15 @@ button {
   }
 }
 
+.dash_InteriorDesign {
+  margin-top: 30px;
+}
+.dash_InteriorDesign h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
 .dash_InteriorDesign .dash_interiorDesignForm {
-  margin-top: 40px;
+  margin-top: 60px;
 }
 .dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst,
 .dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond {
@@ -872,7 +963,7 @@ button {
 .dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond div {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   flex-wrap: wrap;
   flex-basis: calc(33.33% - 20px);
 }
@@ -881,17 +972,23 @@ button {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding: 15px;
+  padding: 25px 30px;
   border: none;
   font-size: 16px;
-  border-radius: 4px;
+  border-radius: 8px;
   background-color: #43484B;
   background-image: url('data:image/svg+xml;utf8,<svg width="10" height="18"  viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 1.80249L9 9.30249L1.5 16.8025" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
   background-repeat: no-repeat;
-  background-position: right 8px center;
+  background-position: right 20px center;
   cursor: pointer;
   color: white;
   margin-bottom: 20px;
+  outline: none;
+}
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst div label,
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond div label {
+  font-size: 20px;
+  font-weight: 600;
 }
 .dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst div .intervation_radio,
 .dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond div .intervation_radio {
@@ -937,6 +1034,12 @@ button {
 .dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond div .intervation_radio div input:checked {
   background-color: #C79952;
 }
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst div .intervation_radio div label,
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond div .intervation_radio div label {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
 .dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst div .intervation_radio div:last-child::after,
 .dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond div .intervation_radio div:last-child::after {
   display: none;
@@ -948,7 +1051,7 @@ button {
 .dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignThird .customAiIntervationForm {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   flex-wrap: wrap;
   flex-basis: calc(33.33% - 20px);
 }
@@ -965,8 +1068,8 @@ button {
   -moz-appearance: none;
        appearance: none;
   -webkit-appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   border: 2px solid #C79952;
   cursor: pointer;
   position: relative;
@@ -977,19 +1080,30 @@ button {
   background-position: center;
   background-size: 100%;
 }
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignThird .customAiIntervationForm .customAiIntervationLabel label {
+  font-size: 20px;
+  font-weight: 600;
+}
 .dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignThird .customAiIntervationForm textarea {
-  background-color: #576072;
+  background-color: #43484B;
   border: none;
   border-radius: 10px;
   resize: none;
   color: white;
-  padding: 10px;
+  padding: 15px;
+  min-height: 123px;
 }
 .dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignThird .customAiIntervationForm ::-moz-placeholder {
+  font-size: 14px;
+  font-weight: 400;
   color: rgb(255, 255, 255) !important;
+  font-family: "Lato", sans-serif;
 }
 .dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignThird .customAiIntervationForm ::placeholder {
+  font-size: 14px;
+  font-weight: 400;
   color: rgb(255, 255, 255) !important;
+  font-family: "Lato", sans-serif;
 }
 .dash_InteriorDesign .dash_interiorDesignForm .interiorDesignFileDiv {
   display: flex;
@@ -1079,6 +1193,7 @@ button {
 .dash_InteriorDesign .dash_interiorDesignForm .InteriorDesignBtn {
   display: flex;
   justify-content: center;
+  margin-bottom: 100px;
 }
 .dash_InteriorDesign .dash_interiorDesignForm .InteriorDesignBtn button {
   padding: 16px 60px;
@@ -1160,9 +1275,15 @@ button {
 
 .footer_Section {
   background-color: #43484B;
-  padding: 30px 100px;
+  padding: 60px 80px;
   color: white;
   display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 1200px) {
+  .footer_Section {
+    justify-content: space-between;
+  }
 }
 @media (max-width: 992px) {
   .footer_Section {
@@ -1177,6 +1298,7 @@ button {
 }
 .footer_Section .footer_left {
   width: 40%;
+  max-width: 415px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -1189,14 +1311,20 @@ button {
   }
 }
 .footer_Section .footer_left img {
-  width: 40%;
+  width: 100%;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 .footer_Section .footer_left p {
-  max-width: 70%;
+  width: 90%;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  line-height: 21.6px;
+  font-size: 18px;
 }
 @media (max-width: 768px) {
   .footer_Section .footer_left p {
-    max-width: 100%;
+    width: 100%;
     text-align: center;
   }
 }
@@ -1210,8 +1338,14 @@ button {
 }
 .footer_Section .footer_right {
   width: 60%;
+  max-width: 601px;
   display: flex;
-  justify-content: space-around;
+  gap: 80px;
+}
+@media (max-width: 1200px) {
+  .footer_Section .footer_right {
+    gap: 40px;
+  }
 }
 @media (max-width: 768px) {
   .footer_Section .footer_right {
@@ -1244,10 +1378,11 @@ button {
   color: white;
   text-align: center;
   padding: 20px 0px;
+  font-family: "Lato", sans-serif;
 }
 .copyright_div h5 {
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 nav {
@@ -1951,7 +2086,7 @@ a:active {
 .pricing_section .pricingDiv .pricing_bottom {
   display: flex;
   justify-content: center;
-  gap: 70px;
+  gap: 40px;
   margin-top: 100px;
 }
 @media (max-width: 992px) {
@@ -1961,8 +2096,23 @@ a:active {
     align-items: center;
   }
 }
+.pricing_section .pricingDiv .pricing_bottom > *:nth-child(1), .pricing_section .pricingDiv .pricing_bottom > *:nth-child(3) {
+  align-self: start;
+}
+@media (max-width: 992px) {
+  .pricing_section .pricingDiv .pricing_bottom > *:nth-child(1), .pricing_section .pricingDiv .pricing_bottom > *:nth-child(3) {
+    align-self: unset;
+  }
+}
 .pricing_section .pricingDiv .pricing_bottom > *:nth-child(2) {
-  transform: scale(1.17);
+  padding: 100px 71px;
+  position: relative;
+  top: -50px;
+}
+@media (max-width: 992px) {
+  .pricing_section .pricingDiv .pricing_bottom > *:nth-child(2) {
+    position: unset;
+  }
 }
 
 .faqDiv {
@@ -1987,7 +2137,7 @@ a:active {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  max-width: 70%;
+  max-width: 943.5px;
   margin: auto;
 }
 @media (max-width: 992px) {
@@ -2005,11 +2155,11 @@ a:active {
 }
 
 .contactUsContainner {
-  background-color: #343a45;
+  background-color: #343A45;
   color: white;
 }
 .contactUsContainner .contactUsSection {
-  width: 80%;
+  width: 90%;
   margin: auto;
   padding-top: 50px;
   padding-bottom: 100px;
@@ -2019,12 +2169,16 @@ a:active {
   text-align: center;
   margin-bottom: 40px;
 }
+@media (max-width: 768px) {
+  .contactUsContainner .contactUsSection h3 {
+    font-size: 30px;
+  }
+}
 .contactUsContainner .contactUsSection h3 span {
   color: #C79952;
 }
 .contactUsContainner .contactusDiv {
   display: flex;
-  justify-content: space-between;
 }
 @media (max-width: 992px) {
   .contactUsContainner .contactusDiv {
@@ -2047,17 +2201,22 @@ a:active {
   }
 }
 .contactUsContainner .contactusDiv .contactUsLeft img {
-  max-width: 400px;
-  width: 95%;
+  width: 100%;
+  max-width: 475.14px;
+  max-height: 44248px;
 }
 .contactUsContainner .contactusDiv .contactUsLeft p {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  line-height: 21.6px;
+  font-weight: 400;
   max-width: 450px;
   text-align: center;
 }
 .contactUsContainner .contactusDiv .contactUsRight {
   width: 50%;
   display: flex;
-  justify-content: end;
+  justify-content: center;
 }
 @media (max-width: 992px) {
   .contactUsContainner .contactusDiv .contactUsRight {
@@ -2072,10 +2231,12 @@ a:active {
   }
 }
 .contactUsContainner .contactusDiv .contactUsRight .contactForm {
+  max-width: 512px;
+  min-height: 712px;
   width: 70%;
-  border: 1px solid white;
-  padding: 20px 40px;
-  border-radius: 20px;
+  border: 2px solid white;
+  padding: 40px 45px;
+  border-radius: 30px;
 }
 @media (max-width: 1200px) {
   .contactUsContainner .contactusDiv .contactUsRight .contactForm {
@@ -2091,15 +2252,37 @@ a:active {
   display: flex;
   flex-direction: column;
 }
-.contactUsContainner .contactusDiv .contactUsRight .contactForm form input,
-.contactUsContainner .contactusDiv .contactUsRight .contactForm form textarea {
+.contactUsContainner .contactusDiv .contactUsRight .contactForm form label {
+  font-family: "Lato", sans-serif;
+}
+.contactUsContainner .contactusDiv .contactUsRight .contactForm form input {
   background: transparent;
-  border: 1px solid white;
-  padding: 12px;
+  border: 1.5px solid white;
+  height: 70px;
   border-radius: 10px;
   color: white;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  outline: none;
+  font-size: 18px;
+  padding-left: 5px;
+}
+.contactUsContainner .contactusDiv .contactUsRight .contactForm form textarea {
+  font-size: 18px;
+  padding-top: 5px;
+  padding-left: 5px;
+  outline: none;
+  resize: none;
+  background: transparent;
+  border: 1.5px solid white;
+  height: 215px;
+  border-radius: 10px;
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.contactUsContainner .contactusDiv .contactUsRight .contactForm form .submitBtn {
+  padding: 35px;
 }
 
 .dashboard_container {
@@ -2141,6 +2324,8 @@ a:active {
 }
 .dashboard_container .sidebar_section .dashboardLogo img {
   width: 100%;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 @media (max-width: 768px) {
   .dashboard_container .sidebar_section .dashboardLogo {

@@ -1,9 +1,13 @@
 .footer_Section{
     background-color:$secondary;
-    padding: 30px 100px;
+    padding: 60px 80px;
     color: white;
     display: flex;
+    justify-content: space-around;
 
+    @include bigScreen{
+        justify-content: space-between;
+    }
     @include largeScreen{
         padding: 30px 50px;
     }
@@ -14,6 +18,7 @@
 
     .footer_left{
         width: 40%;
+        max-width: 415px;
         display: flex;
         flex-direction: column;
         gap: 15px;
@@ -25,14 +30,21 @@
         }
 
         img{
-            width: 40%;
-
+                width: 100%;
+                max-width: fit-content;
+    
         }
         p{
-            max-width: 70%;
+            width: 90%;
+
+            font-family: "Lato", sans-serif;
+            font-weight: 500;
+            line-height: 21.6px;
+            font-size: 18px;
             @include mediumScreen{
-                max-width: 100%;
-                text-align: center;
+                width: 100%;
+        
+             text-align: center;
             }
 
         }
@@ -40,16 +52,21 @@
             display: flex;
             gap: 10px;
             img{
-                cursor: pointer
-                ;
+                cursor: pointer;
                 width:35px;
             }
         }
     }
     .footer_right{
         width: 60%;
+        max-width: 601px;
         display: flex;
-        justify-content: space-around;
+
+        gap: 80px;
+
+        @include bigScreen{
+            gap: 40px;
+        }
         @include mediumScreen{
             width: 90%;
             justify-content: space-between;
@@ -84,10 +101,10 @@
     color: white;
     text-align: center;
     padding: 20px 0px;
-
+    font-family: "Lato", sans-serif;
     h5{
-        font-size: 18px;
-        font-weight: 400;
+        font-size: 20px;
+        font-weight: 500;
     }
 }
 

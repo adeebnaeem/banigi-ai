@@ -1,6 +1,13 @@
 .dash_CustomDesign{
+    margin-top: 30px;
+
+    h3{
+        font-size: 24px;
+        font-weight: 500;
+    }
+
     .dash_CustomDesignForm{
-        margin-top: 40px;
+        margin-top: 60px;
 
         .dash_CustomDesginFirst{
             display: flex;
@@ -12,12 +19,16 @@
             div {
                 display: flex;
                 flex-direction: column;
-                gap: 10px;
+                gap: 15px;
                 flex-basis: calc(33.33% - 20px);
 
                 @include bigScreen{
                 flex-basis: calc(50% - 20px);
 
+                }
+                label{
+                    font-size: 20px;
+                    font-weight: 600;
                 }
 
                 textarea {
@@ -26,20 +37,27 @@
                     border-radius: 10px;
                     resize: none;
                     color: white;
-                    padding: 10px;
-                   
+                    padding: 15px;
+                    min-height: 123px;
                 } ::placeholder {
+                    font-size: 14px;
+                    font-weight: 400;
                     color: rgb(255, 255, 255) !important;
+                    font-family: "Lato", sans-serif;
                 }
 
                 
                 .dash_CustomDesign_exam_btn{
                     margin-top: 22px;
                     button{
+                        font-weight: 500;
+                        font-size: 14px;
+                        
                         background: $secondary;
                         color:white;
-                        padding: 15px;
-                        border-radius: 10px;
+                        min-height: 70px;
+                        padding: 15px 20px;
+                        border-radius: 8px;
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
@@ -47,16 +65,18 @@
                 }
 
                 .dash_customDesign_exam{
-                    p{
                     
-                        border-radius: 10px;
+                    p{
+                        
+                        border-radius: 8px;
                         background: $secondary;
                         color:white;
-                        padding: 15px;
-                    
+                        padding: 15px 10px;
+                        
                     }
                    
                 }
+               
             }
             
         }
@@ -144,7 +164,7 @@
         .ExteriorDesignBtn{
             display: flex;
             justify-content: center;
-
+            margin-bottom: 100px;
             button{
                 padding: 16px 60px;
             }
