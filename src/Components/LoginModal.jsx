@@ -46,7 +46,7 @@ const LoginModal = ({ closeModal }) => {
                                 <div className="loginLogo">
                                     <img src={loginLogo} alt="" />
                                 </div>
-                                <p>Save time and boost your productivity using powerful <span>Banigi AI</span> features</p>
+                                <p className='login_text'>Save time and boost your productivity using powerful <span>Banigi AI</span> features</p>
 
                                 <div className="LoginForm">
                                     <form action="">
@@ -75,7 +75,7 @@ const LoginModal = ({ closeModal }) => {
                                     <img src={appleLogin} alt="" />
                                 </div>
 
-                                <p className='loginTextCenter'>Dont have an account ? <span>Signup</span></p>
+                                <p className='dha_line'><span className='loginTextCenter2'>Dont have an account ? </span><span>Signup</span> </p>
 
                             </div>
                         </div>

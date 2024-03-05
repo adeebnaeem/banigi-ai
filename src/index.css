@@ -387,13 +387,13 @@ button {
   max-width: -moz-fit-content;
   max-width: fit-content;
 }
-.ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv p {
+.ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .login_text {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
 }
-.ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv p span {
+.ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .login_text span {
   color: #C79952;
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .LoginForm {
@@ -463,7 +463,17 @@ button {
   font-size: 14px;
   margin-left: 4px;
   cursor: pointer;
-  opacity: 100%;
+}
+.ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .dha_line {
+  display: flex;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+}
+.ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .dha_line .loginTextCenter2 {
+  opacity: 60%;
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .socialLogin {
   margin-top: 20px;
@@ -559,7 +569,7 @@ button {
 }
 .dash_CustomDesign .dash_CustomDesignForm .dash_CustomDesginFirst {
   display: flex;
-  gap: 30px;
+  gap: 40px;
   align-items: baseline;
 }
 @media (max-width: 768px) {
@@ -571,7 +581,7 @@ button {
 .dash_CustomDesign .dash_CustomDesignForm .dash_CustomDesginFirst div {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
   flex-basis: calc(33.33% - 20px);
 }
 @media (max-width: 1200px) {
@@ -652,6 +662,7 @@ button {
   width: 50%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
@@ -669,9 +680,13 @@ button {
   display: flex;
   gap: 10px;
   margin-left: 10px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
 }
 .dash_CustomDesign .dash_CustomDesignForm .ExteriorDesignFileDiv .ExteriorDesignFile span svg {
-  min-width: 30px;
+  min-width: 21.5px;
 }
 .dash_CustomDesign .dash_CustomDesignForm .ExteriorDesignFileDiv .ExteriorDesignFile input {
   display: block;
@@ -716,7 +731,10 @@ button {
   margin-bottom: 100px;
 }
 .dash_CustomDesign .dash_CustomDesignForm .ExteriorDesignBtn button {
-  padding: 16px 60px;
+  padding: 30px 0px;
+  width: 450px;
+  font-weight: 500;
+  font-size: 20px;
 }
 @media (max-width: 768px) {
   .dash_CustomDesign .dash_CustomDesignForm .ExteriorDesignBtn {
@@ -847,7 +865,8 @@ button {
   -webkit-appearance: none;
   width: 25px;
   height: 25px;
-  border: 2px solid #C79952;
+  border-radius: 4px;
+  border: 1px solid #C79952;
   cursor: pointer;
   position: relative;
 }
@@ -908,6 +927,7 @@ button {
   width: 50%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
@@ -925,9 +945,13 @@ button {
   display: flex;
   gap: 10px;
   margin-left: 10px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignFileDiv .ExteriorDesignFile span svg {
-  min-width: 30px;
+  min-width: 21.5px;
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignFileDiv .ExteriorDesignFile input {
   display: block;
@@ -972,7 +996,10 @@ button {
   margin-bottom: 100px;
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignBtn button {
-  padding: 16px 60px;
+  padding: 30px 0px;
+  width: 450px;
+  font-weight: 500;
+  font-size: 20px;
 }
 @media (max-width: 768px) {
   .dash_ExteriorDesign .dash_ExteriorDesignForm .ExteriorDesignBtn {
@@ -1112,7 +1139,8 @@ button {
   -webkit-appearance: none;
   width: 25px;
   height: 25px;
-  border: 2px solid #C79952;
+  border: 1px solid #C79952;
+  border-radius: 4px;
   cursor: pointer;
   position: relative;
 }
@@ -1175,6 +1203,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
   position: relative;
@@ -1191,9 +1220,13 @@ button {
   display: flex;
   gap: 10px;
   margin-left: 10px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
 }
 .dash_InteriorDesign .dash_interiorDesignForm .interiorDesignFileDiv .interiorDesignFile span svg {
-  min-width: 30px;
+  min-width: 21.5px;
 }
 .dash_InteriorDesign .dash_interiorDesignForm .interiorDesignFileDiv .interiorDesignFile input {
   display: block;
@@ -1238,7 +1271,10 @@ button {
   margin-bottom: 100px;
 }
 .dash_InteriorDesign .dash_interiorDesignForm .InteriorDesignBtn button {
-  padding: 16px 60px;
+  padding: 30px 0px;
+  width: 450px;
+  font-weight: 500;
+  font-size: 20px;
 }
 @media (max-width: 768px) {
   .dash_InteriorDesign .dash_interiorDesignForm .InteriorDesignBtn {
@@ -1337,9 +1373,11 @@ button {
 .AllDesignDash {
   display: flex;
   flex-wrap: wrap;
+  gap: 11px;
 }
 .AllDesignDash img {
-  width: 100%;
+  width: 360.6px;
+  height: 270.45px;
   max-width: -moz-fit-content;
   max-width: fit-content;
 }
