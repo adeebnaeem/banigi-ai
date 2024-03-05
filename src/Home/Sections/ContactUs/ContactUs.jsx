@@ -34,7 +34,7 @@ const ContactUs = () => {
                 <label htmlFor="message">Message</label>
                 <textarea name="" id="" cols="30" rows="10"></textarea>
 
-                <PrimaryButton text="Submit" className="submitBtn"/>
+                <button className="submitBtn">Submit</button>
               </form>
             </div>
           </div>

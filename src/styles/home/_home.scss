@@ -160,8 +160,7 @@
 // How It Work CSS
 
 .HowItWorkDiv {
-
-    padding: 70px 70px 10px 70px;
+    padding: 70px 70px 0px 70px;
     background-color: $secondary;
     color: white;
 
@@ -612,7 +611,7 @@
 // Pricing Section CSS
 
 .pricing_section {
-    background-color: $secondary;
+    background-color: $primary;
     color: white;
     padding: 100px 0px;
 
@@ -873,7 +872,13 @@
                     }
 
                     .submitBtn {
-                        padding: 35px;
+                        padding: 15px;
+                        min-height: 70px;
+                        background-color: $accent;
+                        color: white;
+                        font-weight: 500;
+                        border-radius: 10px;
+                        font-size: 20px;
                     }
                 }
             }

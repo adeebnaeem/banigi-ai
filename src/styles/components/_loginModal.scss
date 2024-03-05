@@ -85,8 +85,10 @@
                        
                     }
                     p{
+                        font-family: "Lato", sans-serif;
                         font-size: 16px;
                         line-height: 24px;
+                        font-weight: 500;
                         span{
                             color: $accent;
                         }
@@ -113,6 +115,7 @@
                             input::placeholder{
                                 color: white;
                                 font-size: 12px;
+                                font-weight: 400;
                                 font-family: "Lato", sans-serif;
 
                             }
@@ -121,20 +124,20 @@
                             }
                             .eyeIcon{
                                 right: 12px;
-                                top: 10px;
+                                top: 12px;
                                 position: absolute;
-                                width: 30px;
-                                height: 30px;
+                                width: 22px;
                                 cursor: pointer;
                             
                             }
 
                             span {
-                                font-weight:250;
+                                font-weight:400;
                                 font-size: 14px;
                                 font-family: "Lato", sans-serif;
                                 text-align: right;
                                 cursor: pointer;
+                                opacity: .6;
                             }
 
                             button{
@@ -148,13 +151,17 @@
                         display: flex;
                         justify-content: center;
                         font-family: "Lato", sans-serif;
-                        font-weight: 250;
+                        font-weight: 400;
                         font-size: 14px;
+                        opacity: 60%;
                         span{
+                            font-family: "Lato", sans-serif;
                             font-weight: 500;
                             color: white;
+                            font-size: 14px;
                             margin-left: 4px;
                             cursor: pointer;
+                            opacity: 100%;
                         }
                     }
 

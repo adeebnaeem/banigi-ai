@@ -10,7 +10,7 @@ nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 4rem;
+        padding: 13px 4rem;
 
         @include smallScreen {
             padding: 10px 25px;
@@ -73,7 +73,7 @@ nav {
             .login_btn {
                 background: transparent;
                 color: white;
-                font-size: 16px;
+                font-size: 18px;
                 @include bigScreen {
                     display: none;
                 }
@@ -81,9 +81,9 @@ nav {
             .getStarted_btn {
                 background-color: $accent;
                 color: white;
-                padding: 10px;
-                border-radius: 10px;
-                font-size: 16px;
+                padding: 15px;
+                border-radius: 8px;
+                font-size: 18px;
 
                 @include mediumScreen {
                     display: none;

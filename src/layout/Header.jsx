@@ -41,7 +41,7 @@ const Header = () => {
                     <div className="nav_links">
                         <ul>
                             
-                            <a href="#main_banner" className={urlCheck.hash === "#main_banner" && "active_navLink"}><li>Home</li></a>
+                            <a href="#main_banner" className= {urlCheck.hash === "#main_banner" && "active_navLink"}><li>Home</li></a>
                           
                             <a href="#howItWork"className={urlCheck.hash === "#howItWork" && "active_navLink"}><li>How It Work</li></a>
                             <a href="#feedback" className={urlCheck.hash === "#feedback" && "active_navLink"}><li>Feedback</li></a>
@@ -64,7 +64,7 @@ const Header = () => {
 
                 {showMobileNav && <div className="mobile_navbar">
                     <ul>
-                    <a href="#main_banner" className={urlCheck.hash === "#main_banner" && "active_navLink"}><li>Home</li></a>
+                    <a href="#main_banner" className={urlCheck.hash === "#main_banner " && "active_navLink"}><li>Home</li></a>
                           
                           <a href="#howItWork"className={urlCheck.hash === "#howItWork" && "active_navLink"}><li>How It Work</li></a>
                           <a href="#feedback" className={urlCheck.hash === "#feedback" && "active_navLink"}><li>Feedback</li></a>

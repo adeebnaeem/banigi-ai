@@ -251,7 +251,8 @@ button {
   -webkit-appearance: none;
   width: 25px;
   height: 25px;
-  border: 2px solid #C79952;
+  border: 1px solid #C79952;
+  border-radius: 4px;
   cursor: pointer;
   position: relative;
 }
@@ -387,8 +388,10 @@ button {
   max-width: fit-content;
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv p {
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 24px;
+  font-weight: 500;
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv p span {
   color: #C79952;
@@ -414,11 +417,13 @@ button {
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .LoginForm form input::-moz-placeholder {
   color: white;
   font-size: 12px;
+  font-weight: 400;
   font-family: "Lato", sans-serif;
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .LoginForm form input::placeholder {
   color: white;
   font-size: 12px;
+  font-weight: 400;
   font-family: "Lato", sans-serif;
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .LoginForm form .passwordField {
@@ -426,18 +431,18 @@ button {
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .LoginForm form .eyeIcon {
   right: 12px;
-  top: 10px;
+  top: 12px;
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 22px;
   cursor: pointer;
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .LoginForm form span {
-  font-weight: 250;
+  font-weight: 400;
   font-size: 14px;
   font-family: "Lato", sans-serif;
   text-align: right;
   cursor: pointer;
+  opacity: 0.6;
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .LoginForm form button {
   margin-top: 20px;
@@ -447,14 +452,18 @@ button {
   display: flex;
   justify-content: center;
   font-family: "Lato", sans-serif;
-  font-weight: 250;
+  font-weight: 400;
   font-size: 14px;
+  opacity: 60%;
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .loginTextCenter span {
+  font-family: "Lato", sans-serif;
   font-weight: 500;
   color: white;
+  font-size: 14px;
   margin-left: 4px;
   cursor: pointer;
+  opacity: 100%;
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .socialLogin {
   margin-top: 20px;
@@ -491,6 +500,8 @@ button {
   padding-bottom: 20px;
   overflow-y: scroll;
   z-index: 10;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none;
 }
 .legalModalContainer .legalModalDiv {
   background-color: white;
@@ -512,12 +523,28 @@ button {
   align-items: center;
   margin-bottom: 30px;
 }
+.legalModalContainer .legalModalDiv .modalHeader h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
 .legalModalContainer .legalModalDiv .modalHeader img {
   cursor: pointer;
 }
 .legalModalContainer .legalModalDiv .modalText p {
-  margin: 15px 0px;
+  margin: 20px 0px;
   text-align: justify;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24.38px;
+}
+.legalModalContainer .legalModalDiv .modalText span {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24.38px;
+}
+
+.legalModalContainer::-webkit-scrollbar {
+  display: none;
 }
 
 .dash_CustomDesign {
@@ -1382,7 +1409,7 @@ button {
 }
 .footer_Section .footer_right {
   width: 60%;
-  max-width: 601px;
+  max-width: 620px;
   display: flex;
   gap: 80px;
 }
@@ -1406,12 +1433,17 @@ button {
   }
 }
 .footer_Section .footer_right h5 {
-  font-size: 18px;
+  font-weight: 500;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
   margin-bottom: 20px;
+  line-height: 24px;
 }
 .footer_Section .footer_right ul li {
   cursor: pointer;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 18px;
 }
 .footer_Section .footer_right ul li:hover {
   color: #C79952;
@@ -1442,7 +1474,7 @@ nav .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 4rem;
+  padding: 13px 4rem;
 }
 @media (max-width: 576px) {
   nav .navbar {
@@ -1496,7 +1528,7 @@ nav .navbar .nav_button {
 nav .navbar .nav_button .login_btn {
   background: transparent;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
 }
 @media (max-width: 1200px) {
   nav .navbar .nav_button .login_btn {
@@ -1506,9 +1538,9 @@ nav .navbar .nav_button .login_btn {
 nav .navbar .nav_button .getStarted_btn {
   background-color: #C79952;
   color: white;
-  padding: 10px;
-  border-radius: 10px;
-  font-size: 16px;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 18px;
 }
 @media (max-width: 768px) {
   nav .navbar .nav_button .getStarted_btn {
@@ -1717,7 +1749,7 @@ a:active {
 }
 
 .HowItWorkDiv {
-  padding: 70px 70px 10px 70px;
+  padding: 70px 70px 0px 70px;
   background-color: #43484B;
   color: white;
 }
@@ -2093,7 +2125,7 @@ a:active {
 }
 
 .pricing_section {
-  background-color: #43484B;
+  background-color: #343A45;
   color: white;
   padding: 100px 0px;
 }
@@ -2326,7 +2358,13 @@ a:active {
   margin-bottom: 30px;
 }
 .contactUsContainner .contactusDiv .contactUsRight .contactForm form .submitBtn {
-  padding: 35px;
+  padding: 15px;
+  min-height: 70px;
+  background-color: #C79952;
+  color: white;
+  font-weight: 500;
+  border-radius: 10px;
+  font-size: 20px;
 }
 
 .dashboard_container {
