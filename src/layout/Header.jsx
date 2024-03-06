@@ -23,11 +23,18 @@ const Header = () => {
         setShowLoginModal(false);
     };
 
-    const closeModal = () => {
+    const closeModal=()=>{
         setShowLoginModal(false);
-        // setShowSignupModal(false);
+        setShowSignupModal(false);
+    }
+    const closeLoginModal = () => {
+        setShowLoginModal(false);
+        setShowSignupModal(true);
     };
-
+    const closeSignupModal=()=>{
+        setShowLoginModal(true);
+        setShowSignupModal(false);
+    }
 
     return (
         <>
@@ -74,9 +81,9 @@ const Header = () => {
 
                     </ul>
                     <button className='login_btn' onClick={openLoginModal}>Login</button>
-                    {showLoginModal && <LoginModal closeModal={closeModal} />}
+                    {showLoginModal && <LoginModal  closeLoginModal={closeLoginModal}/>}
                     <button className='getStarted_btn' onClick={openSignupModal}>Get Started</button>
-                    {showSignupModal && <SignupModal closeModal={closeModal} />}
+                    {showSignupModal && <SignupModal  closeSignupModal={closeSignupModal}/>}
                 </div>}
 
             </nav>

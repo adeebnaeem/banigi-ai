@@ -18,9 +18,11 @@ const LoginModal = ({ closeModal }) => {
     const [password, setPassword] = useState("");
     const [type, setType] = useState('password');
     const [icon, setIcon] = useState(eyeClose);
+    
     const [showLoginModal, setShowLoginModal] = useState(false);
 
     const [showSignupModal, setShowSignupModal] = useState(false);
+    
     const openLoginModal = () => {
         setShowLoginModal(true);
         setShowSignupModal(false);
