@@ -25,7 +25,7 @@ const Header = () => {
 
     const closeModal = () => {
         setShowLoginModal(false);
-        setShowSignupModal(false);
+        // setShowSignupModal(false);
     };
 
 
