@@ -14,27 +14,15 @@ const Header = () => {
 
     const urlCheck=useLocation();
     const openLoginModal = () => {
-        setShowLoginModal(true);
         setShowSignupModal(false);
-    };
-
+        setShowLoginModal(true);}
     const openSignupModal = () => {
-        setShowSignupModal(true);
         setShowLoginModal(false);
-    };
-
-    const closeModal=()=>{
+        setShowSignupModal(true);}
+    const closeModal = () => {
         setShowLoginModal(false);
         setShowSignupModal(false);
-    }
-    const closeLoginModal = () => {
-        setShowLoginModal(false);
-        setShowSignupModal(true);
     };
-    const closeSignupModal=()=>{
-        setShowLoginModal(true);
-        setShowSignupModal(false);
-    }
 
     return (
         <>
@@ -60,9 +48,9 @@ const Header = () => {
 
                     <div className="nav_button">
                         <button className='login_btn' onClick={openLoginModal}>Login</button>
-                        {showLoginModal && <LoginModal closeModal={closeModal} />}
+                        {showLoginModal && <LoginModal closeModal={closeModal} openSignupModal={openSignupModal}/>}
                         <button className='getStarted_btn' onClick={openSignupModal}>Get Started</button>
-                        {showSignupModal && <SignupModal closeModal={closeModal} />}
+                        {showSignupModal && <SignupModal closeModal={closeModal} openLoginModal={openLoginModal}/>}
                         <img src={mobileMenu} alt="" className='mobilemenu' onClick={() => { setShowMobileNav(!showMobileNav) }} />
                     </div>
 
@@ -81,9 +69,9 @@ const Header = () => {
 
                     </ul>
                     <button className='login_btn' onClick={openLoginModal}>Login</button>
-                    {showLoginModal && <LoginModal  closeLoginModal={closeLoginModal}/>}
+                    {showLoginModal && <LoginModal  closeModal={closeModal}/>}
                     <button className='getStarted_btn' onClick={openSignupModal}>Get Started</button>
-                    {showSignupModal && <SignupModal  closeSignupModal={closeSignupModal}/>}
+                    {showSignupModal && <SignupModal  closeModal={closeModal}/>}
                 </div>}
 
             </nav>

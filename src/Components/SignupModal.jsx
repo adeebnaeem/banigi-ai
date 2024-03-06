@@ -11,7 +11,7 @@ import modalClose from "../assets/modalClose.png"
 import eyeOpen from "../assets/eyeOpen.png";
 import eyeClose from "../assets/eyeClose.png";
 
-const SignupModal = ({ closeModal }) => {
+const SignupModal = ({ closeModal,openLoginModal }) => {
     const [password, setPassword] = useState("");
     const [Confirmpassword, setConfirmPassword] = useState("");
     const [passwordType, setPasswordType] = useState('password');
@@ -95,7 +95,7 @@ const SignupModal = ({ closeModal }) => {
                                     <img src={appleLogin} alt="" />
                                 </div>
 
-                                <p className='dha_line'><span className='loginTextCenter2'>Already have an account ? </span><span>Login</span> </p>
+                                <p className='dha_line'><span className='loginTextCenter2'>Already have an account ? </span><span onClick={openLoginModal}>Login</span> </p>
 
                             </div>
                         </div>

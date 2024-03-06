@@ -13,25 +13,18 @@ import eyeClose from "../assets/eyeClose.png";
 import SignupModal from '../Components/SignupModal';
 
 
-const LoginModal = ({ closeModal }) => {
+const LoginModal = ({closeModal ,openSignupModal}) => {
 
     const [password, setPassword] = useState("");
     const [type, setType] = useState('password');
     const [icon, setIcon] = useState(eyeClose);
     
-    const [showLoginModal, setShowLoginModal] = useState(false);
+   
+    
+  
+  
+    
 
-    const [showSignupModal, setShowSignupModal] = useState(false);
-    
-    const openLoginModal = () => {
-        setShowLoginModal(true);
-        setShowSignupModal(false);
-    };
-    
-    const openSignupModal = () => {
-        setShowSignupModal(true);
-    
-    };
     const handleToggle = () => {
         if (type === 'password') {
             setIcon(eyeOpen);
@@ -89,8 +82,7 @@ const LoginModal = ({ closeModal }) => {
                                     <img src={appleLogin} alt="" />
                                 </div>
 
-                                <p className='dha_line'><span className='loginTextCenter2'>Dont have an account ? </span><span onClick={()=>{openSignupModal();closeModal()}}> Signup</span> </p>
-                                {showSignupModal && <SignupModal />}
+                                <p className='dha_line'><span className='loginTextCenter2'>Dont have an account ? </span><span onClick={openSignupModal}> Signup</span> </p>
 
                             </div>
                         </div>
