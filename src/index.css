@@ -474,6 +474,7 @@ button {
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .dha_line .loginTextCenter2 {
   opacity: 60%;
+  margin-right: 3px;
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .socialLogin {
   margin-top: 20px;
