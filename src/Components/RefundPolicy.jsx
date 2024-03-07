@@ -21,14 +21,14 @@ const RefundPolicy = ({closeModal}) => {
 
             </p>
 
-            <span>Exceptions
+            <span className='policySubHeading'>Exceptions
             </span>
 
             <p>Refunds may not be provided if more than 7 days have passed since the purchase, if the service has been extensively used (over 100 designs generated), if proof of purchase is unavailable, or if the customer violates our terms of service.
 
             </p>
 
-            <span>Changes to this Refund Policy
+            <span className='policySubHeading'>Changes to this Refund Policy
 
             </span>
             <p>This refund policy is subject to change without notice.

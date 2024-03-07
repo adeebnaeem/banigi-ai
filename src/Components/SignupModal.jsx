@@ -62,7 +62,7 @@ const SignupModal = ({ closeModal,openLoginModal }) => {
 
                                 <div className="LoginForm">
                                     <form action="">
-                                        <input type="text" placeholder='Email/Phone Number' />
+                                        <input type="text" placeholder='Email / Phone Number' />
                                         <div className="passwordField">
                                             <input type={passwordType}
                                                 name="password"
@@ -80,7 +80,6 @@ const SignupModal = ({ closeModal,openLoginModal }) => {
                                                 autoComplete="current-password" />
                                             <img src={confirmPasswordIcon} alt="" onClick={handleToggleConfirmPassword} className='eyeIcon' />
                                         </div>
-                                        <span>Forgot Password?</span>
 
                                         <Link to="/dashboard/interiorDesign">  <PrimaryButton text="Sign Up" /></Link>
 
@@ -95,7 +94,7 @@ const SignupModal = ({ closeModal,openLoginModal }) => {
                                     <img src={appleLogin} alt="" />
                                 </div>
 
-                                <p className='dha_line'><span className='loginTextCenter2'>Already have an account ? </span><span onClick={openLoginModal}>Login</span> </p>
+                                <p className='dha_line'><span className='loginTextCenter2'>Already have an account? </span><span onClick={openLoginModal}>Login</span> </p>
 
                             </div>
                         </div>

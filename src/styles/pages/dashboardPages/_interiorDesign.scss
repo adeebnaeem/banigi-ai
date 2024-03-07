@@ -1,7 +1,7 @@
 .dash_InteriorDesign {
     margin-top: 30px;
 
-    h3{
+    h3 {
         font-size: 24px;
         font-weight: 500;
     }
@@ -12,52 +12,30 @@
             position: relative;
             display: flex;
             justify-content: space-between;
-            @include largeScreen{
+            @include largeScreen {
                 flex-direction: column;
             }
-           >div {
+            > div {
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
                 flex-wrap: wrap;
                 flex-basis: calc(33.33% - 20px);
-            .css-6mpch8-control{
-                padding: 25px 30px;
-                border: none;
-                    font-size: 16px;
-                    border-radius: 8px;
-                    background-color: $secondary;
-                    cursor: pointer;
-                    color: white;
-                    margin-bottom: 20px;
+
+            
+                .css-ibfo6y-control {
                     outline: none;
-                    
-                    .css-1dimb5e-singleValue{
-                        color: white;
-                    }
-            }
-                // .custom-select {
-                //     appearance: none;
-                //     -webkit-appearance: none;
-                //     -moz-appearance: none;
-                //     padding: 25px 30px;
-                //     border: none;
-                //     font-size: 16px;
-                //     border-radius: 8px;
-                //     background-color: $secondary;
-                //     background-image: url('data:image/svg+xml;utf8,<svg width="10" height="18"  viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 1.80249L9 9.30249L1.5 16.8025" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
-                //     background-repeat: no-repeat;
-                //     background-position: right 20px center;
-                //     cursor: pointer;
-                //     color: white;
-                //     margin-bottom: 20px;
-                //     outline: none;
-                // }
-                label{
+                    box-shadow: unset;
+                }
+                .react-select__dropdown-indicator,
+                .react-select__indicator-separator {
+                    display: none;
+                }
+                label {
                     font-size: 20px;
                     font-weight: 600;
                 }
-            
+
                 .intervation_radio {
                     display: flex;
                     flex-direction: row;
@@ -74,11 +52,12 @@
                         transform: translateX(-50%);
                         height: 5px;
 
-                        width: 80%;
+                        width: 88%;
                         background-color: white;
                     }
 
                     div {
+                        
                         z-index: 3;
 
                         position: relative;
@@ -100,7 +79,7 @@
                                 background-color: $accent;
                             }
                         }
-                        label{
+                        label {
                             margin-top: 20px;
                             font-size: 14px;
                             font-weight: 400;
@@ -116,6 +95,7 @@
         .dash_interiorDesignThird {
             display: flex;
             justify-content: space-between;
+            margin-top: 15px;
             .customAiIntervationForm {
                 display: flex;
                 flex-direction: column;
@@ -123,7 +103,7 @@
                 flex-wrap: wrap;
                 flex-basis: calc(33.33% - 20px);
 
-                @include largeScreen{
+                @include largeScreen {
                     flex-basis: calc(100%);
                 }
 
@@ -149,7 +129,7 @@
                             background-size: 75%;
                         }
                     }
-                    label{
+                    label {
                         font-size: 20px;
                         font-weight: 600;
                     }
@@ -170,7 +150,6 @@
                     font-weight: 400;
                     color: rgb(255, 255, 255) !important;
                     font-family: "Lato", sans-serif;
-
                 }
             }
         }
@@ -180,17 +159,16 @@
             max-width: 840px;
             margin: 40px auto;
             height: 399px;
-            @include bigScreen{
+            @include bigScreen {
                 width: 90%;
             }
-            @include largeScreen{
+            @include largeScreen {
                 height: 300px;
             }
-            @include mediumScreen{
+            @include mediumScreen {
                 flex-direction: column;
                 height: 700px;
                 width: 100%;
-                
             }
             .interiorDesignFile {
                 width: 50%;
@@ -202,7 +180,7 @@
                 border-bottom-left-radius: 25px;
                 position: relative;
                 background-color: $secondary;
-                .uploadedImage{
+                .uploadedImage {
                     width: 100%;
                     height: 100%;
                     object-fit: contain;
@@ -216,7 +194,7 @@
                     font-size: 16px;
                     text-align: center;
                     font-weight: 400;
-                    svg{    
+                    svg {
                         min-width: 21.5px;
                     }
                 }
@@ -233,24 +211,23 @@
                     opacity: 0;
                     cursor: pointer;
                 }
-                @include mediumScreen{
+                @include mediumScreen {
                     width: 100%;
                     height: 50%;
                     border-top-right-radius: 25px;
                     border-bottom-left-radius: 0px;
-
                 }
             }
             .interiorDesignFileImg {
                 width: 50%;
-                background: #6A7074;
-                
+                background: #6a7074;
+
                 border-top-right-radius: 25px;
                 border-bottom-right-radius: 25px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                @include mediumScreen{
+                @include mediumScreen {
                     width: 100%;
                     border-top-right-radius: 0px;
                     border-bottom-left-radius: 25px;
@@ -259,21 +236,20 @@
             }
         }
 
-        .InteriorDesignBtn{
+        .InteriorDesignBtn {
             display: flex;
             justify-content: center;
             margin-bottom: 100px;
-            button{
+            button {
                 padding: 30px 0px;
                 width: 450px;
                 font-weight: 500;
                 font-size: 20px;
             }
 
-            @include mediumScreen{
+            @include mediumScreen {
                 margin-bottom: 150px;
             }
         }
     }
 }
-

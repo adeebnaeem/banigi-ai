@@ -460,14 +460,6 @@ button {
   font-size: 14px;
   opacity: 60%;
 }
-.ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .loginTextCenter span {
-  font-family: "Lato", sans-serif;
-  font-weight: 500;
-  color: white;
-  font-size: 14px;
-  margin-left: 4px;
-  cursor: pointer;
-}
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .dha_line {
   display: flex;
   justify-content: center;
@@ -478,7 +470,7 @@ button {
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .dha_line .loginTextCenter2 {
   opacity: 60%;
-  margin-right: 3px;
+  margin-right: 6px;
   cursor: text;
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .dha_line span {
@@ -560,6 +552,9 @@ button {
   font-weight: 600;
   font-size: 20px;
   line-height: 24.38px;
+}
+.legalModalContainer .legalModalDiv .modalText .policySubHeading {
+  font-weight: 400;
 }
 
 .legalModalContainer::-webkit-scrollbar {
@@ -772,16 +767,16 @@ button {
     flex-direction: column;
   }
 }
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst div,
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond div {
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst > div,
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond > div {
   display: flex;
   flex-direction: column;
   gap: 20px;
   flex-wrap: wrap;
   flex-basis: calc(33.33% - 20px);
 }
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst div .custom-select,
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond div .custom-select {
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst > div .custom-select,
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond > div .custom-select {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -797,21 +792,21 @@ button {
   color: white;
   margin-bottom: 20px;
 }
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst div label,
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond div label {
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst > div label,
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond > div label {
   font-size: 20px;
   font-weight: 600;
 }
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst div .intervation_radio,
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond div .intervation_radio {
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst > div .intervation_radio,
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond > div .intervation_radio {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   position: relative;
   flex-wrap: nowrap;
 }
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst div .intervation_radio::after,
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond div .intervation_radio::after {
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst > div .intervation_radio::after,
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond > div .intervation_radio::after {
   content: "";
   position: absolute;
   top: 13%;
@@ -821,8 +816,8 @@ button {
   width: 80%;
   background-color: white;
 }
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst div .intervation_radio div,
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond div .intervation_radio div {
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst > div .intervation_radio div,
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond > div .intervation_radio div {
   z-index: 3;
   position: relative;
   display: flex;
@@ -830,8 +825,8 @@ button {
   flex-direction: column;
   gap: 5px;
 }
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst div .intervation_radio div input,
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond div .intervation_radio div input {
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst > div .intervation_radio div input,
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond > div .intervation_radio div input {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -842,19 +837,19 @@ button {
   cursor: pointer;
   background-color: #43484B;
 }
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst div .intervation_radio div input:checked,
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond div .intervation_radio div input:checked {
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst > div .intervation_radio div input:checked,
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond > div .intervation_radio div input:checked {
   background-color: #C79952;
 }
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst div .intervation_radio div label,
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond div .intervation_radio div label {
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst > div .intervation_radio div label,
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond > div .intervation_radio div label {
   font-family: "Lato", sans-serif;
   margin-top: 20px;
   font-size: 14px;
   font-weight: 400;
 }
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst div .intervation_radio div:last-child::after,
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond div .intervation_radio div:last-child::after {
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst > div .intervation_radio div:last-child::after,
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond > div .intervation_radio div:last-child::after {
   display: none;
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst .customAiIntervationForm,
@@ -1046,21 +1041,16 @@ button {
   flex-wrap: wrap;
   flex-basis: calc(33.33% - 20px);
 }
-.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst > div .css-6mpch8-control,
-.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond > div .css-6mpch8-control {
-  padding: 25px 30px;
-  border: none;
-  font-size: 16px;
-  border-radius: 8px;
-  background-color: #43484B;
-  cursor: pointer;
-  color: white;
-  margin-bottom: 20px;
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst > div .css-ibfo6y-control,
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond > div .css-ibfo6y-control {
   outline: none;
+  box-shadow: unset;
 }
-.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst > div .css-6mpch8-control .css-1dimb5e-singleValue,
-.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond > div .css-6mpch8-control .css-1dimb5e-singleValue {
-  color: white;
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst > div .react-select__dropdown-indicator,
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst > div .react-select__indicator-separator,
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond > div .react-select__dropdown-indicator,
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond > div .react-select__indicator-separator {
+  display: none;
 }
 .dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst > div label,
 .dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond > div label {
@@ -1083,7 +1073,7 @@ button {
   left: 50%;
   transform: translateX(-50%);
   height: 5px;
-  width: 80%;
+  width: 88%;
   background-color: white;
 }
 .dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst > div .intervation_radio div,
@@ -1124,6 +1114,7 @@ button {
 .dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignThird {
   display: flex;
   justify-content: space-between;
+  margin-top: 15px;
 }
 .dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignThird .customAiIntervationForm {
   display: flex;
@@ -1258,7 +1249,7 @@ button {
 }
 .dash_InteriorDesign .dash_interiorDesignForm .interiorDesignFileDiv .interiorDesignFileImg {
   width: 50%;
-  background: #6A7074;
+  background: #6a7074;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   display: flex;

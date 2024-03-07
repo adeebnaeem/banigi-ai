@@ -57,7 +57,7 @@ const LoginModal = ({closeModal ,openSignupModal}) => {
 
                                 <div className="LoginForm">
                                     <form action="">
-                                        <input type="text" placeholder='Email/Phone Number' />
+                                        <input type="text" placeholder='Email / Phone Number' />
                                         <div className="passwordField">
                                             <input type={type}
                                                 name="password"
@@ -82,7 +82,7 @@ const LoginModal = ({closeModal ,openSignupModal}) => {
                                     <img src={appleLogin} alt="" />
                                 </div>
 
-                                <p className='dha_line'><span className='loginTextCenter2'>Dont have an account ? </span><span onClick={openSignupModal}> Signup</span> </p>
+                                <p className='dha_line'><span className='loginTextCenter2'>Don’t have an account? </span><span onClick={openSignupModal}> Signup</span> </p>
 
                             </div>
                         </div>

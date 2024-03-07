@@ -1,9 +1,16 @@
 import React, { useState } from 'react'
 import PrimaryButton from '../../../Components/PrimaryButton';
 import Select from 'react-select'
-
-
-
+import boho from '../../../assets/boho.png'
+import desertChic from "../../../assets/desertChic.png"
+import earthyForest from "../../../assets/earthyForest.png"
+import highContrast from "../../../assets/highContrast.png"
+import jewel from "../../../assets/jewel.png"
+import Natural from "../../../assets/Natural.png"
+import none from "../../../assets/none.png"
+import relaxed from "../../../assets/relaxed.png"
+import warmEarth from "../../../assets/warmEarth.png"
+import customStyles from '../../../Components/selectCustomStyle';
 
 const InteriorDesign = () => {
 
@@ -11,14 +18,54 @@ const InteriorDesign = () => {
   function getFile(event) {
     setFile(URL.createObjectURL(event.target.files[0]))
   }
-  const flavourOptions = [
-    { value: 'vanilla', label: 'Vanilla', rating: 'safe' },
-    { value: 'chocolate', label: 'Chocolate', rating: 'good' },
-    { value: 'strawberry', label: 'Strawberry', rating: 'wild' },
-    { value: 'salted-caramel', label: 'Salted Caramel', rating: 'crazy' },
+ 
+  const InteriorOptions = [
+    { value: 'Bath Room', label: 'Bath Room' },
+    { value: 'Bed Room', label: 'Bed Room' },
+    { value: 'Dining Room', label: 'Dining Room'},
+    { value: 'Hallway', label: 'Hallway' },
+    { value: 'Kids Room', label: 'Kids Room' },
+    { value: 'Kitchen', label: 'Kitchen' },
+    { value: 'Living Room', label: 'Living Room'},
+    { value: 'Office', label: 'Office' },
   ];
 
+  const ModeOptions=[
+    {value:'Beautiful Redesign',label:'Beautiful Redesign'},
+    {value:'Creative Redesign',label:'Creative Redesign'},
+    {value:'Fill The Room',label:'Fill The Room'},
+  ];
 
+  const styleOptions=[
+{value:'Classic',label:'classic'},
+  ];
+
+  const colourOptions = [
+    { value: 'Boho', label: 'Boho', image: boho },
+    { value: 'Desert Chic', label: 'Desert', image: desertChic },
+    { value: 'Earthy Forest', label: 'Earthy Forest', image: earthyForest },
+    { value: 'High contrast', label: 'High contrast', image: highContrast },
+    { value: 'Jewel', label: 'Jewel', image: jewel},
+    { value: 'Natural', label: 'Natural', image: Natural },
+    { value: 'Relaxed', label: 'Relaxed', image: relaxed },
+    { value: 'Warm Earth', label: 'Warm Earth', image: warmEarth },
+    { value: 'None', label: 'None', image: none },  ];
+
+
+    const NumberOfDesignOptions=[
+      {value:'1',label:'1'},
+      {value:'2',label:'2'},
+      {value:'3',label:'3'},
+      {value:'4',label:'4'},
+      {value:'5',label:'5'},
+    ];
+  const renderOption = (option) => (
+    <div style={{display:'flex',justifyContent:'space-between',alignItems:'center'}}>
+     
+      <span>{option.label}</span>
+      <img src={option.image} alt={option.value} style={{ width: 'fit-content', marginRight:'15px' }} />
+    </div>
+  );
   return (
     <>
       <div className="dash_InteriorDesign">
@@ -33,68 +80,65 @@ const InteriorDesign = () => {
                
                className="react-select-container"
                classNamePrefix="react-select"
-                defaultValue={flavourOptions[2]}
-                options={flavourOptions}
-                theme={(theme) => ({
-                  ...theme,
-                  borderRadius: 8,
-                  colors: {
-                    ...theme.colors,
-                    primary25: '#C79952',
-                    primary: '#C79952',
-                    neutral0: '#43484B'
-                  },
-                })}
+               defaultValue={InteriorOptions[0]}
+               options={InteriorOptions}
+               styles={customStyles}
+               isSearchable={false}
               />
-              {/* <option value="">Bath Room</option>
-                <option value="">Bed Room</option>
-                <option value="">Dining Room</option>
-                <option value="">Hallway</option>
-                <option value="">Kids Room</option>
-                <option value="">Kitchen</option>
-                <option value="">Living Room</option>
-                <option value="">Office</option> */}
+         
 
             </div>
             <div>
               <label htmlFor="">Mode</label>
-              <select name="" id="" className="custom-select">
-                <option value="">Beautiful Redesign</option>
-                <option value="">Creative Redesign</option>
-                <option value="">Fill The Room</option>
-              </select>
+              <Select
+               
+               className="react-select-container"
+               classNamePrefix="react-select"
+               defaultValue={ModeOptions[0]}
+               options={ModeOptions}
+               styles={customStyles}
+               isSearchable={false}
+              />
             </div>
             <div>
               <label htmlFor="">Style</label>
-              <select name="" id="" className="custom-select">
-                <option value="">Classic </option>
-              </select>
+              <Select
+               
+               className="react-select-container"
+               classNamePrefix="react-select"
+                defaultValue={styleOptions[0]}
+                options={styleOptions}
+                styles={customStyles}
+                isSearchable={false}
+              />
             </div>
           </div>
           <div className="dash_interiorDesignSecond">
             <div>
               <label htmlFor="">Color</label>
-              <select name="" id="" className="custom-select">
-                <option value="">Boho </option>
-                <option value="">Desert Chic</option>
-                <option value="">Earthy Forest</option>
-                <option value="">High Contrast</option>
-                <option value="">Jewel </option>
-                <option value="">Natural</option>
-                <option value="">Relaxed</option>
-                <option value="">Warm Earth</option>
-                <option value="">None</option>
-              </select>
+              <Select
+               
+               className="react-select-container"
+               classNamePrefix="react-select"
+                defaultValue={colourOptions[0]}
+                options={colourOptions}
+                styles={customStyles}
+                isSearchable={false}
+                getOptionLabel={(option) => renderOption(option)}
+                getOptionValue={(option) => option.value}
+              />
             </div>
             <div>
               <label htmlFor="">Number Of Designs</label>
-              <select name="" id="" className="custom-select">
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
-                <option value="">4</option>
-                <option value="">5</option>
-              </select>
+              <Select
+               
+               className="react-select-container"
+               classNamePrefix="react-select"
+                defaultValue={NumberOfDesignOptions[0]}
+                options={NumberOfDesignOptions}
+                styles={customStyles}
+                isSearchable={false}
+              />
             </div>
             <div>
               <label htmlFor="">AI Intervention</label>

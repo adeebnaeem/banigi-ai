@@ -1,10 +1,33 @@
 import React, { useState } from "react";
+import Select from 'react-select'
 import PrimaryButton from "../../../Components/PrimaryButton";
+
+
 const ExteriorDesign = () => {
   const [file, setFile] = useState("");
   function getFile(event) {
     setFile(URL.createObjectURL(event.target.files[0]))
   }
+
+  const exteriorOptions=[
+    {value:'House Front',label:'House Front'},
+    
+  ];
+  const ModeOptions=[
+    {value:'Beautiful Redesign',label:'Beautiful Redesign'},
+    {value:'Creative Redesign',label:'Creative Redesign'},
+    {value:'Fill The Room',label:'Fill The Room'},
+  ];
+  const styleOptions=[
+{value:'',label:''}
+  ];
+  const NumberOfDesignOptions=[
+    {value:'1',label:'1'},
+    {value:'2',label:'2'},
+    {value:'3',label:'3'},
+    {value:'4',label:'4'},
+    {value:'5',label:'5'},
+  ];
   return (
     <>
       <div className="dash_ExteriorDesign">

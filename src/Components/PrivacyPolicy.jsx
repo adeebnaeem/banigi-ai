@@ -19,27 +19,27 @@ const PrivacyPolicy = ({ closeModal }) => {
               Information We Collect
             </p>
 
-            <span>Use of Personal Information</span>
+            <span className='policySubHeading'>Use of Personal Information</span>
 
             <p>We utilize the personal information we collect to maintain and enhance our website and services. We may also use it to send you promotional materials or updates.
               Sharing of Personal Information
               We may share your personal information with third parties, such as service providers, to facilitate our services or as required by law.
             </p>
 
-            <span>Security of Personal Information</span>
+            <span className='policySubHeading'>Security of Personal Information</span>
             <p>We employ reasonable measures to protect your personal information from unauthorized access, use, or disclosure. However, we cannot guarantee absolute security.
               Cookies and Other Technologies
               We utilize cookies and similar technologies to enhance your browsing experience and gather information about website usage.
             </p>
-            <span>Links to Other Websites
+            <span className='policySubHeading'>Links to Other Websites
             </span>
             <p>Our website may contain links to third-party websites, whose privacy practices may differ from ours. This privacy policy applies solely to information collected by our website.
             </p>
-            <span>Changes to this Privacy Policy
+            <span className='policySubHeading'>Changes to this Privacy Policy
             </span>
             <p>We may update this privacy policy periodically. Any changes will be communicated by posting the revised policy on our website.
             </p>
-            <span>
+            <span className='policySubHeading'>
               Contact Us
             </span>
             <p>If you have any questions or concerns regarding our privacy policy, please contact us at https://BanigiAI.reamaze.com.
