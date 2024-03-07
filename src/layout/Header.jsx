@@ -73,9 +73,9 @@ const Header = () => {
 
                     </ul>
                     <button className='login_btn' onClick={openLoginModal}>Login</button>
-                    {showLoginModal && <LoginModal  closeModal={closeModal}/>}
+                    {showLoginModal && <LoginModal  closeModal={closeModal}  openSignupModal={openSignupModal}/>}
                     <button className='getStarted_btn' onClick={openSignupModal}>Get Started</button>
-                    {showSignupModal && <SignupModal  closeModal={closeModal}/>}
+                    {showSignupModal && <SignupModal  closeModal={closeModal} openLoginModal={openLoginModal}/>}
                 </div>}
 
             </nav>

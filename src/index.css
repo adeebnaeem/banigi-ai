@@ -260,7 +260,7 @@ button {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23C79952" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: 75%;
 }
 .tryDesignFormDiv form .selectOptionDiv .customAiIntervationForm textarea {
   background-color: #576072;
@@ -884,7 +884,7 @@ button {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23C79952" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: 75%;
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst .customAiIntervationForm textarea,
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond .customAiIntervationForm textarea {
@@ -1157,7 +1157,7 @@ button {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23C79952" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: 75%;
 }
 .dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignThird .customAiIntervationForm .customAiIntervationLabel label {
   font-size: 20px;
@@ -2174,7 +2174,8 @@ a:active {
 .pricing_section {
   background-color: #343A45;
   color: white;
-  padding: 100px 0px;
+  padding-top: 100px;
+  padding-bottom: 30px;
 }
 .pricing_section .pricingDiv {
   width: 90%;
