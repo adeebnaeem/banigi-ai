@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Select from 'react-select'
 import PrimaryButton from "../../../Components/PrimaryButton";
+import customStyles from '../../../Components/selectCustomStyle';
 
 
 const ExteriorDesign = () => {
@@ -11,7 +12,10 @@ const ExteriorDesign = () => {
 
   const exteriorOptions=[
     {value:'House Front',label:'House Front'},
-    
+    {value:'Pond',label:'Pond'},
+    {value:'Outdoor Pool',label:'Outdoor Pool'},
+    {value:'Outdoor patio',label:'Outdoor patio'},
+    {value:'Garden',label:'Garden'},
   ];
   const ModeOptions=[
     {value:'Beautiful Redesign',label:'Beautiful Redesign'},
@@ -37,13 +41,15 @@ const ExteriorDesign = () => {
           <div className="dash_ExteriorDesignFirst">
             <div>
               <label htmlFor="">Exterior Type</label>
-              <select name="" id="" className="custom-select">
-                <option value="">House Front</option>
-                <option value="">Pond</option>
-                <option value="">Outdoor Pool</option>
-                <option value="">Outdoor patio</option>
-                <option value="">Garden</option>
-              </select>
+              <Select
+               
+               className="react-select-container"
+               classNamePrefix="react-select"
+               defaultValue={exteriorOptions[0]}
+               options={exteriorOptions}
+               styles={customStyles}
+               isSearchable={false}
+              />
             </div>
             <div>
               <label htmlFor="">Mode</label>

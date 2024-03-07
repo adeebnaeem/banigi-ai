@@ -775,22 +775,16 @@ button {
   flex-wrap: wrap;
   flex-basis: calc(33.33% - 20px);
 }
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst > div .custom-select,
-.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond > div .custom-select {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  padding: 25px 30px;
-  border: none;
-  font-size: 16px;
-  border-radius: 8px;
-  background-color: #43484B;
-  background-image: url('data:image/svg+xml;utf8,<svg width="10" height="18"  viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 1.80249L9 9.30249L1.5 16.8025" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
-  background-repeat: no-repeat;
-  background-position: right 20px center;
-  cursor: pointer;
-  color: white;
-  margin-bottom: 20px;
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst > div .css-ibfo6y-control,
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond > div .css-ibfo6y-control {
+  outline: none;
+  box-shadow: unset;
+}
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst > div .react-select__dropdown-indicator,
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst > div .react-select__indicator-separator,
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond > div .react-select__dropdown-indicator,
+.dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond > div .react-select__indicator-separator {
+  display: none;
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst > div label,
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignSecond > div label {
@@ -813,7 +807,7 @@ button {
   left: 50%;
   transform: translateX(-50%);
   height: 5px;
-  width: 80%;
+  width: 88%;
   background-color: white;
 }
 .dash_ExteriorDesign .dash_ExteriorDesignForm .dash_ExteriorDesignFirst > div .intervation_radio div,
