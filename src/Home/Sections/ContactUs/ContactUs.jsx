@@ -4,7 +4,7 @@ import PrimaryButton from "../../../Components/PrimaryButton";
 const ContactUs = () => {
   return (
     <>
-    <div className="contactUsContainner" id="contact_us">
+    <div className="contactUsContainner" >
 
     
       <div className="contactUsSection">
@@ -12,7 +12,7 @@ const ContactUs = () => {
           <span>Contact</span> Us
         </h3>
 
-        <div className="contactusDiv">
+        <div className="contactusDiv"id="contact_us">
           <div className="contactUsLeft">
             <img src={contactImg} alt="" />
             <p>

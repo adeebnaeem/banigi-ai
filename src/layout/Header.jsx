@@ -4,7 +4,7 @@ import mobileMenu from "../assets/mobileMenu.png"
 import LoginModal from '../Components/LoginModal';
 import SignupModal from '../Components/SignupModal';
 import { NavLink, Outlet, useLocation, useSearchParams } from "react-router-dom";
-
+import Scrollspy from 'react-scrollspy'
 
 const Header = () => {
 
@@ -35,14 +35,18 @@ const Header = () => {
 
                     <div className="nav_links">
                         <ul>
-                            
-                            <a href="#main_banner" className= {urlCheck.hash === "#main_banner" ? "active_navLink" : "active_navLink"}><li>Home</li></a>
+                            <Scrollspy
+                        items={['main_banner','howItWork','feedback','pricing','faq','contact_us']}
+                                currentClassName="active_navLink"
+                                >
+                            <a href="#main_banner" className= {urlCheck.hash === "" || urlCheck.hash==="#main_banner" ? "active_navLink": ""}><li>Home</li></a>
                           
-                            <a href="#howItWork"className={urlCheck.hash === "#howItWork" && "active_navLink"}><li>How It Work</li></a>
-                            <a href="#feedback" className={urlCheck.hash === "#feedback" && "active_navLink"}><li>Feedback</li></a>
-                            <a href="#pricing" className={urlCheck.hash === "#pricing" && "active_navLink"}><li>Pricing</li></a>
-                            <a href="#faq"className={urlCheck.hash === "#faq" && "active_navLink"}><li>Faq</li></a>
-                            <a href="#contact_us"className={urlCheck.hash === "#contact_us" && "active_navLink"}><li>Contact Us</li></a>
+                            <a href="#howItWork"className={urlCheck.hash === "#howItWork" ? "active_navLink":""}><li>How It Work</li></a>
+                            <a href="#feedback" className={urlCheck.hash === "#feedback" ?"active_navLink":""}><li>Feedback</li></a>
+                            <a href="#pricing" className={urlCheck.hash === "#pricing" ? "active_navLink":""}><li>Pricing</li></a>
+                            <a href="#faq"className={urlCheck.hash === "#faq"? "active_navLink":""}><li>Faq</li></a>
+                            <a href="#contact_us"className={urlCheck.hash === "#contact_us" ? "active_navLink":""}><li>Contact Us</li></a>
+                            </Scrollspy >
                         </ul>
                     </div>
 
