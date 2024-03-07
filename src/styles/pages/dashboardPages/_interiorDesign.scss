@@ -9,39 +9,55 @@
         margin-top: 60px;
         .dash_interiorDesignFirst,
         .dash_interiorDesignSecond {
+            position: relative;
             display: flex;
             justify-content: space-between;
             @include largeScreen{
                 flex-direction: column;
             }
-            div {
+           >div {
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
                 flex-wrap: wrap;
                 flex-basis: calc(33.33% - 20px);
-               
-                .custom-select {
-                    appearance: none;
-                    -webkit-appearance: none;
-                    -moz-appearance: none;
-                    padding: 25px 30px;
-                    border: none;
+            .css-6mpch8-control{
+                padding: 25px 30px;
+                border: none;
                     font-size: 16px;
                     border-radius: 8px;
                     background-color: $secondary;
-                    background-image: url('data:image/svg+xml;utf8,<svg width="10" height="18"  viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 1.80249L9 9.30249L1.5 16.8025" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
-                    background-repeat: no-repeat;
-                    background-position: right 20px center;
                     cursor: pointer;
                     color: white;
                     margin-bottom: 20px;
                     outline: none;
-                }
+                    
+                    .css-1dimb5e-singleValue{
+                        color: white;
+                    }
+            }
+                // .custom-select {
+                //     appearance: none;
+                //     -webkit-appearance: none;
+                //     -moz-appearance: none;
+                //     padding: 25px 30px;
+                //     border: none;
+                //     font-size: 16px;
+                //     border-radius: 8px;
+                //     background-color: $secondary;
+                //     background-image: url('data:image/svg+xml;utf8,<svg width="10" height="18"  viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 1.80249L9 9.30249L1.5 16.8025" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+                //     background-repeat: no-repeat;
+                //     background-position: right 20px center;
+                //     cursor: pointer;
+                //     color: white;
+                //     margin-bottom: 20px;
+                //     outline: none;
+                // }
                 label{
                     font-size: 20px;
                     font-weight: 600;
                 }
+            
                 .intervation_radio {
                     display: flex;
                     flex-direction: row;

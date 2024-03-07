@@ -1028,6 +1028,7 @@ button {
 }
 .dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst,
 .dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
@@ -1037,47 +1038,45 @@ button {
     flex-direction: column;
   }
 }
-.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst div,
-.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond div {
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst > div,
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond > div {
   display: flex;
   flex-direction: column;
   gap: 20px;
   flex-wrap: wrap;
   flex-basis: calc(33.33% - 20px);
 }
-.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst div .custom-select,
-.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond div .custom-select {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst > div .css-6mpch8-control,
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond > div .css-6mpch8-control {
   padding: 25px 30px;
   border: none;
   font-size: 16px;
   border-radius: 8px;
   background-color: #43484B;
-  background-image: url('data:image/svg+xml;utf8,<svg width="10" height="18"  viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 1.80249L9 9.30249L1.5 16.8025" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
-  background-repeat: no-repeat;
-  background-position: right 20px center;
   cursor: pointer;
   color: white;
   margin-bottom: 20px;
   outline: none;
 }
-.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst div label,
-.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond div label {
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst > div .css-6mpch8-control .css-1dimb5e-singleValue,
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond > div .css-6mpch8-control .css-1dimb5e-singleValue {
+  color: white;
+}
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst > div label,
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond > div label {
   font-size: 20px;
   font-weight: 600;
 }
-.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst div .intervation_radio,
-.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond div .intervation_radio {
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst > div .intervation_radio,
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond > div .intervation_radio {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   position: relative;
   flex-wrap: nowrap;
 }
-.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst div .intervation_radio::after,
-.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond div .intervation_radio::after {
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst > div .intervation_radio::after,
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond > div .intervation_radio::after {
   content: "";
   position: absolute;
   top: 13%;
@@ -1087,8 +1086,8 @@ button {
   width: 80%;
   background-color: white;
 }
-.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst div .intervation_radio div,
-.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond div .intervation_radio div {
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst > div .intervation_radio div,
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond > div .intervation_radio div {
   z-index: 3;
   position: relative;
   display: flex;
@@ -1096,8 +1095,8 @@ button {
   flex-direction: column;
   gap: 5px;
 }
-.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst div .intervation_radio div input,
-.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond div .intervation_radio div input {
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst > div .intervation_radio div input,
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond > div .intervation_radio div input {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -1108,18 +1107,18 @@ button {
   cursor: pointer;
   background-color: #43484B;
 }
-.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst div .intervation_radio div input:checked,
-.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond div .intervation_radio div input:checked {
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst > div .intervation_radio div input:checked,
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond > div .intervation_radio div input:checked {
   background-color: #C79952;
 }
-.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst div .intervation_radio div label,
-.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond div .intervation_radio div label {
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst > div .intervation_radio div label,
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond > div .intervation_radio div label {
   margin-top: 20px;
   font-size: 14px;
   font-weight: 400;
 }
-.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst div .intervation_radio div:last-child::after,
-.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond div .intervation_radio div:last-child::after {
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignFirst > div .intervation_radio div:last-child::after,
+.dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignSecond > div .intervation_radio div:last-child::after {
   display: none;
 }
 .dash_InteriorDesign .dash_interiorDesignForm .dash_interiorDesignThird {
