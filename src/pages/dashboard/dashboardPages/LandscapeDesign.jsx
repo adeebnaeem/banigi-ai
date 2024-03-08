@@ -1,10 +1,61 @@
 import React, { useState } from "react";
 import PrimaryButton from "../../../Components/PrimaryButton";
+import customStyles from '../../../Components/selectCustomStyle';
+import Select from 'react-select'
+
+
 const LandscapeDesign = () => {
   const [file, setFile] = useState("");
   function getFile(event) {
     setFile(URL.createObjectURL(event.target.files[0]))
   }
+  const landscapeOptions = [
+    { value: 'Modern', label: 'Modern' },
+    { value: 'City', label: 'City' },
+    { value: 'Contemporary', label: 'Contemporary' },
+    { value: 'Luxury', label: 'Luxury' },
+    { value: 'Apartment', label: 'Apartment' },
+    { value: 'Small', label: 'Small' },
+    { value: 'Vegetable', label: 'Vegetable' },
+    { value: 'Low Budget', label: 'Low Budget' },
+    { value: 'Beach', label: 'Beach' },
+    { value: 'Wedding', label: 'Wedding' },
+    { value: 'Rural Garden', label: 'Rural Garden' },
+    { value: 'Mediterranean', label: 'Mediterranean' },
+    { value: 'Restaurant Garden', label: 'Restaurant Garden' },
+    { value: 'Formal', label: 'Formal' },
+    { value: 'American', label: 'American' },
+    { value: 'English', label: 'English' },
+    { value: 'Traditional', label: 'Traditional' },
+    { value: 'Christmas', label: 'Christmas' },
+    { value: 'Meditation', label: 'Meditation' },
+    { value: 'Coastal', label: 'Coastal' },
+    { value: 'Tropical', label: 'Tropical' },
+  ];
+  const ModeOptions = [
+    { value: 'Beautiful Redesign', label: 'Beautiful Redesign' },
+    { value: 'Creative Redesign', label: 'Creative Redesign' },
+    { value: 'Fill The Room', label: 'Fill The Room' },
+  ];
+  const styleOptions = [
+    { value: 'Backyard', label: 'Backyard' },
+    { value: 'Patio', label: 'Patio' },
+    { value: 'Terrace', label: 'Terrace' },
+    { value: 'Front Yard', label: 'Front Yard' },
+    { value: 'Courtyard', label: 'Courtyard' },
+    { value: 'Pool Area', label: 'Pool Area' },
+    { value: 'Porch', label: 'Porch' },
+    { value: 'Playground', label: 'Playground' },
+  
+
+  ];
+  const NumberOfDesignOptions = [
+    { value: '1', label: '1' },
+    { value: '2', label: '2' },
+    { value: '3', label: '3' },
+    { value: '4', label: '4' },
+    { value: '5', label: '5' },
+  ];
   return (
     <>
       <div className="dash_ExteriorDesign">
@@ -14,62 +65,53 @@ const LandscapeDesign = () => {
           <div className="dash_ExteriorDesignFirst">
             <div>
               <label htmlFor="">Landscape Type</label>
-              <select name="" id="" className="custom-select">
-                <option value="">Backyard</option>
-                <option value="">Patio</option>
-                <option value="">Terrace</option>
-                <option value="">Front Yard</option>
-                <option value="">Courtyard</option>
-                <option value="">Pool Area</option>
-                <option value="">Porch</option>
-                <option value="">Playground</option>
-              </select>
+              <Select
+
+className="react-select-container"
+classNamePrefix="react-select"
+defaultValue={landscapeOptions[0]}
+options={landscapeOptions}
+styles={customStyles}
+isSearchable={false}
+/>
             </div>
             <div>
               <label htmlFor="">Mode</label>
-              <select name="" id="" className="custom-select">
-                <option value="">Beautiful Redesign</option>
-                <option value="">Creative Redesign</option>
-                <option value="">Fill The Room</option>
-              </select>
+              <Select
+
+                className="react-select-container"
+                classNamePrefix="react-select"
+                defaultValue={ModeOptions[0]}
+                options={ModeOptions}
+                styles={customStyles}
+                isSearchable={false}
+              />
             </div>
             <div>
               <label htmlFor="">Style</label>
-              <select name="" id="" className="custom-select">
-                <option value="">Modern </option>
-                <option value="">City </option>
-                <option value="">Contemporary </option>
-                <option value="">Luxury </option>
-                <option value="">Apartment</option>
-                <option value="">Small </option>
-                <option value="">Vegetable </option>
-                <option value="">Low Budget </option>
-                <option value="">Beach </option>
-                <option value="">Wedding </option>
-                <option value="">Rural Garden </option>
-                <option value="">Mediterranean</option>
-                <option value="">Restaurant Garden </option>
-                <option value="">Formal</option>
-                <option value="">American</option>
-                <option value="">English</option>
-                <option value="">Traditional</option>
-                <option value="">Christmas</option>
-                <option value="">Meditation</option>
-                <option value="">Coastal</option>
-                <option value="">Tropical</option>
-              </select>
+              <Select
+
+                className="react-select-container"
+                classNamePrefix="react-select"
+                defaultValue={styleOptions[0]}
+                options={styleOptions}
+                styles={customStyles}
+                isSearchable={false}
+              />
             </div>
           </div>
           <div className="dash_ExteriorDesignSecond">
             <div>
               <label htmlFor="">Number Of Designs</label>
-              <select name="" id="" className="custom-select">
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
-                <option value="">4</option>
-                <option value="">5</option>
-              </select>
+              <Select
+
+className="react-select-container"
+classNamePrefix="react-select"
+defaultValue={NumberOfDesignOptions[0]}
+options={NumberOfDesignOptions}
+styles={customStyles}
+isSearchable={false}
+/>
             </div>
             <div>
               <label htmlFor="">AI Intervention</label>
