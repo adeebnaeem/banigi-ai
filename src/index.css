@@ -168,28 +168,16 @@ button {
   font-size: 20px;
   font-weight: 600;
 }
-.tryDesignFormDiv form .selectOptionDiv .custom-select {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  width: 100%;
-  padding: 20px;
-  border: none;
-  font-size: 16px;
-  border-radius: 8px;
-  background-color: #576072;
-  background-image: url('data:image/svg+xml;utf8,<svg width="10" height="18"  viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 1.80249L9 9.30249L1.5 16.8025" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
-  background-repeat: no-repeat;
-  background-position: right 20px center;
-  cursor: pointer;
-  color: white;
-  margin-bottom: 25px;
-}
-.tryDesignFormDiv form .selectOptionDiv select option {
+.tryDesignFormDiv form .selectOptionDiv .css-om084u-control, .tryDesignFormDiv form .selectOptionDiv .css-ibfo6y-control {
   background-color: #576072;
 }
-.tryDesignFormDiv form .selectOptionDiv :focus {
+.tryDesignFormDiv form .selectOptionDiv .css-ibfo6y-control {
   outline: none;
+  box-shadow: unset;
+}
+.tryDesignFormDiv form .selectOptionDiv .react-select__dropdown-indicator,
+.tryDesignFormDiv form .selectOptionDiv .react-select__indicator-separator {
+  display: none;
 }
 .tryDesignFormDiv form .selectOptionDiv .intervation_radio {
   display: flex;
@@ -283,6 +271,56 @@ button {
   font-size: 20px;
   font-weight: 500;
   line-height: 24.38px;
+}
+
+.selectOptionDiv textarea {
+  background-color: #576072;
+  border: none;
+  border-radius: 10px;
+  resize: none;
+  color: white;
+  padding: 15px;
+  min-height: 123px;
+  outline: none;
+}
+.selectOptionDiv textarea::-moz-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(255, 255, 255) !important;
+  font-family: "Lato", sans-serif;
+}
+.selectOptionDiv textarea::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(255, 255, 255) !important;
+  font-family: "Lato", sans-serif;
+}
+.selectOptionDiv .roomTypeExample {
+  margin-bottom: 20px;
+}
+.selectOptionDiv .roomTypeExample p {
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 10px;
+  background: #576072;
+  color: white;
+  min-height: 70px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.selectOptionDiv .roomTypeExample .roomTypeExamplePara {
+  margin-top: 10px;
+}
+.selectOptionDiv .roomTypeExample .roomTypeExamplePara p {
+  border-radius: 8px;
+  background: #576072;
+  color: white;
+  padding: 15px 10px;
+  margin-bottom: 10px;
 }
 
 .primary_btn {
