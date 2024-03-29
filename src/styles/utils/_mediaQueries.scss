@@ -1,7 +1,9 @@
 $xs_device: 376px;
 $s_device: 576px;
 $m_device: 768px;
+$t_device: 834px;
 $l_device: 992px;
+
 $xl_device: 1200px;
 $xxl_device: 1400px;
 $xxxl_device: 1600px;
@@ -22,11 +24,17 @@ $xxxl_device: 1600px;
     @content;
   }
 }
+@mixin tabScreen {
+  @media (max-width: $t_device) {
+    @content;
+  }
+}
 @mixin largeScreen {
   @media (max-width: $l_device) {
     @content;
   }
 }
+
 @mixin bigScreen {
   @media (max-width: $xl_device) {
     @content;

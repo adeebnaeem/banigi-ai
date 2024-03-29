@@ -6,32 +6,53 @@ nav {
     z-index: 10;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+    @include bigScreen {
+        font-size: 16px;
+    }
+
     .navbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 13px 4rem;
+        height: 88px;
+        width: 95%;
+        margin: auto;
 
-        @include smallScreen {
-            padding: 10px 25px;
+        @include bigScreen {
+            height: 70px;
         }
 
-        .nav_logo{
-            img{
-                width: 90%;
+        @include largeScreen{
+            height: 58px;
+            width: 90%;
+        }
+
+        .nav_logo {
+            width: 201px;
+
+            @include bigScreen {
+                width: 129px;
+            }
+
+            img {
+                width: 100%;
             }
         }
+
         .nav_links {
             ul {
                 display: flex;
                 gap: 30px;
+
                 li {
                     cursor: pointer;
                     position: relative;
 
-                    &:hover{
+                    &:hover {
                         color: $accent;
-                        &::after{
+
+                        &::after {
                             content: '';
                             position: absolute;
                             bottom: -2px;
@@ -40,15 +61,15 @@ nav {
                             width: 50%;
                         }
                     }
-                
-                   
+
+
                 }
 
-                .active_navLink{
+                .active_navLink {
                     position: relative;
                     color: $accent;
-                
-                    &::after{
+
+                    &::after {
                         content: '';
                         position: absolute;
                         bottom: -2px;
@@ -57,11 +78,11 @@ nav {
                         width: 50%;
                     }
                 }
-               
-                
+
+
             }
 
-            @include bigScreen {
+            @include largeScreen {
                 display: none;
             }
         }
@@ -70,61 +91,78 @@ nav {
             display: flex;
             align-items: center;
             gap: 25px;
+
             .login_btn {
                 background: transparent;
                 color: white;
                 font-size: 18px;
+
                 @include bigScreen {
+                    font-size: 16px;
+                }
+
+                @include largeScreen {
                     display: none;
                 }
             }
+
             .getStarted_btn {
                 background-color: $accent;
                 color: white;
                 padding: 15px;
                 border-radius: 8px;
-                font-size: 18px;
 
-                @include mediumScreen {
+                @include bigScreen {
+                    font-size: 16px;
+                    padding: 10px 15px;
+                }
+
+                @include largeScreen {
                     display: none;
                 }
             }
+
             .mobilemenu {
-                width: 28px;
-                @media (min-width: 1200px) {
+                width: 24px;
+
+                @media (min-width: 992px) {
                     display: none;
                 }
             }
         }
     }
 
-    .mobile_navbar{
+    .mobile_navbar {
         background-color: $secondary;
         color: white;
         width: 100%;
         z-index: 2;
-        
-        ul{
-            
-           border-top: 1px solid white;
-            li{
+
+        ul {
+
+            border-top: 1px solid white;
+
+            li {
                 cursor: pointer;
                 text-align: center;
                 width: 100%;
                 padding: 15px;
                 border-bottom: 1px solid rgba(255, 255, 255, 0.1);
                 transition: background-color .1s;
-            
-            } :hover{
+
+            }
+
+            :hover {
                 background-color: $accent;
             }
-           
+
         }
 
-        .login_btn{
+        .login_btn {
             border-bottom: 1px solid rgba(255, 255, 255, 0.8);
         }
-        button{
+
+        button {
             width: 100%;
             background-color: $accent;
             color: white;
@@ -140,6 +178,7 @@ nav {
 a:link {
     color: white;
 }
+
 a:visited {
     color: white;
 }
