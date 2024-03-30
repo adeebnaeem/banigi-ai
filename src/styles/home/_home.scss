@@ -284,7 +284,10 @@
             align-items: center;
         }
         hr{
-            height: 80px;
+            @include mediumScreen{
+                height: 80px;
+            }
+            
         }
     }
 

@@ -1928,8 +1928,10 @@ a:active {
     align-items: center;
   }
 }
-.DesignGridDiv .featureCardDiv hr {
-  height: 80px;
+@media (max-width: 768px) {
+  .DesignGridDiv .featureCardDiv hr {
+    height: 80px;
+  }
 }
 .DesignGridDiv h2 {
   text-align: center;
