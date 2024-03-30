@@ -2144,6 +2144,81 @@ a:active {
   height: 0.6rem;
 }
 
+.buildJobDiv {
+  background-color: #343A45;
+  color: white;
+  padding: 60px 70px;
+}
+@media (max-width: 992px) {
+  .buildJobDiv {
+    padding: 40px 28px;
+  }
+}
+.buildJobDiv h3 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 35px;
+}
+@media (max-width: 1200px) {
+  .buildJobDiv h3 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 992px) {
+  .buildJobDiv h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .buildJobDiv h3 {
+    font-size: 17px;
+  }
+}
+.buildJobDiv h3 span {
+  color: #C79952;
+}
+.buildJobDiv .top-down-img {
+  max-width: 1274.5px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  gap: 15px;
+}
+@media (max-width: 768px) {
+  .buildJobDiv .top-down-img {
+    flex-wrap: wrap;
+  }
+}
+.buildJobDiv .top-down-img > img {
+  width: 220px;
+  cursor: pointer;
+}
+@media (max-width: 1200px) {
+  .buildJobDiv .top-down-img > img {
+    width: 165.35px;
+  }
+}
+@media (max-width: 992px) {
+  .buildJobDiv .top-down-img > img {
+    width: 140px;
+  }
+}
+@media (max-width: 768px) {
+  .buildJobDiv .top-down-img > img {
+    width: 160px;
+  }
+}
+.buildJobDiv .top-down-img > img:nth-child(even) {
+  position: relative;
+  bottom: -100px;
+}
+@media (max-width: 768px) {
+  .buildJobDiv .top-down-img > img:nth-child(even) {
+    position: unset;
+  }
+}
+
 .feedback_div {
   background-color: #343a45;
   color: white;

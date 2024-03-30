@@ -10,6 +10,7 @@ import FaqSection from './Sections/FaqSection/FaqSection'
 import TryBanigiAi from './Sections/TryBanigiAi/TryBanigiAi'
 import Header from '../layout/Header'
 import Footer from '../layout/Footer'
+import BuildJob from './Sections/buildJob/BuildJob'
 
 const Home = () => {
   return (
@@ -20,7 +21,7 @@ const Home = () => {
       <TryBanigiAi/>
      
       <DesignGrid/>
-      
+      <BuildJob/>
       <Feedback/>
       <DownloadApp/>
       <PricingSection/>
