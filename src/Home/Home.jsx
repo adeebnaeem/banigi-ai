@@ -16,9 +16,11 @@ const Home = () => {
     <div>
       <Header/>
       <BannerSection/>
-      <HowItWorkSection/>
-      <DesignGrid/>
+      {/* <HowItWorkSection/> */}
       <TryBanigiAi/>
+     
+      <DesignGrid/>
+      
       <Feedback/>
       <DownloadApp/>
       <PricingSection/>

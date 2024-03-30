@@ -138,6 +138,16 @@ button {
   border-radius: 10px;
   position: relative;
 }
+@media (max-width: 1200px) {
+  .tryDesignFormDiv form .tryDesignFile {
+    padding: 80px 20px;
+  }
+}
+@media (max-width: 992px) {
+  .tryDesignFormDiv form .tryDesignFile {
+    padding: 40px 10px;
+  }
+}
 .tryDesignFormDiv form .tryDesignFile span {
   display: flex;
   gap: 10px;
@@ -167,6 +177,16 @@ button {
   margin-bottom: 15px;
   font-size: 20px;
   font-weight: 600;
+}
+@media (max-width: 992px) {
+  .tryDesignFormDiv form .selectOptionDiv label {
+    font-size: 18px;
+  }
+}
+@media (max-width: 576px) {
+  .tryDesignFormDiv form .selectOptionDiv label {
+    font-size: 16px;
+  }
 }
 .tryDesignFormDiv form .selectOptionDiv .css-om084u-control, .tryDesignFormDiv form .selectOptionDiv .css-ibfo6y-control {
   background-color: #576072;
@@ -271,6 +291,18 @@ button {
   font-size: 20px;
   font-weight: 500;
   line-height: 24.38px;
+}
+@media (max-width: 1200px) {
+  .tryDesignFormDiv form button {
+    height: 62px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 992px) {
+  .tryDesignFormDiv form button {
+    height: 55px;
+    font-size: 16px;
+  }
 }
 
 .selectOptionDiv textarea {
@@ -1413,6 +1445,39 @@ button {
   max-width: fit-content;
 }
 
+.feature_box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  padding: 35px 25px;
+  max-width: 237px;
+}
+@media (max-width: 992px) {
+  .feature_box {
+    max-width: 200px;
+  }
+}
+@media (max-width: 992px) {
+  .feature_box svg {
+    width: 34px;
+  }
+}
+.feature_box h4 {
+  font-size: 18px;
+}
+@media (max-width: 1200px) {
+  .feature_box h4 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 992px) {
+  .feature_box h4 {
+    font-size: 14px;
+  }
+}
+
 .footer_Section {
   background-color: #43484B;
   padding: 60px 80px;
@@ -1759,12 +1824,6 @@ a:active {
     line-height: 40px;
   }
 }
-@media (max-width: 576px) {
-  .main_banner .main_banner_div .banner_left .banner_left_text h1 {
-    font-size: 20px;
-    line-height: 40px;
-  }
-}
 .main_banner .main_banner_div .banner_left .banner_left_text h1 .vector_img {
   position: relative;
 }
@@ -1810,13 +1869,8 @@ a:active {
 }
 @media (max-width: 992px) {
   .main_banner .main_banner_div .banner_left .banner_left_text .banner_left_btn .tryBtn {
-    font-size: 16px;
-  }
-}
-@media (max-width: 576px) {
-  .main_banner .main_banner_div .banner_left .banner_left_text .banner_left_btn .tryBtn {
     padding: 15px;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 .main_banner .main_banner_div .banner_left .banner_left_text .banner_left_btn .watchBtn {
@@ -1852,67 +1906,6 @@ a:active {
   }
 }
 
-.HowItWorkDiv {
-  padding: 70px 70px 0px 70px;
-  background-color: #43484B;
-  color: white;
-}
-.HowItWorkDiv h2 {
-  text-align: center;
-  font-size: 40px;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-@media (max-width: 768px) {
-  .HowItWorkDiv h2 {
-    font-size: 30px;
-    margin-bottom: 17px;
-  }
-}
-.HowItWorkDiv h2 span {
-  color: #C79952;
-}
-.HowItWorkDiv .HowItWorkContainer {
-  display: flex;
-  justify-content: space-between;
-}
-@media (max-width: 1200px) {
-  .HowItWorkDiv .HowItWorkContainer {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-.HowItWorkDiv .HowItWorkContainer .HowItWork_left,
-.HowItWorkDiv .HowItWorkContainer .HowItWork_right {
-  margin-top: 50px;
-}
-.HowItWorkDiv .HowItWorkContainer .HowItWork_left .card_line,
-.HowItWorkDiv .HowItWorkContainer .HowItWork_right .card_line {
-  width: 70%;
-  margin: 80px auto;
-  opacity: 0.5;
-}
-@media (max-width: 1200px) {
-  .HowItWorkDiv .HowItWorkContainer .HowItWork_left .card_line,
-  .HowItWorkDiv .HowItWorkContainer .HowItWork_right .card_line {
-    margin: 30px auto;
-  }
-}
-@media (max-width: 1200px) {
-  .HowItWorkDiv .HowItWorkContainer .HowItWork_right {
-    margin-top: -40px;
-  }
-}
-.HowItWorkDiv .HowItWorkContainer .HowItWork_Middle {
-  margin-top: 20px;
-}
-.HowItWorkDiv .HowItWorkContainer .HowItWork_Middle img {
-  min-width: 400px;
-  max-width: 700px;
-  width: 100%;
-  height: 100%;
-}
-
 .DesignGridDiv {
   background-color: #343A45;
   color: white;
@@ -1922,6 +1915,21 @@ a:active {
   .DesignGridDiv {
     padding: 40px 28px;
   }
+}
+.DesignGridDiv .featureCardDiv {
+  width: 100%;
+  display: flex;
+  margin-bottom: 100px;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .DesignGridDiv .featureCardDiv {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.DesignGridDiv .featureCardDiv hr {
+  height: 80px;
 }
 .DesignGridDiv h2 {
   text-align: center;
@@ -1993,25 +2001,44 @@ a:active {
   font-size: 40px;
   margin-bottom: 30px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .TryDesignDiv h3 {
     font-size: 30px;
+  }
+}
+@media (max-width: 992px) {
+  .TryDesignDiv h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .TryDesignDiv h3 {
+    font-size: 17px;
   }
 }
 .TryDesignDiv h3 span {
   color: #C79952;
 }
 .TryDesignDiv .tabs-container .tab-heading {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, auto));
   gap: 40px;
   margin-bottom: 50px;
+  justify-content: center;
+}
+@media (max-width: 1200px) {
+  .TryDesignDiv .tabs-container .tab-heading {
+    gap: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .TryDesignDiv .tabs-container .tab-heading {
+    gap: 15px;
+  }
 }
 @media (max-width: 768px) {
   .TryDesignDiv .tabs-container .tab-heading {
-    gap: 20px;
+    grid-template-columns: repeat(2, minmax(0, auto));
   }
 }
 .TryDesignDiv .tabs-container .tab-heading button {
@@ -2020,11 +2047,22 @@ a:active {
   color: white;
   padding: 15px 20px;
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 20px;
+}
+@media (max-width: 1200px) {
+  .TryDesignDiv .tabs-container .tab-heading button {
+    font-size: 16px;
+  }
+}
+@media (max-width: 992px) {
+  .TryDesignDiv .tabs-container .tab-heading button {
+    font-size: 13px;
+  }
 }
 @media (max-width: 768px) {
   .TryDesignDiv .tabs-container .tab-heading button {
-    font-size: 16px;
+    font-size: 12px;
+    padding: 15px;
   }
 }
 .TryDesignDiv .tabs-container .tab-heading button.active {
@@ -2034,6 +2072,8 @@ a:active {
   width: 80%;
   margin: auto;
   display: flex;
+  max-width: 1440px;
+  padding: 30px 0px;
   gap: 40px;
 }
 @media (max-width: 1200px) {
@@ -2049,6 +2089,11 @@ a:active {
 .TryDesignDiv .tabs-container .tab_content_div .tab-content {
   width: 40%;
 }
+@media (max-width: 1200px) {
+  .TryDesignDiv .tabs-container .tab_content_div .tab-content {
+    width: 50%;
+  }
+}
 @media (max-width: 992px) {
   .TryDesignDiv .tabs-container .tab_content_div .tab-content {
     width: 80%;
@@ -2060,25 +2105,37 @@ a:active {
     width: 100%;
   }
 }
-.TryDesignDiv .tabs-container .tab_content_div .swiper {
+.TryDesignDiv .tabs-container .tab_content_div .swiper-div {
   width: 55%;
-  padding-bottom: 35px;
 }
-@media (max-width: 576px) {
-  .TryDesignDiv .tabs-container .tab_content_div .swiper {
+@media (max-width: 1200px) {
+  .TryDesignDiv .tabs-container .tab_content_div .swiper-div {
+    width: 50%;
+  }
+}
+@media (max-width: 992px) {
+  .TryDesignDiv .tabs-container .tab_content_div .swiper-div {
     width: 100%;
   }
 }
-.TryDesignDiv .tabs-container .tab_content_div .swiper .swiper-slide {
+.TryDesignDiv .tabs-container .tab_content_div .swiper-div .swiper {
+  height: 100%;
+  padding-bottom: 20px;
+}
+.TryDesignDiv .tabs-container .tab_content_div .swiper-div .swiper .swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.TryDesignDiv .tabs-container .tab_content_div .swiper .swiper-slide img {
+.TryDesignDiv .tabs-container .tab_content_div .swiper-div .swiper .swiper-slide img {
   width: 100%;
   max-width: 550px;
+  height: 100%;
 }
-.TryDesignDiv .tabs-container .tab_content_div .swiper .swiper-pagination-bullet {
+.TryDesignDiv .tabs-container .tab_content_div .swiper-div .swiper .swiper-pagination {
+  bottom: 0px;
+}
+.TryDesignDiv .tabs-container .tab_content_div .swiper-div .swiper .swiper-pagination .swiper-pagination-bullet {
   background-color: rgb(255, 255, 255);
   display: inline-block;
   width: 0.6rem;

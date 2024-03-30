@@ -9,7 +9,12 @@
             padding: 80px 35px;
             border-radius: 10px;
             position: relative;
-
+            @include bigScreen{
+                padding: 80px 20px;
+            }
+            @include largeScreen{
+                padding: 40px 10px;
+            }
             span {
                 display: flex;
                 gap: 10px;
@@ -31,6 +36,7 @@
                 right: 0;
                 opacity: 0;
                 cursor: pointer;
+                
             }
         }
 
@@ -43,6 +49,12 @@
                 margin-bottom: 15px;
                 font-size: 20px;
                 font-weight: 600;
+                @include largeScreen{
+                    font-size: 18px;
+                }
+                @include smallScreen{
+                    font-size: 16px;
+                }
             }
 
             .css-om084u-control,.css-ibfo6y-control{
@@ -170,6 +182,14 @@
             font-size: 20px;
             font-weight: 500;
             line-height: 24.38px;
+            @include bigScreen{
+                height: 62px;
+                font-size: 18px;
+            }
+            @include largeScreen{
+                height: 55px;
+                font-size: 16px;
+            }
         }
     }
 }

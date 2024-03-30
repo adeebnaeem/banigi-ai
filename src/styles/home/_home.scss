@@ -54,10 +54,10 @@
                         line-height: 40px;
                     }
 
-                    @include smallScreen {
-                        font-size: 20px;
-                        line-height: 40px;
-                    }
+                    // @include smallScreen {
+                    //     font-size: 20px;
+                    //     line-height: 40px;
+                    // }
 
                     .vector_img {
                         position: relative;
@@ -110,12 +110,13 @@
                         }
 
                         @include largeScreen {
+                            padding: 15px;
                             font-size: 16px;
                         }
-                        @include smallScreen{
-                            padding: 15px;
-                            font-size: 14px;
-                        }
+                        // @include smallScreen{
+                        //     padding: 15px;
+                        //     font-size: 14px;
+                        // }
 
                         
                     }
@@ -187,80 +188,80 @@
 
 // How It Work CSS
 
-.HowItWorkDiv {
-    padding: 70px 70px 0px 70px;
-    background-color: $secondary;
-    color: white;
+// .HowItWorkDiv {
+//     padding: 70px 70px 0px 70px;
+//     background-color: $secondary;
+//     color: white;
 
-    h2 {
-        text-align: center;
-        font-size: 40px;
-        font-weight: 700;
-        margin-bottom: 30px;
+//     h2 {
+//         text-align: center;
+//         font-size: 40px;
+//         font-weight: 700;
+//         margin-bottom: 30px;
 
-        @include mediumScreen {
-            font-size: 30px;
-            margin-bottom: 17px;
-        }
+//         @include mediumScreen {
+//             font-size: 30px;
+//             margin-bottom: 17px;
+//         }
 
-        span {
-            color: $accent;
-        }
-    }
+//         span {
+//             color: $accent;
+//         }
+//     }
 
-    .HowItWorkContainer {
-        display: flex;
+//     .HowItWorkContainer {
+//         display: flex;
 
-        justify-content: space-between;
+//         justify-content: space-between;
 
-        @include bigScreen {
-            flex-direction: column;
-            align-items: center;
-
-
-        }
-
-        .HowItWork_left,
-        .HowItWork_right {
-
-            margin-top: 50px;
-
-            .card_line {
-                width: 70%;
-                margin: 80px auto;
-                opacity: 0.5;
-
-                @include bigScreen {
-                    margin: 30px auto;
-                }
-
-            }
-
-        }
-
-        .HowItWork_right {
-            @include bigScreen {
-                margin-top: -40px;
-            }
-        }
+//         @include bigScreen {
+//             flex-direction: column;
+//             align-items: center;
 
 
-        .HowItWork_Middle {
-            margin-top: 20px;
+//         }
 
-            img {
+//         .HowItWork_left,
+//         .HowItWork_right {
 
-                min-width: 400px;
-                max-width: 700px;
-                width: 100%;
-                height: 100%;
+//             margin-top: 50px;
 
-            }
-        }
+//             .card_line {
+//                 width: 70%;
+//                 margin: 80px auto;
+//                 opacity: 0.5;
+
+//                 @include bigScreen {
+//                     margin: 30px auto;
+//                 }
+
+//             }
+
+//         }
+
+//         .HowItWork_right {
+//             @include bigScreen {
+//                 margin-top: -40px;
+//             }
+//         }
 
 
-    }
-}
+//         .HowItWork_Middle {
+//             margin-top: 20px;
+
+//             img {
+
+//                 min-width: 400px;
+//                 max-width: 700px;
+//                 width: 100%;
+//                 height: 100%;
+
+//             }
+//         }
+
+
+//     }
+// }
 
 // Design Grid Css
 
@@ -271,6 +272,20 @@
 
     @include largeScreen {
         padding: 40px 28px;
+    }
+
+    .featureCardDiv{
+        width: 100%;
+        display: flex;
+       margin-bottom: 100px;
+        justify-content: space-between;
+        @include mediumScreen{
+            flex-direction: column;
+            align-items: center;
+        }
+        hr{
+            height: 80px;
+        }
     }
 
     h2 {
@@ -353,8 +368,14 @@
         font-size: 40px;
         margin-bottom: 30px;
 
-        @include mediumScreen {
+        @include bigScreen {
             font-size: 30px;
+        }
+        @include largeScreen{
+            font-size: 20px;
+        }
+        @include smallScreen{
+            font-size: 17px;
         }
 
         span {
@@ -364,15 +385,21 @@
 
     .tabs-container {
         .tab-heading {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, auto));
             gap: 40px;
             margin-bottom: 50px;
-
-            @include mediumScreen {
+            justify-content: center;
+            @include bigScreen {
                 gap: 20px;
+                
+            }
+            @include largeScreen{
+               
+                gap: 15px;
+            }
+            @include mediumScreen{
+                grid-template-columns: repeat(2, minmax(0, auto));
             }
 
             button {
@@ -381,11 +408,21 @@
                 color: white;
                 padding: 15px 20px;
                 border-radius: 10px;
-                font-size: 18px;
-
-                @include mediumScreen {
+                font-size: 20px;
+                @include bigScreen {
                     font-size: 16px;
                 }
+                @include largeScreen{
+                    
+                   
+                    font-size: 13px;
+                }
+                @include mediumScreen{
+                    font-size: 12px;
+                    padding: 15px;
+                }
+                
+            
             }
 
             button.active {
@@ -397,8 +434,8 @@
             width: 80%;
             margin: auto;
             display: flex;
-
-
+            max-width: 1440px;
+            padding: 30px 0px;
             @include bigScreen {
                 width: 95%;
             }
@@ -412,6 +449,9 @@
             .tab-content {
                 width: 40%;
 
+                @include bigScreen{
+                    width: 50%;
+                }
                 @include largeScreen {
                     width: 80%;
                     margin: auto;
@@ -424,15 +464,24 @@
 
             }
 
-            .swiper {
-                width: 55%;
-                padding-bottom: 35px;
+            
 
-                @include smallScreen {
+            .swiper-div {
+                width: 55%;
+               
+               
+                @include bigScreen{
+                    width: 50%;
+                }
+                @include largeScreen {
                     width: 100%;
 
                 }
 
+                .swiper{
+                height: 100%;
+               padding-bottom: 20px;
+          
                 .swiper-slide {
 
                     display: flex;
@@ -442,20 +491,24 @@
                     img {
                         width: 100%;
                         max-width: 550px;
-
+                        height: 100%;
 
                     }
                 }
+                .swiper-pagination {
 
+                    bottom: 0px;
                 .swiper-pagination-bullet {
                     background-color: rgb(255, 255, 255);
                     display: inline-block;
                     width: 0.6rem;
                     height: 0.6rem;
+                    
+                
                 }
-
             }
-
+            }
+        }
         }
 
     }
