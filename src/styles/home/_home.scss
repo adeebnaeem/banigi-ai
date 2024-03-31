@@ -277,8 +277,10 @@
     .featureCardDiv{
         width: 100%;
         display: flex;
-       margin-bottom: 100px;
+      
         justify-content: space-between;
+        max-width: 1274.5px;
+        margin: auto ;
         @include mediumScreen{
             flex-direction: column;
             align-items: center;
@@ -295,7 +297,7 @@
         text-align: center;
         font-size: 40px;
         margin-bottom: 35px;
-
+        margin-top: 100px;
         @include mediumScreen {
             font-size: 30px;
         }
@@ -616,7 +618,7 @@
         width: 100%;
         height: 100%;
         padding-bottom: 50px;
-
+        max-width: 1274.5px;
         .swiper-slide {
             display: flex;
             justify-content: center;
@@ -667,7 +669,7 @@
     }
 
     .downloadAppInfo {
-        max-width: 1280px;
+        max-width: 1274.5px;
         margin: auto;
         background-color: white;
         display: flex;
@@ -903,7 +905,7 @@
         margin: auto;
         padding-top: 50px;
         padding-bottom: 100px;
-
+        
 
 
         h3 {
@@ -923,7 +925,8 @@
 
     .contactusDiv {
         display: flex;
-
+        max-width: 1274.5px;
+        margin: auto;
         @include largeScreen {
             flex-direction: column;
             gap: 30px;

@@ -18,7 +18,7 @@ nav {
         height: 88px;
         width: 95%;
         margin: auto;
-
+        max-width: 1274.5px;
         @include bigScreen {
             height: 70px;
         }

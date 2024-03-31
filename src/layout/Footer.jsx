@@ -20,6 +20,9 @@ const Footer = () => {
     <>
 
       <div className="footer_Section">
+        <div className="footer_div">
+
+        
         <div className="footer_left">
           <img src={footerLogo} alt="Banigi Ai" />
 
@@ -66,7 +69,7 @@ const Footer = () => {
             </div>
         </div>
       </div>
-
+      </div>
       <div className="copyright_div">
         <h5>Copyright 2024 Banigi AI All rights reserved.</h5>
       </div>

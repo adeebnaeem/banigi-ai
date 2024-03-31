@@ -1482,26 +1482,30 @@ button {
   background-color: #43484B;
   padding: 60px 80px;
   color: white;
-  display: flex;
-  justify-content: space-around;
-}
-@media (max-width: 1200px) {
-  .footer_Section {
-    justify-content: space-between;
-  }
 }
 @media (max-width: 992px) {
   .footer_Section {
     padding: 30px 50px;
   }
 }
+.footer_Section .footer_div {
+  max-width: 1274.5px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1200px) {
+  .footer_Section .footer_div {
+    justify-content: space-between;
+  }
+}
 @media (max-width: 768px) {
-  .footer_Section {
+  .footer_Section .footer_div {
     flex-direction: column;
     gap: 30px;
   }
 }
-.footer_Section .footer_left {
+.footer_Section .footer_div .footer_left {
   width: 40%;
   max-width: 415px;
   display: flex;
@@ -1509,18 +1513,18 @@ button {
   gap: 15px;
 }
 @media (max-width: 768px) {
-  .footer_Section .footer_left {
+  .footer_Section .footer_div .footer_left {
     width: 90%;
     margin: auto;
     align-items: center;
   }
 }
-.footer_Section .footer_left img {
+.footer_Section .footer_div .footer_left img {
   width: 100%;
   max-width: -moz-fit-content;
   max-width: fit-content;
 }
-.footer_Section .footer_left p {
+.footer_Section .footer_div .footer_left p {
   width: 90%;
   font-family: "Lato", sans-serif;
   font-weight: 500;
@@ -1528,58 +1532,58 @@ button {
   font-size: 18px;
 }
 @media (max-width: 768px) {
-  .footer_Section .footer_left p {
+  .footer_Section .footer_div .footer_left p {
     width: 100%;
     text-align: center;
   }
 }
-.footer_Section .footer_left .footer_social_link {
+.footer_Section .footer_div .footer_left .footer_social_link {
   display: flex;
   gap: 10px;
 }
-.footer_Section .footer_left .footer_social_link img {
+.footer_Section .footer_div .footer_left .footer_social_link img {
   cursor: pointer;
   width: 35px;
 }
-.footer_Section .footer_right {
+.footer_Section .footer_div .footer_right {
   width: 60%;
   max-width: 620px;
   display: flex;
   gap: 80px;
 }
 @media (max-width: 1200px) {
-  .footer_Section .footer_right {
+  .footer_Section .footer_div .footer_right {
     gap: 40px;
   }
 }
 @media (max-width: 768px) {
-  .footer_Section .footer_right {
+  .footer_Section .footer_div .footer_right {
     width: 90%;
     justify-content: space-between;
   }
 }
 @media (max-width: 576px) {
-  .footer_Section .footer_right {
+  .footer_Section .footer_div .footer_right {
     width: 100%;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 }
-.footer_Section .footer_right h5 {
+.footer_Section .footer_div .footer_right h5 {
   font-weight: 500;
   font-family: "Lato", sans-serif;
   font-size: 20px;
   margin-bottom: 20px;
   line-height: 24px;
 }
-.footer_Section .footer_right ul li {
+.footer_Section .footer_div .footer_right ul li {
   cursor: pointer;
   margin-bottom: 15px;
   font-weight: 400;
   font-size: 18px;
 }
-.footer_Section .footer_right ul li:hover {
+.footer_Section .footer_div .footer_right ul li:hover {
   color: #C79952;
 }
 
@@ -1616,6 +1620,7 @@ nav .navbar {
   height: 88px;
   width: 95%;
   margin: auto;
+  max-width: 1274.5px;
 }
 @media (max-width: 1200px) {
   nav .navbar {
@@ -1919,8 +1924,9 @@ a:active {
 .DesignGridDiv .featureCardDiv {
   width: 100%;
   display: flex;
-  margin-bottom: 100px;
   justify-content: space-between;
+  max-width: 1274.5px;
+  margin: auto;
 }
 @media (max-width: 768px) {
   .DesignGridDiv .featureCardDiv {
@@ -1937,6 +1943,7 @@ a:active {
   text-align: center;
   font-size: 40px;
   margin-bottom: 35px;
+  margin-top: 100px;
 }
 @media (max-width: 768px) {
   .DesignGridDiv h2 {
@@ -2242,6 +2249,7 @@ a:active {
   width: 100%;
   height: 100%;
   padding-bottom: 50px;
+  max-width: 1274.5px;
 }
 .feedback_div .swiper .swiper-slide {
   display: flex;
@@ -2284,7 +2292,7 @@ a:active {
   }
 }
 .downloadAppDiv .downloadAppInfo {
-  max-width: 1280px;
+  max-width: 1274.5px;
   margin: auto;
   background-color: white;
   display: flex;
@@ -2495,6 +2503,8 @@ a:active {
 }
 .contactUsContainner .contactusDiv {
   display: flex;
+  max-width: 1274.5px;
+  margin: auto;
 }
 @media (max-width: 992px) {
   .contactUsContainner .contactusDiv {
