@@ -2088,12 +2088,11 @@ a:active {
   background-color: #C79952;
 }
 .TryDesignDiv .tabs-container .tab_content_div {
-  width: 80%;
   margin: 0px auto;
   display: flex;
-  max-width: 1440px;
+  max-width: 1274.5px;
   padding: 30px 0px;
-  justify-content: space-between;
+  justify-content: center;
   gap: 30px;
 }
 @media (max-width: 1200px) {
