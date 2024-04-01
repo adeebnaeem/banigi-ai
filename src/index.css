@@ -457,9 +457,22 @@ button {
   margin-bottom: 40px;
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .loginLogo img {
-  width: 100%;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+  width: 251px;
+}
+@media (max-width: 1200px) {
+  .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .loginLogo img {
+    width: 220px;
+  }
+}
+@media (max-width: 992px) {
+  .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .loginLogo img {
+    width: 200px;
+  }
+}
+@media (max-width: 576px) {
+  .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .loginLogo img {
+    width: 180px;
+  }
 }
 .ModalContainer .loginModalOverlay .LoginModalContainer .loginModalDiv .LoginRightDiv .login_text {
   font-family: "Lato", sans-serif;
@@ -1520,12 +1533,16 @@ button {
   }
 }
 .footer_Section .footer_div .footer_left img {
-  width: 100%;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+  width: 201px;
+}
+@media (max-width: 1200px) {
+  .footer_Section .footer_div .footer_left img {
+    width: 181px;
+  }
 }
 .footer_Section .footer_div .footer_left p {
   width: 90%;
+  margin-top: 15px;
   font-family: "Lato", sans-serif;
   font-weight: 500;
   line-height: 21.6px;

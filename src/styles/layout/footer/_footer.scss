@@ -34,12 +34,14 @@
             }
 
             img {
-                width: 100%;
-                max-width: fit-content;
+                width: 201px;
+                @include bigScreen{
+                    width: 181px;
+                }
             }
             p {
                 width: 90%;
-
+                margin-top: 15px;
                 font-family: "Lato", sans-serif;
                 font-weight: 500;
                 line-height: 21.6px;

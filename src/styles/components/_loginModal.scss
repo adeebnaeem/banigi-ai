@@ -76,8 +76,16 @@
                         margin-bottom: 40px;
 
                         img {
-                            width: 100%;
-                            max-width: fit-content;
+                            width:251px;
+                            @include bigScreen{
+                                width: 220px;
+                            }
+                            @include largeScreen{
+                                width: 200px;
+                            }
+                            @include smallScreen{
+                                width: 180px;
+                            }
                         }
                     }
                     .login_text {
