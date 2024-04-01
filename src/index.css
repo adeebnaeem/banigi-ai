@@ -1598,6 +1598,16 @@ button {
   font-size: 20px;
   font-weight: 500;
 }
+@media (max-width: 992px) {
+  .copyright_div h5 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .copyright_div h5 {
+    font-size: 14px;
+  }
+}
 
 nav {
   background-color: #43484B;
@@ -1945,9 +1955,14 @@ a:active {
   margin-bottom: 35px;
   margin-top: 100px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .DesignGridDiv h2 {
     font-size: 30px;
+  }
+}
+@media (max-width: 992px) {
+  .DesignGridDiv h2 {
+    font-size: 20px;
   }
 }
 .DesignGridDiv h2 span {
@@ -2020,11 +2035,6 @@ a:active {
     font-size: 20px;
   }
 }
-@media (max-width: 576px) {
-  .TryDesignDiv h3 {
-    font-size: 17px;
-  }
-}
 .TryDesignDiv h3 span {
   color: #C79952;
 }
@@ -2079,11 +2089,12 @@ a:active {
 }
 .TryDesignDiv .tabs-container .tab_content_div {
   width: 80%;
-  margin: auto;
+  margin: 0px auto;
   display: flex;
   max-width: 1440px;
   padding: 30px 0px;
-  gap: 40px;
+  justify-content: space-between;
+  gap: 30px;
 }
 @media (max-width: 1200px) {
   .TryDesignDiv .tabs-container .tab_content_div {
@@ -2176,11 +2187,6 @@ a:active {
     font-size: 20px;
   }
 }
-@media (max-width: 576px) {
-  .buildJobDiv h3 {
-    font-size: 17px;
-  }
-}
 .buildJobDiv h3 span {
   color: #C79952;
 }
@@ -2237,9 +2243,14 @@ a:active {
   margin-bottom: 30px;
   font-weight: 700;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .feedback_div h2 {
     font-size: 30px;
+  }
+}
+@media (max-width: 992px) {
+  .feedback_div h2 {
+    font-size: 20px;
   }
 }
 .feedback_div h2 span {
@@ -2250,27 +2261,70 @@ a:active {
   height: 100%;
   padding-bottom: 50px;
   max-width: 1274.5px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+@media (max-width: 1200px) {
+  .feedback_div .swiper {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media (max-width: 992px) {
+  .feedback_div .swiper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 .feedback_div .swiper .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .feedback_div .swiper .swiper-slide img {
   width: 100%;
   max-width: -moz-fit-content;
   max-width: fit-content;
 }
-.feedback_div .swiper .swiper-button-prev {
+.feedback_div .swiper .swiper-button-prev img {
+  position: absolute;
+  left: -10px;
   width: 45px;
   height: 45px;
+}
+@media (max-width: 1200px) {
+  .feedback_div .swiper .swiper-button-prev img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .feedback_div .swiper .swiper-button-prev img {
+    width: 32px;
+    height: 32px;
+  }
 }
 .feedback_div .swiper .swiper-button-prev::after {
   display: none;
 }
-.feedback_div .swiper .swiper-button-next {
+.feedback_div .swiper .swiper-button-next img {
+  position: absolute;
+  right: -10px;
   width: 45px;
   height: 45px;
+}
+@media (max-width: 1200px) {
+  .feedback_div .swiper .swiper-button-next img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .feedback_div .swiper .swiper-button-next img {
+    width: 32px;
+    height: 32px;
+  }
 }
 .feedback_div .swiper .swiper-button-next::after {
   display: none;
@@ -2328,17 +2382,28 @@ a:active {
 }
 .downloadAppDiv .downloadAppInfo .downloadAppText h2 {
   max-width: 400px;
-  font-size: 35px;
+  font-size: 32px;
   color: #43484B;
 }
 @media (max-width: 1200px) {
   .downloadAppDiv .downloadAppInfo .downloadAppText h2 {
     max-width: 100%;
+    font-size: 25px;
+  }
+}
+@media (max-width: 992px) {
+  .downloadAppDiv .downloadAppInfo .downloadAppText h2 {
+    font-size: 20px;
   }
 }
 .downloadAppDiv .downloadAppInfo .downloadAppText p {
   font-family: "Lato", sans-serif;
   font-size: 20px;
+}
+@media (max-width: 992px) {
+  .downloadAppDiv .downloadAppInfo .downloadAppText p {
+    font-size: 16px;
+  }
 }
 .downloadAppDiv .downloadAppInfo .downloadAppText .downloadBtn {
   display: flex;
@@ -2395,9 +2460,14 @@ a:active {
   font-weight: 700;
   margin-bottom: 15px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .pricing_section .pricingDiv .pricing_header h3 {
     font-size: 30px;
+  }
+}
+@media (max-width: 992px) {
+  .pricing_section .pricingDiv .pricing_header h3 {
+    font-size: 20px;
   }
 }
 .pricing_section .pricingDiv .pricing_header p {
@@ -2406,6 +2476,18 @@ a:active {
   font-size: 22px;
   line-height: 26.4px;
   font-family: "Lato", sans-serif;
+}
+@media (max-width: 1200px) {
+  .pricing_section .pricingDiv .pricing_header p {
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+}
+@media (max-width: 992px) {
+  .pricing_section .pricingDiv .pricing_header p {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
 }
 .pricing_section .pricingDiv .pricing_bottom {
   display: flex;
@@ -2454,6 +2536,16 @@ a:active {
   font-size: 30px;
   margin-bottom: 30px;
 }
+@media (max-width: 1200px) {
+  .faqDiv h3 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 992px) {
+  .faqDiv h3 {
+    font-size: 20px;
+  }
+}
 .faqDiv h3 span {
   color: #C79952;
 }
@@ -2493,9 +2585,14 @@ a:active {
   text-align: center;
   margin-bottom: 40px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .contactUsContainner .contactUsSection h3 {
     font-size: 30px;
+  }
+}
+@media (max-width: 992px) {
+  .contactUsContainner .contactUsSection h3 {
+    font-size: 20px;
   }
 }
 .contactUsContainner .contactUsSection h3 span {
@@ -2615,6 +2712,12 @@ a:active {
   font-weight: 500;
   border-radius: 10px;
   font-size: 20px;
+}
+@media (max-width: 992px) {
+  .contactUsContainner .contactusDiv .contactUsRight .contactForm form .submitBtn {
+    min-height: 50px;
+    font-size: 18px;
+  }
 }
 
 .dashboard_container {

@@ -110,5 +110,11 @@
     h5 {
         font-size: 20px;
         font-weight: 500;
+        @include largeScreen{
+            font-size: 16px;
+        }
+        @include smallScreen{
+            font-size: 14px;
+        }
     }
 }
