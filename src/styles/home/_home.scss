@@ -47,7 +47,8 @@
                 h1 {
                     font-size: 45px;
                     line-height: 60px;
-
+                 
+                    
                     @include bigScreen {
                         font-size: 35px;
                         line-height: 50px;
@@ -65,7 +66,7 @@
 
                     .vector_img {
                         position: relative;
-
+                       
                         .vector_icon {
                             width: 100%;
                             height: 18px;
@@ -73,11 +74,43 @@
                             bottom: -13px;
                             left: 0;
                         }
+
+                    }
+                    .ani_text::after{
+                        content: "";
+                        animation: textChange 5s ease-in-out infinite;
+                        position: relative;
+                        top: 20px;
+                        @keyframes textChange {
+                            0% { 
+                                top: -20px;
+                                content:"interior";
+                            } 
+                  
+                            25% { 
+                               
+                                content:"exterior";
+                            } 
+                  
+                            50% { 
+                               
+                                content:"landscape";
+                            } 
+                  
+                            100% { 
+                             
+                                content:"custom";
+                            } 
+                        } 
+
                     }
 
                     span {
                         color: $accent;
+                      
                     }
+                  
+                
                 }
 
                 p {

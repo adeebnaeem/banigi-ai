@@ -9,7 +9,7 @@ const BannerSection = () => {
                 <div className="main_banner_div">
                     <div className="banner_left">
                         <div className="banner_left_text">
-                            <h1>Turn your home  <span className='vector_img'>interior <img src={vector} alt=""className="vector_icon" /> <br /></span> design with  one click through <br /> Banigi <span>AI</span> technology</h1>
+                            <h1>Turn your home  <span className='vector_img'> <span className="ani_text"></span> <img src={vector} alt=""className="vector_icon" /> <br /></span> design with  one click through <br /> Banigi <span>AI</span> technology</h1>
                             <p>Transform your home effortlessly with AI at Banigi AI. Elevate interiors, exteriors, and landscapes seamlessly. Personalized creativity meets efficient custom design. Redefine your space.</p>
                             <div className="banner_left_btn">
                                 <button className='tryBtn'>Try Bagini AI Free</button>

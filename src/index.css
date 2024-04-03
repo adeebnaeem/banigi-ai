@@ -1866,6 +1866,27 @@ a:active {
   bottom: -13px;
   left: 0;
 }
+.main_banner .main_banner_div .banner_left .banner_left_text h1 .ani_text::after {
+  content: "";
+  animation: textChange 5s ease-in-out infinite;
+  position: relative;
+  top: 20px;
+}
+@keyframes textChange {
+  0% {
+    top: -20px;
+    content: "interior";
+  }
+  25% {
+    content: "exterior";
+  }
+  50% {
+    content: "landscape";
+  }
+  100% {
+    content: "custom";
+  }
+}
 .main_banner .main_banner_div .banner_left .banner_left_text h1 span {
   color: #C79952;
 }
