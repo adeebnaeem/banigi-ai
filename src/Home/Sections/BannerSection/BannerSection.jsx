@@ -1,4 +1,4 @@
-import watchIcon from "../../../assets/watch_icon.png"
+    import watchIcon from "../../../assets/watch_icon.png"
 import BannerCard from '../../../Components/BannerCard'
 import vector from '../../../assets/vector.png'
 

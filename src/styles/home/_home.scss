@@ -1,7 +1,6 @@
 // Banner Section
 
 .main_banner {
-
     background: url("../public/banner.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,7 +20,6 @@
         background-color: rgba(0, 0, 0, 0.4);
 
         .banner_left {
-
             width: 95%;
             margin: 0px auto;
             display: flex;
@@ -41,14 +39,13 @@
                 }
 
                 @include largeScreen {
-                    max-width: 420px
+                    max-width: 420px;
                 }
 
                 h1 {
                     font-size: 45px;
                     line-height: 60px;
-                 
-                    
+
                     @include bigScreen {
                         font-size: 35px;
                         line-height: 50px;
@@ -66,7 +63,7 @@
 
                     .vector_img {
                         position: relative;
-                       
+
                         .vector_icon {
                             width: 100%;
                             height: 18px;
@@ -74,43 +71,40 @@
                             bottom: -13px;
                             left: 0;
                         }
-
                     }
-                    .ani_text::after{
-                        content: "";
-                        animation: textChange 5s ease-in-out infinite;
-                        position: relative;
-                        top: 20px;
-                        @keyframes textChange {
-                            0% { 
-                                top: -20px;
-                                content:"interior";
-                            } 
-                  
-                            25% { 
-                               
-                                content:"exterior";
-                            } 
-                  
-                            50% { 
-                               
-                                content:"landscape";
-                            } 
-                  
-                            100% { 
-                             
-                                content:"custom";
-                            } 
-                        } 
+                    @keyframes changeText {
+                        0%,
+                        20% {
+                            content: "interior";
+                            transform: translateY(0);
+                        }
+                        20%,
+                        40% {
+                            content: "exterior";
+                            transform: translateY(0);
+                        }
+                        40%,
+                        60% {
+                            content: "landscape";
+                            transform: translateY(0);
+                        }
+                        60%,
+                        80% {
+                            content: "custom";
+                            transform: translateY(0);
+                        }
+                    }
 
+                    .ani_text::before {
+                        content: " ";
+                        display: inline-block;
+                        position: relative;
+                        animation: changeText 16s infinite; /* Increased the duration to accommodate delays */
                     }
 
                     span {
                         color: $accent;
-                      
                     }
-                  
-                
                 }
 
                 p {
@@ -122,17 +116,13 @@
                     @include bigScreen {
                         font-size: 16px;
                     }
-
                 }
-
-
 
                 .banner_left_btn {
                     display: flex;
                     gap: 25px;
                     margin-top: 60px;
                     justify-content: center;
-
 
                     .tryBtn {
                         background-color: $accent;
@@ -155,8 +145,6 @@
                         //     padding: 15px;
                         //     font-size: 14px;
                         // }
-
-
                     }
 
                     .watchBtn {
@@ -261,7 +249,6 @@
 //             flex-direction: column;
 //             align-items: center;
 
-
 //         }
 
 //         .HowItWork_left,
@@ -288,7 +275,6 @@
 //             }
 //         }
 
-
 //         .HowItWork_Middle {
 //             margin-top: 20px;
 
@@ -301,7 +287,6 @@
 
 //             }
 //         }
-
 
 //     }
 // }
@@ -334,7 +319,6 @@
             @include mediumScreen {
                 height: 80px;
             }
-
         }
     }
 
@@ -358,7 +342,6 @@
     }
 
     .DesignGridLayout {
-
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -367,10 +350,7 @@
         margin: auto;
 
         @include mediumScreen {
-
             grid-template-columns: repeat(2, 1fr);
-
-
         }
 
         @include smallScreen {
@@ -406,9 +386,6 @@
     }
 }
 
-
-
-
 .TryDesignDiv {
     background-color: $secondary;
     padding: 50px;
@@ -431,7 +408,6 @@
             font-size: 20px;
         }
 
-
         span {
             color: $accent;
         }
@@ -444,14 +420,12 @@
             gap: 40px;
             margin-bottom: 50px;
             justify-content: center;
-           
+
             @include bigScreen {
                 gap: 20px;
-
             }
 
             @include largeScreen {
-
                 gap: 15px;
             }
 
@@ -472,8 +446,6 @@
                 }
 
                 @include largeScreen {
-
-
                     font-size: 13px;
                 }
 
@@ -481,8 +453,6 @@
                     font-size: 12px;
                     padding: 15px;
                 }
-
-
             }
 
             button.active {
@@ -491,7 +461,6 @@
         }
 
         .tab_content_div {
-       
             margin: 0px auto;
             display: flex;
             max-width: 1274.5px;
@@ -521,16 +490,11 @@
 
                 @include smallScreen {
                     width: 100%;
-
                 }
-
             }
-
-
 
             .swiper-div {
                 width: 55%;
-
 
                 @include bigScreen {
                     width: 50%;
@@ -538,7 +502,6 @@
 
                 @include largeScreen {
                     width: 100%;
-
                 }
 
                 .swiper {
@@ -546,7 +509,6 @@
                     padding-bottom: 20px;
 
                     .swiper-slide {
-
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -555,12 +517,10 @@
                             width: 100%;
                             max-width: 550px;
                             height: 100%;
-
                         }
                     }
 
                     .swiper-pagination {
-
                         bottom: 0px;
 
                         .swiper-pagination-bullet {
@@ -568,21 +528,15 @@
                             display: inline-block;
                             width: 0.6rem;
                             height: 0.6rem;
-
-
                         }
                     }
                 }
             }
         }
-
     }
-
 }
 
-
 // build you job css
-
 
 .buildJobDiv {
     background-color: $primary;
@@ -598,7 +552,6 @@
         font-size: 40px;
         margin-bottom: 35px;
 
-
         @include bigScreen {
             font-size: 30px;
         }
@@ -606,7 +559,6 @@
         @include largeScreen {
             font-size: 20px;
         }
-
 
         span {
             color: $accent;
@@ -620,42 +572,68 @@
         justify-content: center;
         margin-bottom: 100px;
         gap: 15px;
-
-        @include mediumScreen {
+        @include mediumScreen{
             flex-wrap: wrap;
         }
-
-        >img {
-            width: 220px;
-            cursor: pointer;
-
-            @include bigScreen {
-                width: 165.35px;
-            }
-
-            @include largeScreen {
-                width: 140px;
-            }
-
-            @include mediumScreen {
-                width: 160px;
-            }
-
-            &:nth-child(even) {
-                position: relative;
-                bottom: -100px;
-
-                @include mediumScreen {
-                    position: unset;
-                }
-            }
+      }
+      
+      .top-down-img > div {
+        > img {
+          width: 220px;
+          cursor: pointer;
+          @include bigScreen{
+            width: 165.35px;
+          }
+          @include largeScreen{
+            width: 140px;
+          }
+          @include mediumScreen{
+            width: 160px;
+          }
         }
 
+        &:nth-child(even) {
+          position: relative;
+          bottom: -100px;
+          @include mediumScreen{
+            position: unset;
+          }
+        }
+      }
+      
+      .first_job_Card {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+    
+      }
+      .job_card_text {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: -400px;
+        border-radius: 10px;
+        background: #43484B;
+
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        padding: 10px 20px;
+        transition: all 1s;
+        @include bigScreen{
+            font-size: 14px;
+            padding: 5px 10px;
+        }
 
     }
-
+    .first_job_Card:hover .job_card_text{
+        bottom: 0px;
+    }
+      
 }
-
 
 
 // FeedBack CSS
@@ -679,7 +657,6 @@
         @include largeScreen {
             font-size: 20px;
         }
-
 
         span {
             color: $accent;
@@ -716,8 +693,6 @@
         }
 
         .swiper-button-prev {
-
-
             img {
                 position: absolute;
                 left: -10px;
@@ -734,7 +709,6 @@
                     height: 32px;
                 }
             }
-
         }
 
         .swiper-button-prev::after {
@@ -820,7 +794,7 @@
             h2 {
                 max-width: 400px;
                 font-size: 32px;
-                color: #43484B;
+                color: #43484b;
 
                 @include bigScreen {
                     max-width: 100%;
@@ -878,9 +852,6 @@
             }
 
             .mobileImgDiv {
-
-
-
                 img {
                     width: 100%;
                 }
@@ -923,7 +894,6 @@
                 @include largeScreen {
                     font-size: 20px;
                 }
-
             }
 
             p {
@@ -936,7 +906,6 @@
                 @include bigScreen {
                     font-size: 18px;
                     line-height: 21.6px;
-
                 }
 
                 @include largeScreen {
@@ -952,15 +921,14 @@
             gap: 40px;
             margin-top: 100px;
 
-
             @include largeScreen {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
             }
 
-            &>*:nth-child(1),
-            &>*:nth-child(3) {
+            & > *:nth-child(1),
+            & > *:nth-child(3) {
                 align-self: start;
 
                 @include largeScreen {
@@ -968,25 +936,18 @@
                 }
             }
 
-
-            &>*:nth-child(2) {
+            & > *:nth-child(2) {
                 padding: 100px 71px;
                 position: relative;
                 top: -50px;
 
                 @include largeScreen {
                     position: unset;
-
                 }
             }
-
         }
-
-
     }
-
 }
-
 
 // Frequent Ask Question CSS
 
@@ -1037,9 +998,7 @@
         text-align: center;
         text-decoration: underline;
     }
-
 }
-
 
 // Contact Us CSS
 .contactUsContainner {
@@ -1053,13 +1012,10 @@
         padding-top: 50px;
         padding-bottom: 100px;
 
-
-
         h3 {
             font-size: 40px;
             text-align: center;
             margin-bottom: 40px;
-
 
             @include bigScreen {
                 font-size: 30px;
@@ -1153,7 +1109,6 @@
 
                     label {
                         font-family: "Lato", sans-serif;
-
                     }
 
                     input {

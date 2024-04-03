@@ -1866,26 +1866,29 @@ a:active {
   bottom: -13px;
   left: 0;
 }
-.main_banner .main_banner_div .banner_left .banner_left_text h1 .ani_text::after {
-  content: "";
-  animation: textChange 5s ease-in-out infinite;
-  position: relative;
-  top: 20px;
-}
-@keyframes textChange {
-  0% {
-    top: -20px;
+@keyframes changeText {
+  0%, 20% {
     content: "interior";
+    transform: translateY(0);
   }
-  25% {
+  20%, 40% {
     content: "exterior";
+    transform: translateY(0);
   }
-  50% {
+  40%, 60% {
     content: "landscape";
+    transform: translateY(0);
   }
-  100% {
+  60%, 80% {
     content: "custom";
+    transform: translateY(0);
   }
+}
+.main_banner .main_banner_div .banner_left .banner_left_text h1 .ani_text::before {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  animation: changeText 16s infinite; /* Increased the duration to accommodate delays */
 }
 .main_banner .main_banner_div .banner_left .banner_left_text h1 span {
   color: #C79952;
@@ -2240,33 +2243,63 @@ a:active {
     flex-wrap: wrap;
   }
 }
-.buildJobDiv .top-down-img > img {
+.buildJobDiv .top-down-img > div > img {
   width: 220px;
   cursor: pointer;
 }
 @media (max-width: 1200px) {
-  .buildJobDiv .top-down-img > img {
+  .buildJobDiv .top-down-img > div > img {
     width: 165.35px;
   }
 }
 @media (max-width: 992px) {
-  .buildJobDiv .top-down-img > img {
+  .buildJobDiv .top-down-img > div > img {
     width: 140px;
   }
 }
 @media (max-width: 768px) {
-  .buildJobDiv .top-down-img > img {
+  .buildJobDiv .top-down-img > div > img {
     width: 160px;
   }
 }
-.buildJobDiv .top-down-img > img:nth-child(even) {
+.buildJobDiv .top-down-img > div:nth-child(even) {
   position: relative;
   bottom: -100px;
 }
 @media (max-width: 768px) {
-  .buildJobDiv .top-down-img > img:nth-child(even) {
+  .buildJobDiv .top-down-img > div:nth-child(even) {
     position: unset;
   }
+}
+.buildJobDiv .first_job_Card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.buildJobDiv .job_card_text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -400px;
+  border-radius: 10px;
+  background: #43484B;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 10px 20px;
+  transition: all 1s;
+}
+@media (max-width: 1200px) {
+  .buildJobDiv .job_card_text {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+}
+.buildJobDiv .first_job_Card:hover .job_card_text {
+  bottom: 0px;
 }
 
 .feedback_div {
@@ -2420,7 +2453,7 @@ a:active {
 .downloadAppDiv .downloadAppInfo .downloadAppText h2 {
   max-width: 400px;
   font-size: 32px;
-  color: #43484B;
+  color: #43484b;
 }
 @media (max-width: 1200px) {
   .downloadAppDiv .downloadAppInfo .downloadAppText h2 {
