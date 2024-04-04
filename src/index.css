@@ -1868,14 +1868,21 @@ a:active {
 }
 .main_banner .main_banner_div .banner_left .banner_left_text h1 .vector_img .vector_icon {
   width: 100%;
+  max-width: 166px;
   height: 18px;
   position: absolute;
   bottom: -10px;
   left: 0%;
 }
+@media (max-width: 1200px) {
+  .main_banner .main_banner_div .banner_left .banner_left_text h1 .vector_img .vector_icon {
+    height: 13px;
+  }
+}
 @media (max-width: 576px) {
   .main_banner .main_banner_div .banner_left .banner_left_text h1 .vector_img .vector_icon {
     bottom: -7px;
+    height: 10px;
   }
 }
 @keyframes changeText {

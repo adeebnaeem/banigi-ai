@@ -71,12 +71,17 @@
                         .vector_icon {
                                
                           width: 100%;
+                          max-width: 166px;
                             height: 18px;
                             position: absolute;
                             bottom: -10px;
                             left: 0%;
+                            @include bigScreen{
+                                height: 13px;
+                            }
                             @include smallScreen{
                                 bottom: -7px;
+                                height: 10px;
                             }
                             
                         }
