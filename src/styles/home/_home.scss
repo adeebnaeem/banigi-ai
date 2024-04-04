@@ -63,43 +63,108 @@
 
                     .vector_img {
                         position: relative;
-
+                        width: 150px;
+                        display: inline-block;
+                        @include smallScreen{
+                            width: 80px;
+                        }
                         .vector_icon {
-                            width: 100%;
+                               
+                          width: 100%;
                             height: 18px;
                             position: absolute;
-                            bottom: -13px;
-                            left: 0;
+                            bottom: -10px;
+                            left: 0%;
+                            @include smallScreen{
+                                bottom: -7px;
+                            }
+                            
                         }
                     }
                     @keyframes changeText {
-                        0%,
-                        20% {
+                        0%{
                             content: "interior";
-                            transform: translateY(0);
+                            transform: translateY(100%);
+                            opacity: 1;
                         }
-                        20%,
-                        40% {
+                        20%{
+                            content: "interior";
+                            transform: translateY(0%);
+                            opacity: 1;
+                        }
+                        30% {
+                            content: "interior";
+                            transform: translateY(100%);
+                            opacity: 0;
+                        }
+                        31% {
+                            opacity: 0;
                             content: "exterior";
-                            transform: translateY(0);
+                            transform: translateY(100%);
                         }
-                        40%,
-                        60% {
+                        40% {
+                            opacity: 1;
+                            content: "exterior";
+                            transform: translateY(0%);
+                        }
+                        50% {
+                            opacity: 0;
+                            content: "exterior";
+                            transform: translateY(100%);
+                        }
+                        51% {
+                            opacity: 0;
                             content: "landscape";
-                            transform: translateY(0);
+                            transform: translateY(100%);
                         }
-                        60%,
-                        80% {
+                        60% {
+                            opacity: 1;
+                            
+                            content: "landscape";
+                            transform: translateY(0%);
+                        }
+                        70% {
+                            opacity: 0;
+                       
+                            content: "landscape";
+                            transform: translateY(100%);
+                        }
+                        71% {
+                       
+                            opacity: 0;
                             content: "custom";
-                            transform: translateY(0);
+                            transform: translateY(100%);
                         }
+                        81% {
+                            opacity: 1;
+                            
+                            
+                            content: "custom";
+                            transform: translateY(0%);
+                        }
+                        100% {
+                            opacity: 0;
+                       
+                        
+                            content: "custom";
+                            transform: translateY(100%);
+                        }
+                        
+                    
+                
+                        
                     }
+                    .ani_text {
+                        position: absolute;
+                   left: 0%;
+                   bottom: 100%;
+                      }
 
                     .ani_text::before {
                         content: " ";
                         display: inline-block;
                         position: relative;
-                        animation: changeText 16s infinite; /* Increased the duration to accommodate delays */
+                        animation: changeText 6s infinite; /* Increased the duration to accommodate delays */
                     }
 
                     span {
@@ -612,7 +677,7 @@
         width: 100%;
         height: 100%;
         bottom: -400px;
-        border-radius: 10px;
+        border-radius:7px;
         background: #43484B;
 
         text-align: center;
@@ -622,7 +687,7 @@
         justify-content: center;
         gap: 25px;
         padding: 10px 20px;
-        transition: all 1s;
+        transition: all .4s;
         @include bigScreen{
             font-size: 14px;
             padding: 5px 10px;
