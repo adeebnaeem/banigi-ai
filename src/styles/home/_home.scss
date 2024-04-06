@@ -56,120 +56,138 @@
                         line-height: 40px;
                     }
 
-                    // @include smallScreen {
-                    //     font-size: 20px;
-                    //     line-height: 40px;
-                    // }
+                    @include smallScreen {
+                        font-size: 21px;
+                        line-height: 40px;
+                    }
 
                     .vector_img {
                         position: relative;
                         width: 150px;
                         display: inline-block;
-                        @include smallScreen{
+
+                        @include smallScreen {
                             width: 80px;
                         }
+
                         .vector_icon {
-                               
-                          width: 100%;
-                          max-width: 166px;
+
+                            width: 100%;
+                            max-width: 166px;
                             height: 18px;
                             position: absolute;
                             bottom: -10px;
                             left: 0%;
-                            @include bigScreen{
+
+                            @include bigScreen {
                                 height: 13px;
                             }
-                            @include smallScreen{
+
+                            @include smallScreen {
                                 bottom: -7px;
                                 height: 10px;
                             }
-                            
+
                         }
                     }
+
                     @keyframes changeText {
-                        0%{
+                        0% {
                             content: "interior";
                             transform: translateY(100%);
                             opacity: 1;
                         }
-                        20%{
+
+                        20% {
                             content: "interior";
                             transform: translateY(0%);
                             opacity: 1;
                         }
+
                         30% {
                             content: "interior";
                             transform: translateY(100%);
                             opacity: 0;
                         }
+
                         31% {
                             opacity: 0;
                             content: "exterior";
                             transform: translateY(100%);
                         }
+
                         40% {
                             opacity: 1;
                             content: "exterior";
                             transform: translateY(0%);
                         }
+
                         50% {
                             opacity: 0;
                             content: "exterior";
                             transform: translateY(100%);
                         }
+
                         51% {
                             opacity: 0;
                             content: "landscape";
                             transform: translateY(100%);
                         }
+
                         60% {
                             opacity: 1;
-                            
+
                             content: "landscape";
                             transform: translateY(0%);
                         }
+
                         70% {
                             opacity: 0;
-                       
+
                             content: "landscape";
                             transform: translateY(100%);
                         }
+
                         71% {
-                       
+
                             opacity: 0;
                             content: "custom";
                             transform: translateY(100%);
                         }
+
                         81% {
                             opacity: 1;
-                            
-                            
+
+
                             content: "custom";
                             transform: translateY(0%);
                         }
+
                         100% {
                             opacity: 0;
-                       
-                        
+
+
                             content: "custom";
                             transform: translateY(100%);
                         }
-                        
-                    
-                
-                        
+
+
+
+
                     }
+
                     .ani_text {
                         position: absolute;
-                   left: 0%;
-                   bottom: 100%;
-                      }
+                        left: 0%;
+                        bottom: 100%;
+                    }
 
                     .ani_text::before {
                         content: " ";
                         display: inline-block;
                         position: relative;
-                        animation: changeText 6s infinite; /* Increased the duration to accommodate delays */
+                        animation: changeText 6s infinite;
+                        /* Increased the duration to accommodate delays */
                     }
 
                     span {
@@ -536,6 +554,7 @@
             max-width: 1274.5px;
             padding: 30px 0px;
             justify-content: center;
+
             @include bigScreen {
                 width: 95%;
             }
@@ -636,85 +655,79 @@
     }
 
     .top-down-img {
-        max-width: 1274.5px;
+
         margin: auto;
         display: flex;
-        justify-content: center;
-        margin-bottom: 100px;
+        max-width: 1274.5px;
+        margin-bottom: 70px;
         gap: 15px;
-        @include mediumScreen{
-            flex-wrap: wrap;
-        }
-      }
-      
-      .top-down-img > div {
-        @include smallScreen{
-            width: 95%;
-            max-width: 300px;
-    
-            margin: auto;
-        }
-     
-        > img {
-          width: 220px;
-          cursor: pointer;
-          @include bigScreen{
-            width: 165.35px;
-          }
-          @include largeScreen{
-            width: 140px;
-          }
-          @include mediumScreen{
-            width: 160px;
-          }
-          @include smallScreen{
-            width: 100%;
 
-        
-          }
-        }
-
-        &:nth-child(even) {
-          position: relative;
-          bottom: -100px;
-          @include mediumScreen{
-            position: unset;
-          }
-        }
-      }
-      
-      .first_job_Card {
-        position: relative;
-        overflow: hidden;
-        cursor: pointer;
-    
-      }
-      .job_card_text {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        bottom: -600px;
-        border-radius:7px;
-        background: #43484B;
-
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
-        gap: 25px;
-        padding: 10px 20px;
-        transition: all .4s;
-        @include bigScreen{
-            font-size: 14px;
-            padding: 5px 10px;
+
+@include mediumScreen{
+    flex-wrap: wrap;
+}
+@include smallScreen{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+        .first_job_Card {
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+            width: 220px;
+
+            &:nth-child(even) {
+                top: 100px;
+                @include mediumScreen{
+                    top: 0px;
+                }
+            }
+
+            @include smallScreen{
+                width: 100%;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+
+            .job_card_text {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                bottom: -600px;
+                border-radius: 7px;
+                background: #43484B;
+
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 25px;
+                padding: 10px 20px;
+                transition: all .4s;
+
+                @include bigScreen {
+                    font-size: 14px;
+                    padding: 5px 10px;
+                }
+
+            }
+
         }
+
 
     }
-    .first_job_Card:hover .job_card_text{
+
+
+    .first_job_Card:hover .job_card_text {
         bottom: 0px;
     }
-      
+
 }
 
 
@@ -725,6 +738,7 @@
     color: white;
 
     padding: 60px 70px;
+
     @include largeScreen {
         padding: 40px 28px;
     }
@@ -771,6 +785,7 @@
             justify-content: center;
             align-items: center;
             position: relative;
+
             img {
                 width: 100%;
                 max-width: fit-content;
@@ -1012,8 +1027,8 @@
                 align-items: center;
             }
 
-            & > *:nth-child(1),
-            & > *:nth-child(3) {
+            &>*:nth-child(1),
+            &>*:nth-child(3) {
                 align-self: start;
 
                 @include largeScreen {
@@ -1021,7 +1036,7 @@
                 }
             }
 
-            & > *:nth-child(2) {
+            &>*:nth-child(2) {
                 padding: 100px 71px;
                 position: relative;
                 top: -50px;
